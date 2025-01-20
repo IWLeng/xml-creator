@@ -128,6 +128,7 @@ rule_sets = {
             (r'\bZignorowania\b', r'<phoneme alphabet="ipa" ph="zignorovanja">Zignorowania</phoneme>'),
             (r'\bAiTM\b', r'<phoneme alphabet="ipa" ph="ˈaj.te.em">AiTM</phoneme>'),
             (r'\broutery\b', r'<phoneme alphabet="ipa" ph="ˈru.tery">routery</phoneme>'),
+            (r'\bphishingiem\b', r'<phoneme alphabet="ipa" ph="fi.ʃiːn.giem">phishingiem</phoneme>'),
         ]
     },
     "11": {
