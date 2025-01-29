@@ -26,6 +26,7 @@ rule_sets = {
             (r'avmed', r'AvMed'),
             (r'av med', r'AvMed'),
             (r'well point', r'WellPoint'),
+            (r'\bAdvantage MD\b', r'Advantage <phoneme alphabet="ipa" ph="ɛm">M</phoneme><phoneme alphabet="ipa" ph="diː">D</phoneme>'),
         ]
     },
     "2": {
