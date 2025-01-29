@@ -26,7 +26,6 @@ rule_sets = {
             (r'avmed', r'AvMed'),
             (r'av med', r'AvMed'),
             (r'well point', r'WellPoint'),
-            (r'\bAdvantage MD\b', r'Advantage <phoneme alphabet="ipa" ph="ɛm">M</phoneme><phoneme alphabet="ipa" ph="diː">D</phoneme>'),
         ]
     },
     "2": {
@@ -64,7 +63,8 @@ rule_sets = {
             (r'Capital Blue', r'Cápital Blue'),
             (r'\bHumana\b', r'<phoneme alphabet="ipa" ph="hjuˈmɛna">Humana</phoneme>'),
             (r'\bMedica\b', r'Médica'),
-            (r'\bla 1\b', r'la una'),      
+            (r'\bla 1\b', r'la una'),
+            (r'\bAdvantage MD\b', r'Advantage <phoneme alphabet="ipa" ph="ɛm">M</phoneme><phoneme alphabet="ipa" ph="diː">D</phoneme>'),
         ]
     },
 }
