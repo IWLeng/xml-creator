@@ -49,6 +49,7 @@ rule_sets = {
             (r'AmeriHealth', r'<phoneme alphabet="ipa" ph="amɛɹʌ">Ameri</phoneme>-Health'),
             (r'Caritas', r'<phoneme alphabet="ipa" ph="ˈkæɹiˌtʌsː">Caritas</phoneme>'),
             (r'\bWellCare\b', r'Well-Care'),
+            (r'\bAllWell\b', r'All-Well'),
             (r'\bRightCare\b', r'Right-Care'),
             (r'\bTexas\b', r'<phoneme alphabet="ipa" ph="ˈtɛk.səs">Texas</phoneme>'),
             (r'\bFirstCare\b', r'First-Care'),
