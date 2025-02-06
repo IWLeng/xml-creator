@@ -66,6 +66,7 @@ rule_sets = {
             (r'\bMedica\b', r'Médica'),
             (r'\bla 1\b', r'la una'),
             (r'\bAdvantage MD\b', r'Advantage <phoneme alphabet="ipa" ph="ɛm">M</phoneme><phoneme alphabet="ipa" ph="diː">D</phoneme>'),
+            (r'([0-9]-[0-9]{3}-[0-9]{3}-[0-9]{4})', r'<say-as interpret-as="telephone">$1</say-as>'),
         ]
     },
 }
