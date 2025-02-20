@@ -75,8 +75,6 @@ rule_sets = {
         "name": "Korean",
         "rules": [
             (r'\bCentene\b', r'<lang xml:lang="en-US">Centene</lang>'),
-            (r'\b(Wellcare By Allwell|Wellcare)\b', 
-            lambda m: replacements[m.group(0)]),
             (r'([0-9])번', r'<say-as interpret-as="number_digit">$1</say-as>번'),
             (r'10자리', r'<phoneme alphabet="ipa" ph="jʌl">10</phoneme>자리'),
             (r'회의', r'<phoneme alphabet="ipa" ph="ˈhø̞ːi">회의</phoneme>'),
@@ -87,8 +85,6 @@ rule_sets = {
         "name": "Vietnamese",
         "rules: [
             (r'\bCentene\b', r'<lang xml:lang="en-US">Centene</lang>'),
-            (r'\b(Wellcare By Allwell|Wellcare)\b', 
-            lambda m: replacements[m.group(0)]),
         ]
-    },
+    }
 }
