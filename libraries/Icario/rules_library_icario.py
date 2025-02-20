@@ -2,8 +2,7 @@ rule_sets = {
     "1": {
         "name": "English",
         "rules": [
-            (r'\(TTY:\s?711\)', r'(<say-as interpret-as="characters">TTY</say-as>: <say-as interpret-as="number_digit">711</say-as>)'),
-            (r'\b TTY \b', r' <say-as interpret-as="characters">TTY</say-as> '),
+            (r'(TTY)(?:\W*(711))?', r'<say-as interpret-as="characters">\1 \2</say-as>'),
             (r'\bLead\b', r'<phoneme alphabet="ipa" ph="lɛd">Lead</phoneme>'),
             (r'\bAmeriHealth\b', r'<phoneme alphabet="ipa" ph="ʌmɛɹʌ">Ameri</phoneme>Health'),
             (r'\bCaritas\b', r'<phoneme alphabet="ipa" ph="kæɹ.ətɔs">Caritas</phoneme>'),
@@ -26,14 +25,13 @@ rule_sets = {
             (r'avmed', r'AvMed'),
             (r'av med', r'AvMed'),
             (r'well point', r'WellPoint'),
-            (r'([0-9]{1}\W[0-9]{3}\W[0-9]{3}\W[0-9]{4})|([0-9]{3}\W[0-9]{3}\W[0-9]{4})|(\([0-9]{1}\)\W[0-9]{3}\W[0-9]{3}\W[0-9]{4})', r'<say-as interpret-as="telephone">$1$2$3</say-as>')
+            (r'(\(?\d{1,3}\)?\W?\d{3}\W?\d{3}\W?\d{4})', r'<say-as interpret-as="telephone">\1</say-as>'),
         ]
     },
     "2": {
         "name": "Spanish",
         "rules": [
-            (r'\(TTY:\s?711\)', r'(<say-as interpret-as="characters">TTY</say-as>: <say-as interpret-as="number_digit">711</say-as>)'),
-            (r'\b TTY \b', r' <say-as interpret-as="characters">TTY</say-as> '),
+            (r'(TTY)(?:\W*(711))?', r'<say-as interpret-as="characters">\1 \2</say-as>'),
             (r'To continue this call in English, press one', r'To <phoneme alphabet="ipa" ph="kənˈtɪnjuː">continue</phoneme> this call in English, press one'),
             (r'To continue this call in English, press 1', r'To <phoneme alphabet="ipa" ph="kənˈtɪnjuː">continue</phoneme> this call in English, press one.'),
             (r'AvMed', r'Av-Med'),
@@ -67,7 +65,7 @@ rule_sets = {
             (r'\bMedica\b', r'Médica'),
             (r'\bla 1\b', r'la una'),
             (r'\bAdvantage MD\b', r'Advantage <phoneme alphabet="ipa" ph="ɛm">M</phoneme><phoneme alphabet="ipa" ph="diː">D</phoneme>'),
-            (r'([0-9]-[0-9]{3}-[0-9]{3}-[0-9]{4})', r'<say-as interpret-as="telephone">$1</say-as>'),
+            (r'(\(?\d{1,3}\)?\W?\d{3}\W?\d{3}\W?\d{4})', r'<say-as interpret-as="telephone">\1</say-as>'),
             (r'\bCentene\b', r'Centín'),
         ]
     },
