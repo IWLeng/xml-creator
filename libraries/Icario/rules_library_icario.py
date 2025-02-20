@@ -83,7 +83,7 @@ rule_sets = {
     },
     "4": {
         "name": "Vietnamese",
-        "rules: [
+        "rules": [
             (r'\bCentene\b', r'<lang xml:lang="en-US">Centene</lang>'),
         ]
     }
