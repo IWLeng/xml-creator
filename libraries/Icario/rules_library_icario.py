@@ -60,7 +60,7 @@ rule_sets = {
             (r'\bDiverge\b', r'<phoneme alphabet="ipa" ph="daɪˈvɝd͡ʒ">Diverge</phoneme>'),
             (r'\bPCP\b', r'<phoneme alphabet="ipa" ph="piːsiːpiː">PCP</phoneme>'),
             (r'\bNordyke\b', r'<phoneme alphabet="ipa" ph="ˈnor.daik">Nordyke</phoneme>'),
-            (r'\bTanir\b', r'Taníier '),
+            (r'\bTanir\b', r'Taníier'),
             (r'\bMy Family Doctor\b', r'My Family <phoneme alphabet="ipa" ph="ˈdɔktɚ">Doctor</phoneme>'),
             (r'Capital Blue', r'Cápital Blue'),
             (r'\bHumana\b', r'<phoneme alphabet="ipa" ph="hjuˈmɛna">Humana</phoneme>'),
