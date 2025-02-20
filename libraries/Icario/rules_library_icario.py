@@ -26,6 +26,7 @@ rule_sets = {
             (r'avmed', r'AvMed'),
             (r'av med', r'AvMed'),
             (r'well point', r'WellPoint'),
+            (r'([0-9]{1}\W[0-9]{3}\W[0-9]{3}\W[0-9]{4})|([0-9]{3}\W[0-9]{3}\W[0-9]{4})|(\([0-9]{1}\)\W[0-9]{3}\W[0-9]{3}\W[0-9]{4})', r'<say-as interpret-as="telephone">$1$2$3</say-as>')
         ]
     },
     "2": {
