@@ -25,7 +25,7 @@ rule_sets = {
             (r'avmed', r'AvMed'),
             (r'av med', r'AvMed'),
             (r'well point', r'WellPoint'),
-            (r'(\(?\+?\d{1,3}\)?[\W\s]?\d{3}[\W\s]?\d{3}[\W\s]?\d{4})', r'<say-as interpret-as="telephone">\1</say-as>'),
+            (r'\(?(1)?\)?([-. ]?\d{3}[-. ]\d{3}[-. ]\d{4})', r'<say-as interpret-as="telephone">\1\2</say-as>'),
         ]
     },
     "2": {
@@ -65,7 +65,7 @@ rule_sets = {
             (r'\bMedica\b', r'Médica'),
             (r'\bla 1\b', r'la una'),
             (r'\bAdvantage MD\b', r'Advantage <phoneme alphabet="ipa" ph="ɛm">M</phoneme><phoneme alphabet="ipa" ph="diː">D</phoneme>'),
-            (r'(\(?\+?\d{1,3}\)?[\W\s]?\d{3}[\W\s]?\d{3}[\W\s]?\d{4})', r'<say-as interpret-as="telephone">\1</say-as>'),
+            (r'\(?(1)?\)?([-. ]?\d{3}[-. ]\d{3}[-. ]\d{4})', r'<say-as interpret-as="telephone">\1\2</say-as>'),
             (r'\bCentene\b', r'Centín'),
         ]
     },
@@ -77,6 +77,7 @@ rule_sets = {
             (r'10자리', r'<phoneme alphabet="ipa" ph="jʌl">10</phoneme>자리'),
             (r'회의', r'<phoneme alphabet="ipa" ph="ˈhø̞ːi">회의</phoneme>'),
             (r'24시간', r'<say-as interpret-as="character">24</say-as>시간'),
+            (r'\(?(1)?\)?([-. ]?\d{3}[-. ]\d{3}[-. ]\d{4})', r'<say-as interpret-as="telephone">\1\2</say-as>')
         ]
     },
     "4": {
