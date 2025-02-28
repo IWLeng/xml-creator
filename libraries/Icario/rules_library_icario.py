@@ -2,7 +2,7 @@ rule_sets = {
     "1": {
         "name": "English",
         "rules": [
-            (r'(TTY)(?:\W*(711))?', r'<say-as interpret-as="characters">\1 \2</say-as>'),
+            (r'TTY(?:[: ]?\s*711)?', lambda m: f'<say-as interpret-as="characters">TTY</say-as>' + (': <say-as interpret-as="characters">711</say-as>' if '711' in m.group() else '')),
             (r'\bLead\b', r'<phoneme alphabet="ipa" ph="lɛd">Lead</phoneme>'),
             (r'\bAmeriHealth\b', r'<phoneme alphabet="ipa" ph="ʌmɛɹʌ">Ameri</phoneme>Health'),
             (r'\bCaritas\b', r'<phoneme alphabet="ipa" ph="kæɹ.ətɔs">Caritas</phoneme>'),
@@ -31,7 +31,7 @@ rule_sets = {
     "2": {
         "name": "Spanish",
         "rules": [
-            (r'(TTY)(?:\W*(711))?', r'<say-as interpret-as="characters">\1 \2</say-as>'),
+            (r'TTY(?:[: ]?\s*711)?', lambda m: f'<say-as interpret-as="characters">TTY</say-as>' + (': <say-as interpret-as="characters">711</say-as>' if '711' in m.group() else '')),
             (r'To continue this call in English, press one', r'To <phoneme alphabet="ipa" ph="kənˈtɪnjuː">continue</phoneme> this call in English, press one'),
             (r'To continue this call in English, press 1', r'To <phoneme alphabet="ipa" ph="kənˈtɪnjuː">continue</phoneme> this call in English, press one.'),
             (r'AvMed', r'Av-Med'),
