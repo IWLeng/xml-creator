@@ -3,7 +3,7 @@ rule_sets = {
         "name": "English",
         "rules": [
             (r'TTY(?:[: ]?\s*711)?', lambda m: f'<say-as interpret-as="characters">TTY</say-as>' + (': <say-as interpret-as="characters">711</say-as>' if '711' in m.group() else '')),
-            (r'\bLead\b', r'<phoneme alphabet="ipa" ph="lɛd">Lead</phoneme>'),
+            (r'\bLead\b(?!\s+(?:to|by|into|on|from))', r'<phoneme alphabet="ipa" ph="lɛd">Lead</phoneme>'),
             (r'\bAmeriHealth\b', r'<phoneme alphabet="ipa" ph="ʌmɛɹʌ">Ameri</phoneme>Health'),
             (r'\bCaritas\b', r'<phoneme alphabet="ipa" ph="kæɹ.ətɔs">Caritas</phoneme>'),
             (r'\bColon\b', r'<phoneme alphabet="ipa" ph="ˈkoʊ.lən">Colon</phoneme>'),
