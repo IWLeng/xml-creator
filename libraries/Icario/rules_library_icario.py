@@ -26,6 +26,7 @@ rule_sets = {
             (r'av med', r'AvMed'),
             (r'well point', r'WellPoint'),
             (r'\(?(1)?\)?([-. ]?\d{3}[-. ]\d{3}[-. ]\d{4})', r'<say-as interpret-as="telephone">\1\2</say-as>'),
+            (r'\bLead\b(?!\s+(?:to|by|into|on|from))', r'<phoneme alphabet="ipa" ph="lɛd">Lead</phoneme>'),
         ]
     },
     "2": {
@@ -67,6 +68,8 @@ rule_sets = {
             (r'\bAdvantage MD\b', r'Advantage <phoneme alphabet="ipa" ph="ɛm">M</phoneme><phoneme alphabet="ipa" ph="diː">D</phoneme>'),
             (r'\(?(1)?\)?([-. ]?\d{3}[-. ]\d{3}[-. ]\d{4})', r'<say-as interpret-as="telephone">\1\2</say-as>'),
             (r'\bCentene\b', r'Centín'),
+            (r'a través', r'através'),
+            (r'Flexible Benefit', r'<phoneme alphabet="ipa" ph="ˈflɛk.sɪ.bəl">Flexible</phoneme> Benefit')
         ]
     },
     "3": {
