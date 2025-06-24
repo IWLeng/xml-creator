@@ -69,7 +69,8 @@ rule_sets = {
             (r'\(?(1)?\)?([-. ]?\d{3}[-. ]\d{3}[-. ]\d{4})', r'<say-as interpret-as="telephone">\1\2</say-as>'),
             (r'\bCentene\b', r'Centín'),
             (r'a través', r'através'),
-            (r'Flexible Benefit', r'<phoneme alphabet="ipa" ph="ˈflɛk.sɪ.bəl">Flexible</phoneme> Benefit')
+            (r'Flexible Benefit', r'<phoneme alphabet="ipa" ph="ˈflɛk.sɪ.bəl">Flexible</phoneme> Benefit'),
+            (r'\b1 Mes\b', r'un mes')
         ]
     },
     "3": {
