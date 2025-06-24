@@ -19,6 +19,15 @@ rule_sets = {
             (r'\bGmailu\b', r'<phoneme alphabet="ipa" ph="ˈd͡ʒiːmɛjlu">Gmailu</phoneme>'),
             (r'\bAI\b', r'<phoneme alphabet="ipa" ph="ˈɛj ˈaːj">AI</phoneme>'),
             (r'\bscreeningů\b', r'<phoneme alphabet="ipa" ph="ˈskriːnɪnguː">screeningů</phoneme>'),
+            (r'\be-mailovým\b', r'<phoneme alphabet="ipa" ph="ˈiːmɛjloviːm">e-mailovým</phoneme>'),
+            (r'\btvrdí\b', r'<phoneme alphabet="ipa" ph="ˈtvrɟiː">tvrdí</phoneme>'),
+            (r'\bsplňovat\b', r'<phoneme alphabet="ipa" ph="ˈsplɲovat">splňovat</phoneme>'),
+            (r'\be-mailového\b', r'<phoneme alphabet="ipa" ph="ˈiːmɛjlɔʋɛːɦo">e-mailového</phoneme>'),
+            (r'\bdržitele\b', r'<phoneme alphabet="ipa" ph="ˈdrʒɪtɛlɛ">držitele</phoneme>'),
+            (r'\bPINy\b', r'<phoneme alphabet="ipa" ph="ˈpɪnɪ">PINy</phoneme>'),
+            (r'\bprvé\b', r'<phoneme alphabet="ipa" ph="pr.vˈɛː">prvé</phoneme>'),
+            (r'\bsplnit\b', r'<phoneme alphabet="ipa" ph="ˈsplɲɪt">splnit</phoneme>'),
+            (r'\bDále\b', r'<phoneme alphabet="ipa" ph="ˈdaːlɛ">Dále</phoneme>'),
         ]
     },
     "2": {
@@ -129,6 +138,8 @@ rule_sets = {
             (r'\bAiTM\b', r'<phoneme alphabet="ipa" ph="ˈaj.te.em">AiTM</phoneme>'),
             (r'\broutery\b', r'<phoneme alphabet="ipa" ph="ˈru.tery">routery</phoneme>'),
             (r'\bphishingiem\b', r'<phoneme alphabet="ipa" ph="fi.ʃiːn.giem">phishingiem</phoneme>'),
+            (r'\be-maili\b', r'<phoneme alphabet="ipa" ph="imejli">e-maili</phoneme>'),
+            (r'\be-mailach\b', r'<phoneme alphabet="ipa" ph="imejlach">e-mailach</phoneme>'),
         ]
     },
     "11": {
@@ -149,6 +160,10 @@ rule_sets = {
             (r'\bStealers\b', r'<phoneme alphabet="ipa" ph="stˈiːlexs">Stealers</phoneme>'),
             (r'\bsozinhos\b', r'<phoneme alphabet="ipa" ph="sozˈiˌɲus">sozinhos</phoneme>'),
             (r'\bcoloca-se\b', r'<phoneme alphabet="ipa" ph="ko.ˈlɔ.ka.si">coloca-se</phoneme>'),
+            (r'\babram\b', r'<phoneme alphabet="ipa" ph="ˈabɾɐ̃w">abram</phoneme>'),
+            (r'\bPerceba\b', r'<phoneme alphabet="ipa" ph="peɾˈsebɐ">Perceba</phoneme>'),
+            (r'\bEste\b', r'<phoneme alphabet="ipa" ph="ˈes.tʃi">Este</phoneme>'),
+            (r'\bcartões\b', r'<phoneme alphabet="ipa" ph="kaɾtˌoˈjj̃s">cartões</phoneme>'),
         ]
     },
     "12": {
@@ -203,6 +218,17 @@ rule_sets = {
             (r'\bolarak\b', r'<phoneme alphabet="ipa" ph="olaɾak">olarak</phoneme>'),
             (r'\bTabi\b', r'<phoneme alphabet="ipa" ph="ta.biː">Tabi</phoneme>'),
             (r'\bçözmelerine\b', r'<phoneme alphabet="ipa" ph="t͡ʃœzmeleɾine">çözmelerine</phoneme>'),
+            (r'\be-postalardaki\b', r'<phoneme alphabet="ipa" ph="e.pos.ta.lar.da.kii">e-postalardaki</phoneme>'),
+			(r'\be-postalarıyla\b', r'<phoneme alphabet="ipa" ph="e.pos.ta.la.rɯɯj.la">e-postalarıyla</phoneme>'),
+			(r'\bPOI\b', r'<phoneme alphabet="ipa" ph="pe.oo.ɯ">POI</phoneme>'),
+        ]
+    },
+    "15": {
+        "name": "ko-kr",
+        "rules": [
+            (r'\b슬롯에\b', r'<phoneme alphabet="ipa" ph="sʰɯl‿losʰe">슬롯에</phoneme>'),
+            (r'\bAsecna\b', r'<phoneme alphabet="ipa" ph="asekna">Asecna</phoneme>'),
+            (r'\bFAA\b', r'<say-as interpret-as="characters">FAA</say-as>'),
         ]
     },
 }
