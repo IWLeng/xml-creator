@@ -13,8 +13,6 @@ rule_sets = {
             (r'\blisteria\b', r'listéria'),
             (r'\bStandardize\b', r'Stándardais'),
             (r'\bE. coli\b', r'e-coli'),
-            (r'', r''),
-            (r'', r''),
         ]
     },
     "3": {
