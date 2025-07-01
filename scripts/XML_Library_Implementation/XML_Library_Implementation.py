@@ -82,7 +82,24 @@ def main():
             "4": {
                 "name": "Alliance Safety Council",
                 "url": "https://raw.githubusercontent.com/IWLeng/xml-creator/main/libraries/Alliance_Safety_Council/rules_library_alliance_safety_council.py"
+            },
+            "5": {
+                "name": "Insight",
+                "url": "https://raw.githubusercontent.com/IWLeng/xml-creator/main/libraries/Insight/rules_library_insight.py"
+            },
+            "6": {
+                "name": "Ohio State University",
+                "url": "https://raw.githubusercontent.com/IWLeng/xml-creator/main/libraries/Ohio_State_University/rules_library_OSU.py"
+            },
+            "7": {
+                "name": "PPG",
+                "url": "https://raw.githubusercontent.com/IWLeng/xml-creator/main/libraries/PPG/rules_library_ppg.py"
+            },
+            "8": {
+                "name": "Private Health Management",
+                "url": "https://raw.githubusercontent.com/IWLeng/xml-creator/main/libraries/Private_Health_Management/rules_library_private_health_management.py"
             }
+            
         }
         
         print("Select the client you are working on:")
