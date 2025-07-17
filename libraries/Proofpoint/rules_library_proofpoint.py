@@ -9,7 +9,7 @@ rule_sets = {
             (r'\be-mailovém\b', r'<phoneme alphabet="ipa" ph="iːmaɪlovɛːm">e-mailovém</phoneme>'),
             (r'\be-mailových\b', r'<phoneme alphabet="ipa" ph="iːmaɪloviːx">e-mailových</phoneme>'),
             (r'\bcloudovými\b', r'<phoneme alphabet="ipa" ph="klaudoviːmi">cloudovými</phoneme>'),
-            (r'\bcloudové\b', r'<phoneme alphabet="ipa" ph="klou̯dovɛː">cloudové</phoneme>'),
+            (r'\bcloudové\b', r'<phoneme alphabet="ipa" ph="ˈklaudovɛː">cloudové</phoneme>'),
             (r'\bmalwarem\b', r'<phoneme alphabet="ipa" ph="malvɛːrɛm">malwarem</phoneme>'),
             (r'\bmalwaru\b', r'<phoneme alphabet="ipa" ph="malvɛːru">malwaru</phoneme>'),
             (r'\bověřte\b', r'<phoneme alphabet="ipa" ph="ovjɛr̝tɛ">ověřte</phoneme>'),
