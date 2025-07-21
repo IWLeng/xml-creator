@@ -89,6 +89,7 @@ rule_sets = {
         "name": "Vietnamese",
         "rules": [
             (r'\bCentene\b', r'<lang xml:lang="en-US">Centene</lang>'),
+            (r'\bWellcare By Allwell\b', r'<lang xml:lang="en-US">Wellcare By Allwell</lang>')
         ]
     }
 }
