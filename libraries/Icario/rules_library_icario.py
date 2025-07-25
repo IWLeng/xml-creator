@@ -81,7 +81,6 @@ rule_sets = {
             (r'10자리', r'<phoneme alphabet="ipa" ph="jʌl">10</phoneme>자리'),
             (r'회의', r'<phoneme alphabet="ipa" ph="ˈhø̞ːi">회의</phoneme>'),
             (r'24시간', r'<say-as interpret-as="character">24</say-as>시간'),
-            (r'\(?(1)?\)?([-. ]?\d{3}[-. ]\d{3}[-. ]\d{4})', r'<say-as interpret-as="telephone">\1\2</say-as>'),
             (r'\bWellcare By Allwell\b', r'<lang xml:lang="en-US">Wellcare By Allwell</lang>')
         ]
     },
@@ -89,7 +88,15 @@ rule_sets = {
         "name": "Vietnamese",
         "rules": [
             (r'\bCentene\b', r'<lang xml:lang="en-US">Centene</lang>'),
-            (r'\bWellcare By Allwell\b', r'<lang xml:lang="en-US">Wellcare By Allwell</lang>')
+            (r'\bWellcare By Allwell\b', r'<lang xml:lang="en-US">Wellcare By Allwell</lang>'),
+            (r'TTY(?:[: ]?\s*711)?', lambda m: f'TTY' + (': <say-as interpret-as="characters">711</say-as>' if '711' in m.group() else '')),
+            (r'\(?(1)?\)?([-. ]?\d{3}[-. ]\d{3}[-. ]\d{4})', r'<say-as interpret-as="telephone">\1\2</say-as>'),
+        ]
+    },
+    "5": {
+        "name": "Chinese (Simplified)",
+        "rules": [
+            (r'TTY(?:[: ]?\s*711)?', lambda m: f'<say-as interpret-as="characters">TTY</say-as>' + (': <say-as interpret-as="characters">711</say-as>' if '711' in m.group() else '')),
         ]
     }
 }
