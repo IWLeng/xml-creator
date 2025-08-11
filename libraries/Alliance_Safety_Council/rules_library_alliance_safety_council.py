@@ -14,6 +14,10 @@ rule_sets = {
           (r'\bOrion\b', r'<phoneme alphabet="ipa" ph="oˈɾai.on">Orion</phoneme>'),
           (r'\bEngineered\b', r'<phoneme alphabet="ipa" ph="ˌendʒiˈnieɾd">Engineered</phoneme>'),
           (r'\bEscanee\b', r'escané-e'),
+          (r'\bFive-S\b', r'Five-eS'),
+          (r'Baton', r'Báton'),
+          (r'', r''),
+          (r'\bEPP\b', r'<say-as interpret-as="characters">EPP</say-as>'),
         ]
     }
 }
