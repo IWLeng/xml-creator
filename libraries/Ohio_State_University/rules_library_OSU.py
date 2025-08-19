@@ -51,8 +51,15 @@ rule_sets = {
             (r'\b(CV[!.,?-]?)\b', r'<say-as interpret-as="characters">CV</say-as>'),
             (r'\b(ID[!.,?-]?)\b', r'<say-as interpret-as="characters">ID</say-as>'),
             (r'\bgen\b', r'gén'),
-            (r'\bampere\b', r'ampér'),
             (r'\b(X[!.,?-]?)\b', r'<say-as interpret-as="characters">X</say-as>'),
+            (r'\bampere\b', r'ampére'),
+            (r'\bCO\b', r'<say-as interpret-as="characters">CO</say-as>'),
+            (r'\bCO2\b', r'<say-as interpret-as="characters">CO2</say-as>'),
+            (r'\bCH4\b', r'<say-as interpret-as="characters">CH4</say-as>'),
+            (r'\bPEM\b', r'<phoneme alphabet="ipa" ph="ˈpem">PEM</phoneme>'),
+            (r'cost-to-go', r'cost-to-<phoneme alphabet="ipa" ph="ɡoʊ">go</phoneme>'),
+            (r'\bmodellino\b', r'modéllino'),
+            (r'\bstate\b', r'<phoneme alphabet="ipa" ph="state">state</phoneme>'),
         ]
     }
 }
