@@ -35,7 +35,7 @@ rule_sets = {
             (r'\bstop and go\b', r'stop and <phoneme alphabet="ipa" ph="ˈgːoʊ">go</phoneme>'),
             (r'\bcomplete\b', r'<phoneme alphabet="ipa" ph="complete">complete</phoneme>'),
             (r'\bduty ratio\b', r'duty <phoneme alphabet="ipa" ph="rɛj.ʤio">ratio</phoneme>'),
-            (r'\belettrici\b', r'<phoneme alphabet="ipa" ph="eleˈttri.ʧi">elettrici</phoneme>'),
+            (r'\belettrici\b', r'<phoneme alphabet="ipa" ph="elˈettri.ʧi">elettrici</phoneme>'),
             (r'\bCoenergia\b', r'<phoneme alphabet="ipa" ph="ko.e.ner.ʤˈia">Coenergia</phoneme>'),
             (r'\bmuoverci\b', r'<phoneme alphabet="ipa" ph="muɔ.ver.ʧi">muoverci</phoneme>'),
             (r'\bmatematici\b', r'<phoneme alphabet="ipa" ph="ma.te.ˈma.ti.ˌtʃːi">matematici</phoneme>'),
@@ -60,6 +60,7 @@ rule_sets = {
             (r'cost-to-go', r'cost-to-<phoneme alphabet="ipa" ph="ɡoʊ">go</phoneme>'),
             (r'\bmodellino\b', r'modéllino'),
             (r'\bstate\b', r'<phoneme alphabet="ipa" ph="state">state</phoneme>'),
+            (r'\bcentrifughi\b', r'centrífughi'),
         ]
     }
 }
