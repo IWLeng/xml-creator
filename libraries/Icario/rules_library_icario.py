@@ -27,6 +27,7 @@ rule_sets = {
             (r'well point', r'WellPoint'),
             (r'\(?(1)?\)?([-. ]?\d{3}[-. ]\d{3}[-. ]\d{4})', r'<say-as interpret-as="telephone">\1\2</say-as>'),
             (r'\bLead\b(?!\s+(?:to|by|into|on|from))', r'<phoneme alphabet="ipa" ph="lɛd">Lead</phoneme>'),
+            (r'My Benefits dot Nations Benefits dot com', r'My Benefits dot Nations Benefits, dot com')
         ]
     },
     "2": {
