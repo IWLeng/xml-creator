@@ -61,6 +61,7 @@ rule_sets = {
             (r'\bmodellino\b', r'modéllino'),
             (r'\bstate\b', r'<phoneme alphabet="ipa" ph="state">state</phoneme>'),
             (r'\bcentrifughi\b', r'centrífughi'),
+            (r'\bfuel cell\b', r'<lang xml:lang="en-US">fuel cell</lang>'),
         ]
     }
 }
