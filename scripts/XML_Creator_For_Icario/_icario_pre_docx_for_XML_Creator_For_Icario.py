@@ -64,8 +64,19 @@ def process_docx_to_xlsx(docx_path):
     for table in doc.tables:
         for row in table.rows:
             if len(row.cells) > 0:  # Ensure at least one column exists
-                cell = row.cells[min(1, len(row.cells) - 1)]  # Use column 2 if available, otherwise column 1
-                highlighted, non_highlighted = extract_highlighted_text(cell)
+                # Try column 2 first (index 1)
+                if len(row.cells) > 1:
+                    cell = row.cells[1]  # Column 2
+                    highlighted, non_highlighted = extract_highlighted_text(cell)
+                    
+                    # If no highlighted text in column 2, try column 3 (index 2)
+                    if not highlighted and len(row.cells) > 2:
+                        cell = row.cells[2]  # Column 3
+                        highlighted, non_highlighted = extract_highlighted_text(cell)
+                else:
+                    # Only 1 column available, use column 1
+                    cell = row.cells[0]  # Column 1
+                    highlighted, non_highlighted = extract_highlighted_text(cell)
                 
                 if highlighted:  # Process only if there is highlighted text
                     extracted_data.append([highlighted, non_highlighted])
