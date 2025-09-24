@@ -11,20 +11,40 @@ def clean_text(text):
     text = re.sub(r"\.wav", "", text)  # Remove ".wav"
     text = re.sub(r"content key.*", "", text, flags=re.IGNORECASE)  # Remove "content key:" and everything after
     text = re.sub(r"\<.*?\>", "", text)
+    
+    # Replace carriage returns with line feeds (Excel's Alt+Enter)
+    text = text.replace('\r', '\n')
+    
     return text.strip()
 
 def extract_highlighted_text(cell):
-    """Extract only YELLOW highlighted text from a DOCX table cell."""
+    """Extract only YELLOW highlighted text from a DOCX table cell, preserving paragraph structure."""
     highlighted_text = []
     non_highlighted_text = []
     
-    for para in cell.paragraphs:
+    for para_idx, para in enumerate(cell.paragraphs):
+        highlighted_runs = []
+        non_highlighted_runs = []
+        
         for run in para.runs:
             # Check if the text is highlighted with YELLOW specifically
             if run.font.highlight_color and run.font.highlight_color == WD_COLOR_INDEX.YELLOW:
-                highlighted_text.append(run.text)
+                highlighted_runs.append(run.text)
             else:
-                non_highlighted_text.append(run.text)
+                non_highlighted_runs.append(run.text)
+        
+        # Join runs within the same paragraph
+        if highlighted_runs:
+            highlighted_text.append(''.join(highlighted_runs))
+        if non_highlighted_runs:
+            non_highlighted_text.append(''.join(non_highlighted_runs))
+        
+        # Add line break between paragraphs (except after the last one)
+        if para_idx < len(cell.paragraphs) - 1:
+            if highlighted_text:  # Only add line break if we have highlighted content
+                highlighted_text.append('\n')
+            if non_highlighted_text:  # Only add line break if we have non-highlighted content
+                non_highlighted_text.append('\n')
     
     highlighted = clean_text(''.join(highlighted_text))
     non_highlighted = clean_text(''.join(non_highlighted_text))
@@ -32,27 +52,38 @@ def extract_highlighted_text(cell):
     return highlighted, non_highlighted
 
 def autofit_columns(xlsx_path):
-    """Auto-fit the columns in the Excel file with custom settings for column B."""
+    """Auto-fit the columns in the Excel file with custom settings."""
     wb = load_workbook(xlsx_path)
     ws = wb.active
 
     # Set column B width to 130 and enable wrap text
     ws.column_dimensions['B'].width = 130
     
-    # Apply wrap text to all cells in column B
-    for row in ws.iter_rows(min_col=2, max_col=2):  # Column B
+    # Apply wrap text ONLY to column B
+    for row in ws.iter_rows(min_col=2, max_col=2):  # Column B only
         for cell in row:
             cell.alignment = Alignment(wrap_text=True)
+    
+    # Auto-fit column A (no wrap text)
+    max_length = 0
+    for cell in ws['A']:  # All cells in column A
+        if cell.value:
+            max_length = max(max_length, len(str(cell.value)))
+    ws.column_dimensions['A'].width = max_length + 2  # Add some padding
 
-    # Auto-fit other columns (A, C, D, etc. if they exist)
+    # Auto-fit other columns (C, D, etc. if they exist)
     for col in ws.columns:
         col_letter = col[0].column_letter
-        if col_letter != 'B':  # Skip column B since we already set it
+        if col_letter not in ['A', 'B']:  # Skip columns A and B since we already set them
             max_length = 0
             for cell in col:
                 if cell.value:
-                    max_length = max(max_length, len(str(cell.value)))
-            ws.column_dimensions[col_letter].width = max_length + 2  # Add some padding
+                    # For cells with newlines, find the longest line
+                    cell_lines = str(cell.value).split('\n')
+                    for line in cell_lines:
+                        max_length = max(max_length, len(line))
+            adjusted_width = min(max_length + 2, 50)  # Cap at 50 to avoid extremely wide columns
+            ws.column_dimensions[col_letter].width = adjusted_width
 
     wb.save(xlsx_path)
 
