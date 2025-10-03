@@ -71,7 +71,8 @@ rule_sets = {
             (r'\bCentene\b', r'Centín'),
             (r'a través', r'através'),
             (r'Flexible Benefit', r'<phoneme alphabet="ipa" ph="ˈflɛk.sɪ.bəl">Flexible</phoneme> Benefit'),
-            (r'\b1 Mes\b', r'un mes')
+            (r'\b1 Mes\b', r'un mes'),
+            (r'My Benefits punto Nations Benefits punto com', r'My Benefits, punto, Nations Benefits, punto com')
         ]
     },
     "3": {
