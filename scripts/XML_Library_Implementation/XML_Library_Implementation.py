@@ -98,6 +98,10 @@ def main():
             "8": {
                 "name": "Private Health Management",
                 "url": "https://raw.githubusercontent.com/IWLeng/xml-creator/main/libraries/Private_Health_Management/rules_library_private_health_management.py"
+            },
+            "9": {
+                "name": "Alcoa",
+                "url": "https://raw.githubusercontent.com/IWLeng/xml-creator/main/libraries/Alcoa/rules_library_alcoa.py"
             }
             
         }
