@@ -17,7 +17,6 @@ rule_sets = {
             (r'\bFanatics Fest\b', r'<lang xml:lang="en-US">Fanatics Fest</lang>'),
             (r'\bFanatics Foundation\b', r'<lang xml:lang="en-US">Fanatics Foundation</lang>'),
             (r'\bCorporate and Platform Services\b', r'<lang xml:lang="en-US">Corporate and Platform Services</lang>'),
-            (r'\bFanatics\b', r'<lang xml:lang="en-US">Fanatics</lang>'), 
             (r'\bSportsbook\b', r'<lang xml:lang="en-US">Sportsbook</lang>'),
             (r'\bfandom\b', r'<lang xml:lang="en-US">fandom</lang>'),
             (r'\biGaming\b', r'<lang xml:lang="en-US">iGaming</lang>'),
