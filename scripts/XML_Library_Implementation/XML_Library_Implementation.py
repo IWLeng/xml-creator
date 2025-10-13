@@ -102,6 +102,10 @@ def main():
             "9": {
                 "name": "Alcoa",
                 "url": "https://raw.githubusercontent.com/IWLeng/xml-creator/main/libraries/Alcoa/rules_library_alcoa.py"
+            },
+            "10": {
+                "name": "Fanatics",
+                "url": "https://raw.githubusercontent.com/IWLeng/xml-creator/main/libraries/Fanatics/rules_library_fanatics.py"
             }
             
         }
