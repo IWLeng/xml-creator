@@ -29,6 +29,20 @@ rule_sets = {
             (r'\bsplnit\b', r'<phoneme alphabet="ipa" ph="ˈsplɲɪt">splnit</phoneme>'),
             (r'\bsplňovat\b', r'<phoneme alphabet="ipa" ph="ˈsplɲovat">splňovat</phoneme>'),
             (r'\btvrdí\b', r'<phoneme alphabet="ipa" ph="ˈtvrɟiː">tvrdí</phoneme>'),
+            (r'\bID\b', r'<phoneme alphabet="ipa" ph="ˈajˈdiː">ID</phoneme>'),
+            (r'\bGPS\b', r'<phoneme alphabet="ipa" ph="ˈd͡ʒiːˈpiːˈɛs">GPS</phoneme>'),
+            (r'\bMS\b', r'<phoneme alphabet="ipa" ph="ˈemˈes">MS</phoneme>'),
+            (r'\bfirmwaru\b', r'<phoneme alphabet="ipa" ph="ˈfɪrmwaru">firmwaru</phoneme>'),
+            (r'\bHackeři\b', r'<phoneme alphabet="ipa" ph="ˈhɛt͡ʃɛɾi">Hackeři</phoneme>'),
+            (r'\be-mailům\b', r'<phoneme alphabet="ipa" ph="ˈiːmɛjluːm">e-mailům</phoneme>'),
+            (r'\bkondice\b', r'<phoneme alphabet="ipa" ph="ˈkɔndɪt͡se">kondice</phoneme>'),
+            (r'\bConvention\b', r'<phoneme alphabet="ipa" ph="kənˈvɛnʃən">Convention</phoneme>'),
+            (r'\bcloudových\b', r'<phoneme alphabet="ipa" ph="ˈklaudoviːx">cloudových</phoneme>'),
+            (r'\bransomware\b', r'<phoneme alphabet="ipa" ph="ˈrænsəmˌwɛər">ransomware</phoneme>'),
+            (r'\bransomwaru\b', r'<phoneme alphabet="ipa" ph="ˈransomwaru">ransomwaru</phoneme>'),
+            (r'\bStealers\b', r'<phoneme alphabet="ipa" ph="ˈstiːlərz">Stealers</phoneme>'),
+            (r'\bThomasi\b', r'<phoneme alphabet="ipa" ph="ˈtɔmasi">Thomasi</phoneme>'),
+            (r'\bTeda\b', r'<phoneme alphabet="ipa" ph="ˈtɛda">Teda</phoneme>'),
         ]
     },
     "2": {
@@ -50,7 +64,10 @@ rule_sets = {
             (r'\bSpambots\b', r'<phoneme alphabet="ipa" ph="spˈambɒts">Spambots</phoneme>'),
             (r'\bVirtuosin\b', r'<phoneme alphabet="ipa" ph="vˌɪɾtuːoːzˈiːn">Virtuosin</phoneme>'),
             (r'\büblen\b', r'<phoneme alphabet="ipa" ph="ˈyblən">üblen</phoneme>'),
-            (r'\bRansomware\b', r'<phoneme alphabet="ipa" ph="ɹˈansəmwˌe͡ə">Ransomware</phoneme>'),        
+            (r'\bRansomware\b', r'<phoneme alphabet="ipa" ph="ɹˈansəmwˌe͡ə">Ransomware</phoneme>'),
+            (r'\Black Friday\b', r'<lang xml:lang="en-US">Black <phoneme alphabet="ipa" ph="ˈfɹaɪˌdeɪ">Friday</phoneme></lang>'),
+            (r'\bCyber Monday\b', r'<lang xml:lang="en-US">Cyber Monday</lang>'),
+            (r'\bE-Commerce-Websites\b', r'<lang xml:lang="en-US">E-Commerce-Websites</lang>'),
         ]
     },
     "3": {
@@ -81,6 +98,10 @@ rule_sets = {
             (r'\bShell\b', r'<phoneme alphabet="ipa" ph="ʒɛl">Shell</phoneme>'),
             (r'\bphishing\b', r'<lang xml:lang="en-US">phishing</lang>'),
             (r'\bransomware\b', r'<lang xml:lang="en-US">ransomware</lang>'),
+            (r'\bBlack Friday\b', r'<lang xml:lang="en-US">Black Friday</lang>'),
+            (r'\bCyber Monday\b', r'<lang xml:lang="en-US">Cyber Monday</lang>'),
+            (r'\bPhishing\b', r'<lang xml:lang="en-US">Phishing</lang>'), 
+            (r'\barruine\b', r'<phoneme alphabet="ipa" ph="aruˈine">arruíne</phoneme>'),
         ]
     },
     "6": {
@@ -96,6 +117,8 @@ rule_sets = {
             (r'\bhackeados\b', r'<phoneme alphabet="ipa" ph="xakeados">hackeados</phoneme>'),
             (r'\bShell\b', r'<phoneme alphabet="ipa" ph="ʒɛl">Shell</phoneme>'),
             (r'\bphishing\b', r'Fishing'),
+            (r'\bFriday\b', r'<phoneme alphabet="ipa" ph="ˈfraiˌdeɪ">Friday</phoneme>'),
+            (r'\bMonday\b', r'<phoneme alphabet="ipa" ph="ˈmʌn.deɪ">Monday</phoneme>'),
         ]
     },
     "7": {
@@ -112,6 +135,7 @@ rule_sets = {
             (r'\bsûr\b', r'<phoneme alphabet="ipa" ph="syʁ">sûr</phoneme>'),
             (r'\bregardez y\b', r'<phoneme alphabet="ipa" ph="ɾəgaɾdez‿ i">regardez y</phoneme>'),
             (r'\bWi-Fi\b', r'<phoneme alphabet="ipa" ph="wifi">Wi-Fi</phoneme>'),
+            (r'\bicloud\b', r'<phoneme alphabet="ipa" ph="aɪˌklaʊd">icloud</phoneme>'),
         ]
     },
     "8": {
@@ -146,6 +170,12 @@ rule_sets = {
             (r'\be-mailach\b', r'<phoneme alphabet="ipa" ph="imejlach">e-mailach</phoneme>'),
             (r'\bDziękujemy\b', r'<phoneme alphabet="ipa" ph="d͡ʑɛŋkujˈɛmɨ">Dziękujemy</phoneme>'),
             (r'\bcyberzagrożeniami\b', r'<phoneme alphabet="ipa" ph="ˈt͡sɨ.bɛr.za.ɡrɔˈʐɛ.ɲa.mi">cyberzagrożeniami</phoneme>'),
+            (r'\bboty\b', r'<phoneme alphabet="ipa" ph="ˈbɔ.tɨ">boty</phoneme>'),
+            (r'\bphishing\b', r'<phoneme alphabet="ipa" ph="ˈfi.ʃiŋɡ">phishing</phoneme>'),
+            (r'\be-mailami\b', r'<phoneme alphabet="ipa" ph="iˈmɛj.lami">e-mailami</phoneme>'),
+            (r'\bsmartwatche\b', r'<phoneme alphabet="ipa" ph="ˈsmartwɑtʃɛ">smartwatche</phoneme>'),
+            (r'\bStealery\b', r'<phoneme alphabet="ipa" ph="ˈsti.lɛ.rɨ">Stealery</phoneme>'),
+            (r'\bzidentyfikować\b', r'<phoneme alphabet="ipa" ph="z‿i.dɛn.tɨ.fiˈkɔ.vat͡ɕ">zidentyfikować</phoneme>'),
         ]
     },
     "11": {
@@ -182,6 +212,12 @@ rule_sets = {
             (r'\bcibercriminosos\b', r'<phoneme alphabet="ipa" ph="si.bɨɾ.kɾɨ.mi.ˈno.zuʃ">cibercriminosos</phoneme>'),
             (r'\bspear\b', r'<phoneme alphabet="ipa" ph="spɪə">spear</phoneme>'),
             (r'\bransomware\b', r'<phoneme alphabet="ipa" ph="ˈrænsəmwer">ransomware</phoneme>'),
+            (r'\binfetado\b', r'<phoneme alphabet="ipa" ph="ĩfɛtˈadu">infetado</phoneme>'),
+            (r'\binfetar\b', r'<phoneme alphabet="ipa" ph="ĩfɛtˈar">infetar</phoneme>'),
+            (r'\bmultifator\b', r'<phoneme alphabet="ipa" ph="muɫtifatˈor">multifator</phoneme>'),
+            (r'\bpush\b', r'<phoneme alphabet="ipa" ph="pʊʃ">push</phoneme>'),
+            (r'\bransomware\b', r'<phoneme alphabet="ipa" ph="ˈɾænsəmwɛɹ">ransomware</phoneme>'),
+            (r'\bestratagemas\b', r'<phoneme alphabet="ipa" ph="ʃtrɐtɐʒˈemɐʃ">estratagemas</phoneme>'),
         ]
     },
     "13": {
@@ -193,6 +229,7 @@ rule_sets = {
             (r'\bมาโคร\b', r'<phoneme alphabet="ipa" ph="maːkʰrō">มาโคร</phoneme>'),
             (r'\bรูปแบบอื่น\b', r'<phoneme alphabet="ipa" ph="rú̋̀p.bàb.eun">รูปแบบอื่น</phoneme>'),
             (r'\bTOAD\b', r'<phoneme alphabet="ipa" ph="toad">TOAD</phoneme>'),
+            (r'\bอย่าคลิกลิงก์\b', r'<phoneme alphabet="ipa" ph="yaá̋̀.khliḱ.linḡ">อย่าคลิกลิงก์</phoneme>'),
         ]
     },
     "14": {
@@ -228,6 +265,11 @@ rule_sets = {
             (r'\be-postalardaki\b', r'<phoneme alphabet="ipa" ph="e.pos.ta.lar.da.kii">e-postalardaki</phoneme>'),
 			(r'\be-postalarıyla\b', r'<phoneme alphabet="ipa" ph="e.pos.ta.la.rɯɯj.la">e-postalarıyla</phoneme>'),
 			(r'\bPOI\b', r'<phoneme alphabet="ipa" ph="pe.oo.ɯ">POI</phoneme>'),
+            (r'\be-postada\b', r'<phoneme alphabet="ipa" ph="e.pos.ta.daː">e-postada</phoneme>'),
+            (r'\be-postanıza\b', r'<phoneme alphabet="ipa" ph="e.pos.ta.nɯza">e-postanıza</phoneme>'),
+            (r'\be-postadaki\b', r'<phoneme alphabet="ipa" ph="epostadaki">e-postadaki</phoneme>'),
+            (r'\be-postalarınız\b', r'<phoneme alphabet="ipa" ph="epostalaɾɯnɯz">e-postalarınız</phoneme>'),
+            (r'\be-postasıyla\b', r'<phoneme alphabet="ipa" ph="epostasɯjlaa">e-postasıyla</phoneme>'),
         ]
     },
     "15": {
@@ -244,10 +286,49 @@ rule_sets = {
             (r'\bkyberzločincov\b', r'<phoneme alphabet="ipa" ph="ˈkɪbɛrzlotʃintsɔu">kyberzločincov</phoneme>'),
             (r'\bpostupy\b', r'<phoneme alphabet="ipa" ph="ˈpɔstupi">postupy</phoneme>'),
             (r'\bphishingu\b', r'<phoneme alphabet="ipa" ph="ˈfiʃɪngu">phishingu</phoneme>'),
-            (r'\be-mailové\b', r'<phoneme alphabet="ipa" ph="ˈiːmɛjlovɛː">e-mailové</phoneme>'),
             (r'\be-mailových\b', r'<phoneme alphabet="ipa" ph="ˈiːmɛjloviːx">e-mailových</phoneme>'),
             (r'\be-mailovými\b', r'<phoneme alphabet="ipa" ph="ˈiːmɛjloviːmɪ">e-mailovými</phoneme>'),
-            (r'\be-mailov\b', r'<phoneme alphabet="ipa" ph="ˈiːmɛjlov">e-mailov</phoneme>'),
+            (r'\bSMS\b', r'<phoneme alphabet="ipa" ph="ˈesemes">SMS</phoneme>'),
+            (r'\bMS Teams\b', r'<phoneme alphabet="ipa" ph="ɛm.ɛs.tiːms">MS Teams</phoneme>'),
+            (r'\bphishing\b', r'<phoneme alphabet="ipa" ph="ˈfiʂing">phishing</phoneme>'),
+            (r'\bphishingovými\b', r'<phoneme alphabet="ipa" ph="ˈfiʂingɔʋiːmi">phishingovými</phoneme>'),
+            (r'\bphishingu\b', r'<phoneme alphabet="ipa" ph="ˈfiʂingu">phishingu</phoneme>'),
+            (r'\be-maile\b', r'<phoneme alphabet="ipa" ph="ˈiːmejl">e-maile</phoneme>'),
+            (r'\be-mailov\b', r'<phoneme alphabet="ipa" ph="ˈiːmejlɔu">e-mailov</phoneme>'),
+            (r'\be-mailové\b', r'<phoneme alphabet="ipa" ph="ˈiːmejlɔʋeː">e-mailové</phoneme>'),
+            (r'\be-maile\b', r'<phoneme alphabet="ipa" ph="ˈiːmejle">e-maile</phoneme>'),
+            (r'\be-maily\b', r'<phoneme alphabet="ipa" ph="ˈiːmejli">e-maily</phoneme>'),
+            (r'\bkyberzločinci\b', r'<phoneme alphabet="ipa" ph="ˈkɪbɛrzlɔtʃɪnt͡si">kyberzločinci</phoneme>'),
+            (r'\bcloudové\b', r'<phoneme alphabet="ipa" ph="ˈklau̯dɔʋe">cloudové</phoneme>'),
+            (r'\bcloudových\b', r'<phoneme alphabet="ipa" ph="ˈklau̯dɔʋiːx">cloudových</phoneme>'),
+            (r'\bmenej\b', r'<phoneme alphabet="ipa" ph="ˈmeɲej">menej</phoneme>'),
+            (r'\bprostredníctvom\b', r'<phoneme alphabet="ipa" ph="ˈprɔstredɲiːctʋɔm">prostredníctvom</phoneme>'),
+            (r'\bsietnica\b', r'<phoneme alphabet="ipa" ph="ˈsɪetɲitsa">sietnica</phoneme>'),
+            (r'\bspoofingu\b', r'<phoneme alphabet="ipa" ph="ˈspuːfingu">spoofingu</phoneme>'),
+            (r'\bzariadenia\b', r'<phoneme alphabet="ipa" ph="ˈzarɪɐɟeɲɪɐ">zariadenia</phoneme>'),
         ]
-    }
+    },
+    "17": {
+        "name": "sv-se",
+        "rules": [
+            (r'\boffline\b', r'<phoneme alphabet="ipa" ph="ɑːfˈlaɪn">offline</phoneme>'),
+            (r'\bbetrott\b', r'<phoneme alphabet="ipa" ph="bɛˈtrɔt">betrott</phoneme>'),
+            (r'\bthe Hall of Hackers\b', r'<phoneme alphabet="ipa" ph="ðə">the</phoneme> <phoneme alphabet="ipa" ph="hɔːl">Hall</phoneme> <phoneme alphabet="ipa" ph="oːf">ofs</phoneme> <phoneme alphabet="ipa" ph="ˈhækərz">Hackers</phoneme>'),
+            (r'\bheminternet\b', r'<phoneme alphabet="ipa" ph="hɛmˌɪntɛrnɛt">heminternet</phoneme>'),
+            (r'\binvasion\b', r'<phoneme alphabet="ipa" ph="ɪnˈveɪʒən">invasion</phoneme>'),
+            (r'\blookalike\b', r'<phoneme alphabet="ipa" ph="lʊkəlaɪk">lookalike</phoneme>'),
+            (r'\bmalware\b', r'<phoneme alphabet="ipa" ph="mæl.wer">malware</phoneme>'),
+            (r'\brouterns\b', r'<phoneme alphabet="ipa" ph="raʊtɛrnːs">routerns</phoneme>'),
+            (r'\bStealers\b', r'<phoneme alphabet="ipa" ph="stiːlərz">Stealers</phoneme>'),
+            (r'\bWi-Fi\b', r'<phoneme alphabet="ipa" ph="waɪ.faɪ">Wi-Fi</phoneme>'),
+        ]
+    },
+    "18": {
+        "name": "da-dk",
+        "rules": [
+            (r'\bslags\b', r'<phoneme alphabet="ipa" ph="ˈslɑgs">slags</phoneme>'),
+            (r'\bmalware\b', r'<phoneme alphabet="ipa" ph="ˈmɑlˌwɛr">malware</phoneme>'),
+            (r'\bwi-fi\b', r'<phoneme alphabet="ipa" ph="ˈwɑjˌfɑj">wi-fi</phoneme>'),
+        ]
+    },
 }
