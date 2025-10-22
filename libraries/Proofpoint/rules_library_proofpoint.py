@@ -95,12 +95,12 @@ rule_sets = {
             (r'\bhackeado\b', r'<phoneme alphabet="ipa" ph="xakeado">hackeado</phoneme>'),
             (r'\bhackear\b', r'<phoneme alphabet="ipa" ph="xakear">hackear</phoneme>'),
             (r'\bShell\b', r'<phoneme alphabet="ipa" ph="ʒɛl">Shell</phoneme>'),
-            (r'\bphishing\b', r'<lang xml:lang="en-US">phishing</lang>'),
             (r'\bransomware\b', r'<lang xml:lang="en-US">ransomware</lang>'),
             (r'\bBlack Friday\b', r'<lang xml:lang="en-US">Black Friday</lang>'),
             (r'\bCyber Monday\b', r'<lang xml:lang="en-US">Cyber Monday</lang>'),
             (r'\bPhishing\b', r'<lang xml:lang="en-US">Phishing</lang>'), 
             (r'\barruine\b', r'<phoneme alphabet="ipa" ph="aruˈine">arruíne</phoneme>'),
+            (r'\bsmishing\b', r'<lang xml:lang="en-US">smishing</lang>'),
         ]
     },
     "6": {
