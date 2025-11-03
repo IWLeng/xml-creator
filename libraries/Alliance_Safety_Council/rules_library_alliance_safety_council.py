@@ -16,7 +16,7 @@ rule_sets = {
           (r'\bEscanee\b', r'escané-e'),
           (r'\bFive-S\b', r'Five-eS'),
           (r'Baton', r'Báton'),
-          (r'', r''),
+          (r'\bAir Liquide\b', r'Air <phoneme alphabet="ipa" ph="likwˈid">Liquide</phoneme>'),
           (r'\bEPP\b', r'<say-as interpret-as="characters">EPP</say-as>'),
         ]
     }

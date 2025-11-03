@@ -83,7 +83,8 @@ rule_sets = {
             (r'10자리', r'<phoneme alphabet="ipa" ph="jʌl">10</phoneme>자리'),
             (r'회의', r'<phoneme alphabet="ipa" ph="ˈhø̞ːi">회의</phoneme>'),
             (r'24시간', r'<say-as interpret-as="character">24</say-as>시간'),
-            (r'\bWellcare By Allwell\b', r'<lang xml:lang="en-US">Wellcare By Allwell</lang>')
+            (r'\bWellcare By Allwell\b', r'<lang xml:lang="en-US">Wellcare By Allwell</lang>'),
+            (r'\(?(\d)?\)?[-. ]?(\d{3})[-. ]?(\d{3})[-. ]?(\d{4})', lambda m: f'<say-as interpret-as="characters">{m.group(1)}</say-as>-<say-as interpret-as="characters">{m.group(2)}</say-as>-<say-as interpret-as="characters">{m.group(3)}</say-as>-<say-as interpret-as="characters">{m.group(4)}</say-as>' if m.group(1) else f'<say-as interpret-as="characters">{m.group(2)}</say-as>-<say-as interpret-as="characters">{m.group(3)}</say-as>-<say-as interpret-as="characters">{m.group(4)}</say-as>'),
         ]
     },
     "4": {
@@ -99,6 +100,15 @@ rule_sets = {
         "name": "Chinese (Simplified)",
         "rules": [
             (r'TTY(?:[: ]?\s*711)?', lambda m: f'<say-as interpret-as="characters">TTY</say-as>' + (': <say-as interpret-as="characters">711</say-as>' if '711' in m.group() else '')),
+        ]
+    },
+    "6": {
+        "name": "Armenian"
+        "rules": [
+            (r'\bKaiser Permanente\b', r'<lang xml:lang="en-US">Kaiser Permanente</lang>'),
+            (r'\bTTY\b', r'<lang xml:lang="en-US">TTY</lang>'),
+            (r'\bID\b', r'<lang xml:lang="en-US">ID</lang>'),
+            (r'\borg\b', r'<lang xml:lang="en-US">org</lang>'),
         ]
     }
 }
