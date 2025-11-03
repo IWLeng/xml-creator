@@ -103,7 +103,7 @@ rule_sets = {
         ]
     },
     "6": {
-        "name": "Armenian"
+        "name": "Armenian",
         "rules": [
             (r'\bKaiser Permanente\b', r'<lang xml:lang="en-US">Kaiser Permanente</lang>'),
             (r'\bTTY\b', r'<lang xml:lang="en-US">TTY</lang>'),
