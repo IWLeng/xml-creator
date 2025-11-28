@@ -109,7 +109,11 @@ def main():
             },
             "11": {
                 "name": "Shipco",
-                "url": "https://raw.githubusercontent.com/IWLeng/xml-creator/main/libraries/Alcoa/rules_library_shipco.py"
+                "url": "https://raw.githubusercontent.com/IWLeng/xml-creator/main/libraries/Shipco/rules_library_shipco.py"
+            },
+            "12": {
+                "name": "Burkle",
+                "url": "https://raw.githubusercontent.com/IWLeng/xml-creator/main/libraries/Burkle/rules_library_burkle.py"
             }
             
         }
