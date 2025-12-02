@@ -114,7 +114,11 @@ def main():
             "12": {
                 "name": "Burkle",
                 "url": "https://raw.githubusercontent.com/IWLeng/xml-creator/main/libraries/Burkle/rules_library_burkle.py"
-            }
+            },
+            "13": {
+                "name": "Hyatt",
+                "url": "https://raw.githubusercontent.com/IWLeng/xml-creator/main/libraries/Hyatt/rules_library_hyatt.py"
+            },
             
         }
         
