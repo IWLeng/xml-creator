@@ -40,4 +40,13 @@ rule_sets = {
             (r'\bfandom\b', r'<lang xml:lang="en-US">fandom</lang>'),
         ]
     },
+    "2": {
+        "name": "Filipino",
+        "rules": [
+            (r'\bGaming\b', r'<phoneme alphabet="ipa" ph="ˈɡeiming">Gaming</phoneme>'),
+            (r'\biGaming\b', r'<phoneme alphabet="ipa" ph="ˈaiɡeiming">iGaming</phoneme>'),
+            (r'\blive\b', r'<phoneme alphabet="ipa" ph="ˈlaiv">live</phoneme>'),
+            (r'\bkitain\b', r'<phoneme alphabet="ipa" ph="kitˈain">kitain</phoneme>'),
+        ]
+    }
 }
