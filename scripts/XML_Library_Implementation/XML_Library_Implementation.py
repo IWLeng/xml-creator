@@ -119,7 +119,6 @@ def main():
                 "name": "Hyatt",
                 "url": "https://raw.githubusercontent.com/IWLeng/xml-creator/main/libraries/Hyatt/rules_library_hyatt.py"
             },
-            
         }
         
         print("Select the client you are working on:")
