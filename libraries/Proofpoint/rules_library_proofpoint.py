@@ -10,9 +10,9 @@ rule_sets = {
             (r'\bDále\b', r'<phoneme alphabet="ipa" ph="ˈdaːlɛ">Dále</phoneme>'),
             (r'\bDocuSign\b', r'<phoneme alphabet="ipa" ph="dokusaːjn">DocuSign</phoneme>'),
             (r'\bdržitele\b', r'<phoneme alphabet="ipa" ph="ˈdrʒɪtɛlɛ">držitele</phoneme>'),
-            (r'\be-mailech\b', r'<phoneme alphabet="ipa" ph="iːmaɪlɛx">e-mailech</phoneme>'),
-            (r'\be-mailová\b', r'<phoneme alphabet="ipa" ph="iːmaɪlovaː">e-mailová</phoneme>'),
-            (r'\be-mailové\b', r'<phoneme alphabet="ipa" ph="iːmaɪlovɛː">e-mailové</phoneme>'),
+            (r'\be-mailech\b', r'<phoneme alphabet="ipa" ph="ˈiːmejlexː">e-mailech</phoneme>'),
+            (r'\be-mailová\b', r'<phoneme alphabet="ipa" ph="ˈiːmejlɔʋaː">e-mailová</phoneme>'),
+            (r'\be-mailové\b', r'<phoneme alphabet="ipa" ph="ˈiːmejlɔʋɛː">e-mailové</phoneme>'),
             (r'\be-mailového\b', r'<phoneme alphabet="ipa" ph="ˈiːmɛjlɔʋɛːɦo">e-mailového</phoneme>'),
             (r'\be-mailovém\b', r'<phoneme alphabet="ipa" ph="iːmaɪlovɛːm">e-mailovém</phoneme>'),
             (r'\be-mailových\b', r'<phoneme alphabet="ipa" ph="iːmaɪloviːx">e-mailových</phoneme>'),
@@ -43,6 +43,7 @@ rule_sets = {
             (r'\bStealers\b', r'<phoneme alphabet="ipa" ph="ˈstiːlərz">Stealers</phoneme>'),
             (r'\bThomasi\b', r'<phoneme alphabet="ipa" ph="ˈtɔmasi">Thomasi</phoneme>'),
             (r'\bTeda\b', r'<phoneme alphabet="ipa" ph="ˈtɛda">Teda</phoneme>'),
+            (r'\búkolů\b', r'<phoneme alphabet="ipa" ph="ˈuːkoluː">úkolů</phoneme>'),
         ]
     },
     "2": {
@@ -68,6 +69,8 @@ rule_sets = {
             (r'\Black Friday\b', r'<lang xml:lang="en-US">Black <phoneme alphabet="ipa" ph="ˈfɹaɪˌdeɪ">Friday</phoneme></lang>'),
             (r'\bCyber Monday\b', r'<lang xml:lang="en-US">Cyber Monday</lang>'),
             (r'\bE-Commerce-Websites\b', r'<lang xml:lang="en-US">E-Commerce-Websites</lang>'),
+            (r'\bhosten\b', r'<phoneme alphabet="ipa" ph="hˈɔstn">hosten</phoneme>'),
+            (r'\bJunk\b', r'<lang xml:lang="en-US"><phoneme alphabet="ipa" ph=" d͡ʒˈʌŋk">Junk</phoneme></lang>'),
         ]
     },
     "3": {
@@ -118,6 +121,7 @@ rule_sets = {
             (r'\bphishing\b', r'Fishing'),
             (r'\bFriday\b', r'<phoneme alphabet="ipa" ph="ˈfraiˌdeɪ">Friday</phoneme>'),
             (r'\bMonday\b', r'<phoneme alphabet="ipa" ph="ˈmʌn.deɪ">Monday</phoneme>'),
+            (r'\biPhone\b', r'<phoneme alphabet="ipa" ph="ˈaifon">iPhone</phoneme>'),
         ]
     },
     "7": {
@@ -175,6 +179,10 @@ rule_sets = {
             (r'\bsmartwatche\b', r'<phoneme alphabet="ipa" ph="ˈsmartwɑtʃɛ">smartwatche</phoneme>'),
             (r'\bStealery\b', r'<phoneme alphabet="ipa" ph="ˈsti.lɛ.rɨ">Stealery</phoneme>'),
             (r'\bzidentyfikować\b', r'<phoneme alphabet="ipa" ph="z‿i.dɛn.tɨ.fiˈkɔ.vat͡ɕ">zidentyfikować</phoneme>'),
+            (r'\bPodsycanie\b', r'<phoneme alphabet="ipa" ph="pɔd.sɨˈt͡sa.ɲɛ">Podsycanie</phoneme>'),
+            (r'\bphishing\b', r'<phoneme alphabet="ipa" ph="ˈfi.ʃiŋɡ">phishing</phoneme>'),
+            (r'\bodrzucony\b', r'<phoneme alphabet="ipa" ph="ɔdʐuˈt͡sɔnɨ">odrzucony</phoneme>'),
+            (r'\bMMS-y\b', r'<phoneme alphabet="ipa" ph="ɛmɛmˈɛsɨ">MMS-y</phoneme>'),
         ]
     },
     "11": {
@@ -199,6 +207,9 @@ rule_sets = {
             (r'\bPerceba\b', r'<phoneme alphabet="ipa" ph="peɾˈsebɐ">Perceba</phoneme>'),
             (r'\bEste\b', r'<phoneme alphabet="ipa" ph="ˈes.tʃi">Este</phoneme>'),
             (r'\bcartões\b', r'<phoneme alphabet="ipa" ph="kaɾtˌoˈjj̃s">cartões</phoneme>'),
+            (r'\bVPNs\b', r'<phoneme alphabet="ipa" ph="vepeˈens">VPNs</phoneme>'),
+            (r'\bOracle\b', r'<phoneme alphabet="ipa" ph="ˈɔːrəkəl">Oracle</phoneme>'),
+            (r'\be-mail\b', r'<phoneme alphabet="ipa" ph="iˈmeɪw">e-mail</phoneme>'),
         ]
     },
     "12": {
@@ -216,6 +227,9 @@ rule_sets = {
             (r'\bpush\b', r'<phoneme alphabet="ipa" ph="pʊʃ">push</phoneme>'),
             (r'\bransomware\b', r'<phoneme alphabet="ipa" ph="ˈɾænsəmwɛɹ">ransomware</phoneme>'),
             (r'\bestratagemas\b', r'<phoneme alphabet="ipa" ph="ʃtrɐtɐʒˈemɐʃ">estratagemas</phoneme>'),
+            (r'\balojá-las\b', r'<phoneme alphabet="ipa" ph="ɐluʒˈalɐʃ">alojá-las</phoneme>'),
+            (r'\binstalá-las\b', r'<phoneme alphabet="ipa" ph="ĩʃtɐlˈalɐʃ">instalá-las</phoneme>'),
+            (r'\binfetará\b', r'<phoneme alphabet="ipa" ph="ĩfɘtɐɾˈa">infetará</phoneme>'),
         ]
     },
     "13": {
@@ -268,6 +282,9 @@ rule_sets = {
             (r'\be-postadaki\b', r'<phoneme alphabet="ipa" ph="epostadaki">e-postadaki</phoneme>'),
             (r'\be-postalarınız\b', r'<phoneme alphabet="ipa" ph="epostalaɾɯnɯz">e-postalarınız</phoneme>'),
             (r'\be-postasıyla\b', r'<phoneme alphabet="ipa" ph="epostasɯjlaa">e-postasıyla</phoneme>'),
+            (r'\byalnızca\b', r'<phoneme alphabet="ipa" ph="jal.nɯz̥d͡ʒa">yalnızca</phoneme>'),
+            (r'\be-postalarına\b', r'<phoneme alphabet="ipa" ph="epostalaɾɯna">e-postalarına</phoneme>'),
+            (r'\bMMS’yi\b', r'<phoneme alphabet="ipa" ph="meemeeseji">MMS’yi</phoneme>'),
         ]
     },
     "15": {
@@ -319,6 +336,8 @@ rule_sets = {
             (r'\brouterns\b', r'<phoneme alphabet="ipa" ph="raʊtɛrnːs">routerns</phoneme>'),
             (r'\bStealers\b', r'<phoneme alphabet="ipa" ph="stiːlərz">Stealers</phoneme>'),
             (r'\bWi-Fi\b', r'<phoneme alphabet="ipa" ph="waɪ.faɪ">Wi-Fi</phoneme>'),
+            (r'\be-postalias\b', r'<phoneme alphabet="ipa" ph="ˌɪ.pʊstˈalɪas">e-postalias</phoneme>'),
+            (r'\bInvoice\b', r'<phoneme alphabet="ipa" ph="ˈɪnˌvɔɪs">Invoice</phoneme>'),
         ]
     },
     "18": {
