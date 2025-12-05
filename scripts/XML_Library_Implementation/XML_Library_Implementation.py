@@ -119,6 +119,10 @@ def main():
                 "name": "Hyatt",
                 "url": "https://raw.githubusercontent.com/IWLeng/xml-creator/main/libraries/Hyatt/rules_library_hyatt.py"
             },
+            "14": {
+                "name": "Caterpillar",
+                "url": "https://raw.githubusercontent.com/IWLeng/xml-creator/main/libraries/Caterpillar/rules_library_caterpillar.py"
+            }
         }
         
         print("Select the client you are working on:")
