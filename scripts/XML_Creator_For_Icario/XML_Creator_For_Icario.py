@@ -10,7 +10,8 @@ languages = {
     "3": {"name": "Chinese", "tts": "azure", "voice": "zh-CN, XiaochenMultilingualNeural"},
     "4": {"name": "Korean", "tts": "azure", "voice": "en-US, EmmaMultilingualNeural"},
     "5": {"name": "Vietnamese", "tts": "azure", "voice": "en-US, EmmaMultilingualNeural"},
-    "6": {"name": "Armenian", "tts": "azure", "voice": "en-US, EmmaMultilingualNeural"}
+    "6": {"name": "Armenian", "tts": "azure", "voice": "en-US, EmmaMultilingualNeural"},
+    "6": {"name": "Russian", "tts": "azure", "voice": "en-US, EmmaMultilingualNeural"}
 }
 
 # Azure template (fixed xml:lang="en-US")
