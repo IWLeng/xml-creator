@@ -105,6 +105,7 @@ rule_sets = {
         "name": "Chinese (Simplified)",
         "rules": [
             (r'TTY(?:[: ]?\s*711)?', lambda m: f'<say-as interpret-as="characters">TTY</say-as>' + (': <say-as interpret-as="characters">711</say-as>' if '711' in m.group() else '')),
+            (r'\b(Wellcare(?: By (?:Delaware First Health|Superior HealthPlan))?)\b', r'<lang xml:lang="en-US">\1</lang>'),
         ]
     },
     "6": {
@@ -114,6 +115,7 @@ rule_sets = {
             (r'\bTTY\b', r'<lang xml:lang="en-US">TTY</lang>'),
             (r'\bID\b', r'<lang xml:lang="en-US">ID</lang>'),
             (r'\borg\b', r'<lang xml:lang="en-US">org</lang>'),
+            (r'\b(Wellcare(?: By (?:Delaware First Health|Superior HealthPlan))?)\b', r'<lang xml:lang="en-US">\1</lang>'),
         ]
     },
     "6": {
