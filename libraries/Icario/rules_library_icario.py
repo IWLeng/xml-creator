@@ -76,6 +76,7 @@ rule_sets = {
             (r'\bcolon\b', r'cólon'),
             (r'\bDual Care\b', r'Dúal Care'),
             (r'\bHealthPlan\b', r'Health-Plan')
+            (r'\bIntake\b', r'<phoneme alphabet="ipa" ph="ˈintˌeik">Intake</phoneme>'),
         ]
     },
     "3": {
