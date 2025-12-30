@@ -75,7 +75,7 @@ rule_sets = {
             (r'My Benefits punto Nations Benefits punto com', r'My Benefits, punto, Nations Benefits, punto com'),
             (r'\bcolon\b', r'cólon'),
             (r'\bDual Care\b', r'Dúal Care'),
-            (r'\bHealthPlan\b', r'Health-Plan')
+            (r'\bHealthPlan\b', r'Health-Plan'),
             (r'\bIntake\b', r'<phoneme alphabet="ipa" ph="ˈintˌeik">Intake</phoneme>'),
         ]
     },
