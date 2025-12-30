@@ -8,7 +8,6 @@ import os
 import sys
 from pathlib import Path
 from docx import Document
-from xml.dom import minidom
 
 def extract_text_from_docx(docx_path):
     """Extract plain text from DOCX file"""
@@ -30,16 +29,13 @@ def extract_text_from_docx(docx_path):
 
 def create_azure_xml(content, voice):
     """Create XML using Azure template"""
-    azure_template = """<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US"><voice name="Microsoft Server Speech Text to Speech Voice ({voice})"><prosody rate="-5%" pitch="0%"><mstts:silence type="Sentenceboundary" value="200ms"/>\n\n{content}\n<mstts:silence type="Tailing" value="200ms"/></prosody></voice></speak>"""
+    azure_template = """<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US"><voice name="Microsoft Server Speech Text to Speech Voice ({voice})"><prosody rate="0%" pitch="0%">\n\n{content}\n</prosody></voice></speak>"""
     
     # Clean and prepare content
     cleaned_content = content.strip()
     
-    # Apply template
-    xml_content = azure_template.format(voice=voice, content=cleaned_content)
-    
-    # Pretty print the XML
-    return pretty_print_xml(xml_content)
+    # Apply template - no pretty printing, no XML declaration
+    return azure_template.format(voice=voice, content=cleaned_content)
 
 def create_amazon_xml(content):
     """Create XML using Amazon template"""
@@ -48,31 +44,8 @@ def create_amazon_xml(content):
     # Clean and prepare content
     cleaned_content = content.strip()
     
-    # Apply template
-    xml_content = amazon_template.format(content=cleaned_content)
-    
-    # Pretty print the XML
-    return pretty_print_xml(xml_content)
-
-def pretty_print_xml(xml_string):
-    """Format XML string to be human-readable"""
-    try:
-        # Parse the XML string
-        parsed = minidom.parseString(xml_string)
-        
-        # Pretty print with indentation
-        pretty_xml = parsed.toprettyxml(indent="  ")
-        
-        # Remove excessive newlines from minidom's output
-        lines = pretty_xml.split('\n')
-        non_empty_lines = [line for line in lines if line.strip()]
-        
-        # Join with single newline
-        return '\n'.join(non_empty_lines)
-    
-    except Exception as e:
-        print(f"Warning: Could not pretty print XML: {e}")
-        return xml_string
+    # Apply template - no pretty printing, no XML declaration
+    return amazon_template.format(content=cleaned_content)
 
 def process_docx_file(docx_path, engine_select, azure_voice=None):
     """Process a single DOCX file and save XML"""
@@ -94,7 +67,7 @@ def process_docx_file(docx_path, engine_select, azure_voice=None):
         # Create output filename (same name, .xml extension)
         output_filename = os.path.splitext(docx_path)[0] + '.xml'
         
-        # Save XML file
+        # Save XML file - no extra formatting
         with open(output_filename, 'w', encoding='utf-8') as f:
             f.write(xml_content)
         
