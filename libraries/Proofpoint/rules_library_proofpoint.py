@@ -174,7 +174,6 @@ rule_sets = {
             (r'\bDziękujemy\b', r'<phoneme alphabet="ipa" ph="d͡ʑɛŋkujˈɛmɨ">Dziękujemy</phoneme>'),
             (r'\bcyberzagrożeniami\b', r'<phoneme alphabet="ipa" ph="ˈt͡sɨ.bɛr.za.ɡrɔˈʐɛ.ɲa.mi">cyberzagrożeniami</phoneme>'),
             (r'\bboty\b', r'<phoneme alphabet="ipa" ph="ˈbɔ.tɨ">boty</phoneme>'),
-            (r'\bphishing\b', r'<phoneme alphabet="ipa" ph="ˈfi.ʃiŋɡ">phishing</phoneme>'),
             (r'\be-mailami\b', r'<phoneme alphabet="ipa" ph="iˈmɛj.lami">e-mailami</phoneme>'),
             (r'\bsmartwatche\b', r'<phoneme alphabet="ipa" ph="ˈsmartwɑtʃɛ">smartwatche</phoneme>'),
             (r'\bStealery\b', r'<phoneme alphabet="ipa" ph="ˈsti.lɛ.rɨ">Stealery</phoneme>'),
