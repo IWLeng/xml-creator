@@ -299,7 +299,6 @@ rule_sets = {
         "rules": [
             (r'\bkyberzločincov\b', r'<phoneme alphabet="ipa" ph="ˈkɪbɛrzlotʃintsɔu">kyberzločincov</phoneme>'),
             (r'\bpostupy\b', r'<phoneme alphabet="ipa" ph="ˈpɔstupi">postupy</phoneme>'),
-            (r'\bphishingu\b', r'<phoneme alphabet="ipa" ph="ˈfiʃɪngu">phishingu</phoneme>'),
             (r'\be-mailových\b', r'<phoneme alphabet="ipa" ph="ˈiːmɛjloviːx">e-mailových</phoneme>'),
             (r'\be-mailovými\b', r'<phoneme alphabet="ipa" ph="ˈiːmɛjloviːmɪ">e-mailovými</phoneme>'),
             (r'\bSMS\b', r'<phoneme alphabet="ipa" ph="ˈesemes">SMS</phoneme>'),
