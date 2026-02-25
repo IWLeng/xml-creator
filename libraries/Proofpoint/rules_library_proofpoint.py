@@ -44,6 +44,10 @@ rule_sets = {
             (r'\bThomasi\b', r'<phoneme alphabet="ipa" ph="ˈtɔmasi">Thomasi</phoneme>'),
             (r'\bTeda\b', r'<phoneme alphabet="ipa" ph="ˈtɛda">Teda</phoneme>'),
             (r'\búkolů\b', r'<phoneme alphabet="ipa" ph="ˈuːkoluː">úkolů</phoneme>'),
+            (r'\bčtvrtletí\b', r'<phoneme alphabet="ipa" ph="ˈt͡ʃtvr̩dlɛciː">čtvrtletí</phoneme>'),
+            (r'\be-mailem\b', r'<phoneme alphabet="ipa" ph="ˈiːmejlem">e-mailem</phoneme>'),
+            (r'\bHR\b', r'<phoneme alphabet="ipa" ph="ˈɛjt͡ʃ aːr">HR</phoneme>'),
+            (r'\bindície\b', r'<phoneme alphabet="ipa" ph="ˈɪndiːt͡siːjɛ">indície</phoneme>'),
         ]
     },
     "2": {
@@ -71,6 +75,7 @@ rule_sets = {
             (r'\bE-Commerce-Websites\b', r'<lang xml:lang="en-US">E-Commerce-Websites</lang>'),
             (r'\bhosten\b', r'<phoneme alphabet="ipa" ph="hˈɔstn">hosten</phoneme>'),
             (r'\bJunk\b', r'<lang xml:lang="en-US"><phoneme alphabet="ipa" ph=" d͡ʒˈʌŋk">Junk</phoneme></lang>'),
+            (r'\bBoxing Day\b', r'<lang xml:lang="en-US"><phoneme alphabet="ipa" ph="ˈbɒksɪŋ">Boxing</phoneme> Day</lang>'),
         ]
     },
     "3": {
@@ -104,6 +109,9 @@ rule_sets = {
             (r'\bPhishing\b', r'<lang xml:lang="en-US">Phishing</lang>'), 
             (r'\barruine\b', r'<phoneme alphabet="ipa" ph="aruˈine">arruíne</phoneme>'),
             (r'\bsmishing\b', r'<lang xml:lang="en-US">smishing</lang>'),
+            (r'\bAnyDesk\b', r'<lang xml:lang="en-US">AnyDesk</lang>'),
+            (r'\barruíne\b', r'<phoneme alphabet="ipa" ph="aruˈine">arruíne</phoneme>'),
+            (r'\bconfiámos\b', r'<phoneme alphabet="ipa" ph="konfjˈamˌos">confiámos</phoneme>'),
         ]
     },
     "6": {
@@ -118,10 +126,15 @@ rule_sets = {
             (r'\bhackeado\b', r'<phoneme alphabet="ipa" ph="xakeado">hackeado</phoneme>'),
             (r'\bhackeados\b', r'<phoneme alphabet="ipa" ph="xakeados">hackeados</phoneme>'),
             (r'\bShell\b', r'<phoneme alphabet="ipa" ph="ʒɛl">Shell</phoneme>'),
-            (r'\bphishing\b', r'Fishing'),
+            (r'\bPhishing\b', r'<lang xml:lang="en-US">Phishing</lang>'), 
             (r'\bFriday\b', r'<phoneme alphabet="ipa" ph="ˈfraiˌdeɪ">Friday</phoneme>'),
             (r'\bMonday\b', r'<phoneme alphabet="ipa" ph="ˈmʌn.deɪ">Monday</phoneme>'),
             (r'\biPhone\b', r'<phoneme alphabet="ipa" ph="ˈaifon">iPhone</phoneme>'),
+            (r'\bAnyDesk\b', r'<lang xml:lang="en-US">AnyDesk</lang>'),
+            (r'\bCanada Post\b', r'<lang xml:lang="en-US">Canada Post</lang>'),
+            (r'\bGmail\b', r'<lang xml:lang="en-US">Gmail</lang>'),
+            (r'\bID\b', r'<say-as interpret-as="characters">ID</say-as>'),
+            (r'\bTI\b', r'<say-as interpret-as="characters">TI</say-as>'),
         ]
     },
     "7": {
@@ -182,6 +195,8 @@ rule_sets = {
             (r'\bphishing\b', r'<phoneme alphabet="ipa" ph="ˈfi.ʃiŋɡ">phishing</phoneme>'),
             (r'\bodrzucony\b', r'<phoneme alphabet="ipa" ph="ɔdʐuˈt͡sɔnɨ">odrzucony</phoneme>'),
             (r'\bMMS-y\b', r'<phoneme alphabet="ipa" ph="ɛmɛmˈɛsɨ">MMS-y</phoneme>'),
+            (r'\bpodziękowanie\b', r'<phoneme alphabet="ipa" ph="ˌpɔd͡ʑɛ̃ŋkɔˈvaɲɛ">podziękowanie</phoneme>'),
+            (r'\bzweryfikować\b', r'<phoneme alphabet="ipa" ph="zvɛrʲiˈfʲikɔvat͡ɕ">zweryfikować</phoneme>'),
         ]
     },
     "11": {
@@ -208,7 +223,8 @@ rule_sets = {
             (r'\bcartões\b', r'<phoneme alphabet="ipa" ph="kaɾtˌoˈjj̃s">cartões</phoneme>'),
             (r'\bVPNs\b', r'<phoneme alphabet="ipa" ph="vepeˈens">VPNs</phoneme>'),
             (r'\bOracle\b', r'<phoneme alphabet="ipa" ph="ˈɔːrəkəl">Oracle</phoneme>'),
-            (r'\be-mail\b', r'<phoneme alphabet="ipa" ph="iˈmeɪw">e-mail</phoneme>'),
+            (r'\bTI\b', r'<say-as interpret-as="characters">TI</say-as>'),
+            (r'\be-mail\b', r'<phoneme alphabet="ipa" ph="imˈejl">e-mail</phoneme>'),
         ]
     },
     "12": {
@@ -229,6 +245,9 @@ rule_sets = {
             (r'\balojá-las\b', r'<phoneme alphabet="ipa" ph="ɐluʒˈalɐʃ">alojá-las</phoneme>'),
             (r'\binstalá-las\b', r'<phoneme alphabet="ipa" ph="ĩʃtɐlˈalɐʃ">instalá-las</phoneme>'),
             (r'\binfetará\b', r'<phoneme alphabet="ipa" ph="ĩfɘtɐɾˈa">infetará</phoneme>'),
+            (r'\bGmail\b', r'<phoneme alphabet="ipa" ph="d͡ʒi.mˈɐjl">Gmail</phoneme>'),
+            (r'\bTI\b', r'<say-as interpret-as="characters">TI</say-as>'),
+            (r'\brideshare\b', r'<phoneme alphabet="ipa" ph="ɹajdɘʃˈɛɾɘ">rideshare</phoneme>'),
         ]
     },
     "13": {
@@ -284,6 +303,12 @@ rule_sets = {
             (r'\byalnızca\b', r'<phoneme alphabet="ipa" ph="jal.nɯz̥d͡ʒa">yalnızca</phoneme>'),
             (r'\be-postalarına\b', r'<phoneme alphabet="ipa" ph="epostalaɾɯna">e-postalarına</phoneme>'),
             (r'\bMMS’yi\b', r'<phoneme alphabet="ipa" ph="meemeeseji">MMS’yi</phoneme>'),
+            (r'\bCanada Post’tan\b', r'<phoneme alphabet="ipa" ph="kanaˈda‿postˈtan">Canada Post’tan</phoneme>'),
+            (r'\bDHL’den\b', r'<phoneme alphabet="ipa" ph="deːheːleːden">DHL’den</phoneme>'),
+            (r'\be-postalarından\b', r'<phoneme alphabet="ipa" ph="epostalarɯndan">e-postalarından</phoneme>'),
+            (r'\bFedEx\b', r'<phoneme alphabet="ipa" ph="fˈed‿ˌecs">FedEx</phoneme>'),
+            (r'\bİK’den\b', r'<phoneme alphabet="ipa" ph="iːceˈden">İK’den</phoneme>'),
+            (r'\bİK’yi\b', r'<phoneme alphabet="ipa" ph="iːceˈji">İK’yi</phoneme>'),
         ]
     },
     "15": {
@@ -305,19 +330,33 @@ rule_sets = {
             (r'\bMS Teams\b', r'<phoneme alphabet="ipa" ph="ɛm.ɛs.tiːms">MS Teams</phoneme>'),
             (r'\bphishing\b', r'<phoneme alphabet="ipa" ph="ˈfiʂing">phishing</phoneme>'),
             (r'\bphishingovými\b', r'<phoneme alphabet="ipa" ph="ˈfiʂingɔʋiːmi">phishingovými</phoneme>'),
-            (r'\bphishingu\b', r'<phoneme alphabet="ipa" ph="ˈfiʂingu">phishingu</phoneme>'),
-            (r'\be-mailov\b', r'<phoneme alphabet="ipa" ph="ˈiːmejlɔu">e-mailov</phoneme>'),
+            (r'\bphishingu\b', r'<phoneme alphabet="ipa" ph="ˈfiʃiŋɡu">phishingu</phoneme>'),
+            (r'\be-mailov\b', r'<phoneme alphabet="ipa" ph="ˈiːmɛjlɔʋ">e-mailov</phoneme>'),
             (r'\be-mailové\b', r'<phoneme alphabet="ipa" ph="ˈiːmejlɔʋeː">e-mailové</phoneme>'),
             (r'\be-maile\b', r'<phoneme alphabet="ipa" ph="ˈiːmejle">e-maile</phoneme>'),
-            (r'\be-maily\b', r'<phoneme alphabet="ipa" ph="ˈiːmejli">e-maily</phoneme>'),
+            (r'\be-maily\b', r'<phoneme alphabet="ipa" ph="ˈiːmɛjli">e-maily</phoneme>'),
             (r'\bkyberzločinci\b', r'<phoneme alphabet="ipa" ph="ˈkɪbɛrzlɔtʃɪnt͡si">kyberzločinci</phoneme>'),
             (r'\bcloudové\b', r'<phoneme alphabet="ipa" ph="ˈklau̯dɔʋe">cloudové</phoneme>'),
             (r'\bcloudových\b', r'<phoneme alphabet="ipa" ph="ˈklau̯dɔʋiːx">cloudových</phoneme>'),
             (r'\bmenej\b', r'<phoneme alphabet="ipa" ph="ˈmeɲej">menej</phoneme>'),
-            (r'\bprostredníctvom\b', r'<phoneme alphabet="ipa" ph="ˈprɔstredɲiːctʋɔm">prostredníctvom</phoneme>'),
+            (r'\bprostredníctvom\b', r'<phoneme alphabet="ipa" ph="ˈprɔstrɛdɲiːctʋɔm">prostredníctvom</phoneme>'),
             (r'\bsietnica\b', r'<phoneme alphabet="ipa" ph="ˈsɪetɲitsa">sietnica</phoneme>'),
             (r'\bspoofingu\b', r'<phoneme alphabet="ipa" ph="ˈspuːfingu">spoofingu</phoneme>'),
             (r'\bzariadenia\b', r'<phoneme alphabet="ipa" ph="ˈzarɪɐɟeɲɪɐ">zariadenia</phoneme>'),
+            (r'\bID\b', r'<phoneme alphabet="ipa" ph="ˈajdiː">ID</phoneme>'),
+            (r'\bPhishingové\b', r'<phoneme alphabet="ipa" ph="ˈfiʃiŋgɔvɛː">Phishingové</phoneme>'),
+            (r'\bVictorii\b', r'<phoneme alphabet="ipa" ph="viktˈoːriːˌiː">Victorii</phoneme>'),
+            (r'\be-mail\b', r'<phoneme alphabet="ipa" ph="ˈiːmɛjl">e-mail</phoneme>'),
+            (r'\be-mailmi\b', r'<phoneme alphabet="ipa" ph="ˈiːmɛjlmi">e-mailmi</phoneme>'),
+            (r'\be-mailoch\b', r'<phoneme alphabet="ipa" ph="ˈiːmɛjlɔx">e-mailoch</phoneme>'),
+            (r'\be-mailom\b', r'<phoneme alphabet="ipa" ph="ˈiːmɛjlɔm">e-mailom</phoneme>'),
+            (r'\be-mailová\b', r'<phoneme alphabet="ipa" ph="ˈiːmɛjlɔʋaː">e-mailová</phoneme>'),
+            (r'\bmonitorovanie\b', r'<phoneme alphabet="ipa" ph="ˈmɔnitorɔʋaɲɛ">monitorovanie</phoneme>'),
+            (r'\bphishingového\b', r'<phoneme alphabet="ipa" ph="ˈfiʃiŋgɔʋɛːɦɔ">phishingového</phoneme>'),
+            (r'\bphishingový\b', r'<phoneme alphabet="ipa" ph="ˈfiʃiŋɔʋiː">phishingový</phoneme>'),
+            (r'\bphishingových\b', r'<phoneme alphabet="ipa" ph="ˈfiʃiŋɔʋiːx">phishingových</phoneme>'),
+            (r'\bphishingovým\b', r'<phoneme alphabet="ipa" ph="ˈfiʃiŋɔʋiːm">phishingovým</phoneme>'),
+            (r'\bpoďakovanie\b', r'<phoneme alphabet="ipa" ph="ˈpɔɟakɔʋaɲɛ">poďakovanie</phoneme>'),
         ]
     },
     "17": {
@@ -335,6 +374,7 @@ rule_sets = {
             (r'\bWi-Fi\b', r'<phoneme alphabet="ipa" ph="waɪ.faɪ">Wi-Fi</phoneme>'),
             (r'\be-postalias\b', r'<phoneme alphabet="ipa" ph="ˌɪ.pʊstˈalɪas">e-postalias</phoneme>'),
             (r'\bInvoice\b', r'<phoneme alphabet="ipa" ph="ˈɪnˌvɔɪs">Invoice</phoneme>'),
+            (r'\bjulshoppingsäsongen\b', r'<phoneme alphabet="ipa" ph="ˈjʉːlˌʂɔpɪŋˌsɛˌsɔŋɛn ">julshoppingsäsongen</phoneme>'),
         ]
     },
     "18": {
@@ -343,6 +383,49 @@ rule_sets = {
             (r'\bslags\b', r'<phoneme alphabet="ipa" ph="ˈslɑgs">slags</phoneme>'),
             (r'\bmalware\b', r'<phoneme alphabet="ipa" ph="ˈmɑlˌwɛr">malware</phoneme>'),
             (r'\bwi-fi\b', r'<phoneme alphabet="ipa" ph="ˈwɑjˌfɑj">wi-fi</phoneme>'),
+            (r'\bAnyDesk\b', r'<phoneme alphabet="ipa" ph="ˈɛnˌi‿dɛsk">AnyDesk</phoneme>'),
+            (r'\bE-mailadressen\b', r'<phoneme alphabet="ipa" ph="imeil‿addrˈassn">E-mailadressen</phoneme>'),
+            (r'\bVerificér\b', r'<phoneme alphabet="ipa" ph="verifisˈer">Verificér</phoneme>'),
+            (r'\bVictoria\b', r'<phoneme alphabet="ipa" ph="vjktˈoɾˌiɑ">Victoria</phoneme>'),
+            (r'\bcyberangreb\b', r'<phoneme alphabet="ipa" ph="sɑɪ.ber‿angrˈɛb">cyberangreb</phoneme>'),
+            (r'\be-mailadresser\b', r'<phoneme alphabet="ipa" ph="imeil‿addrˈessn">e-mailadresser</phoneme>'),
+            (r'\bid\b', r'<say-as interpret-as="characters">id</say-as>'),
+            (r'\bpolitikker\b', r'<phoneme alphabet="ipa" ph="politiger">politikker</phoneme>'),
+            (r'\bpålideligt\b', r'<phoneme alphabet="ipa" ph="pˌɒ.lidelˈigt">pålideligt</phoneme>'),
+        ]
+    },
+    "19": {
+        "name": "ja-jp",
+        "rules": [
+            (r'\bフィッシング\b', r'<phoneme alphabet="sapi" ph="フィッシング">フィッシング</phoneme>'),
+            (r'\b使うよう\b', r'<phoneme alphabet="sapi" ph="ツカウ\'ヨー">使うよう</phoneme>'),
+            (r'\b個別連絡\b', r'<phoneme alphabet="sapi" ph="コベツ+レンラク">個別連絡</phoneme>'),
+            (r'\b受取ったときに、\b', r'<phoneme alphabet="sapi" ph="ウケトッタトキニ">受取ったときに、</phoneme>'),
+            (r'\b確かに\b', r'<phoneme alphabet="sapi" ph="タシカニ">確かに</phoneme>'),
+            (r'\b福利厚生\b', r'<phoneme alphabet="sapi" ph="フクリ+コウセイ">福利厚生</phoneme>'),
+            (r'\b送信者名\b', r'<phoneme alphabet="sapi" ph="ソウシンシャメイ">送信者名</phoneme>'),
+        ]
+    },
+    "20": {
+        "name": "hu-hu",
+        "rules": [
+            (r'\bAnyDesk\b', r'<phoneme alphabet="ipa" ph="ˈɛni dɛsk">AnyDesk</phoneme>'),
+            (r'\bFedEx-et\b', r'<phoneme alphabet="ipa" ph="fɛdɛksɛt">FedEx-et</phoneme>'),
+            (r'\badathalász\b', r'<phoneme alphabet="ipa" ph="ɒdɒthɒlaːs">adathalász</phoneme>'),
+            (r'\badathalászat\b', r'<phoneme alphabet="ipa" ph="ɒdɒthɒlaːsɒt">adathalászat</phoneme>'),
+            (r'\badathalászatot\b', r'<phoneme alphabet="ipa" ph="ɒdɒthɒlaːsɒtot">adathalászatot</phoneme>'),
+            (r'\be-mail-cím\b', r'<phoneme alphabet="ipa" ph="iːmeːlt͡siːm">e-mail-cím</phoneme>'),
+            (r'\be-mail-címét\b', r'<phoneme alphabet="ipa" ph="iːmeːlt͡siːmeːt">e-mail-címét</phoneme>'),
+            (r'\be-mailek\b', r'<phoneme alphabet="ipa" ph="ˈiː.meɪlɛk">e-mailek</phoneme>'),
+            (r'\be-mailekben\b', r'<phoneme alphabet="ipa" ph="ˈiː.meɪlɛkbɛn">e-mailekben</phoneme>'),
+            (r'\be-maileket\b', r'<phoneme alphabet="ipa" ph="ˈiː.meɪlɛkɛt">e-maileket</phoneme>'),
+            (r'\be-mailekről\b', r'<phoneme alphabet="ipa" ph="iːmeːlɛkrøːl">e-mailekről</phoneme>'),
+            (r'\be-mailen\b', r'<phoneme alphabet="ipa" ph="ˈiː.meɪlɛn ">e-mailen</phoneme>'),
+            (r'\be-maillel\b', r'<phoneme alphabet="ipa" ph="ˈiː.meɪllːɛl">e-maillel</phoneme>'),
+            (r'\be-mailre\b', r'<phoneme alphabet="ipa" ph="iːmeːlɾɛ">e-mailre</phoneme>'),
+            (r'\be-mailt\b', r'<phoneme alphabet="ipa" ph="ˈiː.meɪlt">e-mailt</phoneme>'),
+            (r'\btekintse\b', r'<phoneme alphabet="ipa" ph=" tɛkinʧːɛ">tekintse</phoneme>'),
+            (r'\bészre a szokatlan\b', r'<phoneme alphabet="ipa" ph="eːsɾɛ‿ɒ‿sokɒtlɒn">észre a szokatlan</phoneme>'),
         ]
     },
 }
