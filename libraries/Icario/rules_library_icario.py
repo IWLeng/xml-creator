@@ -99,7 +99,7 @@ rule_sets = {
             (r'\bCentene\b', r'<lang xml:lang="en-US">Centene</lang>'),
             (r'\bWellcare By Allwell\b', r'<lang xml:lang="en-US">Wellcare By Allwell</lang>'),
             (r'TTY(?:[: ]?\s*711)?', lambda m: f'TTY' + (': <say-as interpret-as="characters">711</say-as>' if '711' in m.group() else '')),
-            (r'\(?(1)?\)?([-. ]?\d{3}[-. ]\d{3}[-. ]\d{4})', r'<say-as interpret-as="telephone">\1\2</say-as>'),
+            (r'\(?(1)?\)?[-. ]?(\d{3})[-. ](\d{3})[-. ](\d{4})',  lambda m: (f'<say-as interpret-as="characters">{m.group(1)}</say-as>-' if m.group(1) else '') +            f'<say-as interpret-as="characters">{m.group(2)}</say-as>-<say-as interpret-as="characters">{m.group(3)}</say-as>-<say-as interpret-as="characters">{m.group(4)}</say-as>'),
             (r'\b(Wellcare(?: By (?:Delaware First Health|Superior HealthPlan))?)\b', r'<lang xml:lang="en-US">\1</lang>'),
         ]
     },
