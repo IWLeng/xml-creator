@@ -6,7 +6,7 @@ rule_sets = {
           (r'\bWaskey\b', r'Wáskey'),
           (r'\bANSI\b', r'Ansi'),
           (r'\bJSEA\b', r'<say-as interpret-as="characters">JSEA</say-as>'),
-          (r'\bOsha\b', r'<lang xml:lang="en-US"><phoneme alphabet="ipa" ph="ˈoʃa">Osha</phoneme>'),
+          (r'\bOsha\b', r'<lang xml:lang="en-US"><phoneme alphabet="ipa" ph="ˈoʃa">Osha</phoneme></lang>'),
           (r'\bPenhall\b', r'<phoneme alphabet="ipa" ph="pˈɛn.hɔl">Penhall</phoneme>'),
           (r'\bProcedure\b', r'<phoneme alphabet="ipa" ph="proˈsidʒur">Procedure</phoneme>'),
           (r'\bcause\b', r'<phoneme alphabet="ipa" ph="ˈkau.se">cause</phoneme>'),
