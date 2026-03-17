@@ -76,7 +76,7 @@ rule_sets = {
             (r'\bcolon\b', r'cólon'),
             (r'\bDual Care\b', r'Dúal Care'),
             (r'\bHealthPlan\b', r'Health-Plan'),
-            (r'\bIntake\b', r'intéik'),
+            (r'\bIntake\b', r'ínteik'),
             (r'\bcure\b', r'cúre'),
         ]
     },
@@ -84,7 +84,7 @@ rule_sets = {
         "name": "Korean",
         "rules": [
             (r'\bCentene\b', r'<lang xml:lang="en-US">Centene</lang>'),
-            (r'([0-9])번', r'<say-as interpret-as="number_digit">$1</say-as>번'),
+            (r'([0-9])번', r'<say-as interpret-as="number_digit">\1</say-as>번'),
             (r'10자리', r'<phoneme alphabet="ipa" ph="jʌl">10</phoneme>자리'),
             (r'회의', r'<phoneme alphabet="ipa" ph="ˈhø̞ːi">회의</phoneme>'),
             (r'24시간', r'<say-as interpret-as="character">24</say-as>시간'),
