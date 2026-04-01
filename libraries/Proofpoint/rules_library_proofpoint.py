@@ -47,7 +47,7 @@ rule_sets = {
             (r'\bčtvrtletí\b', r'<phoneme alphabet="ipa" ph="ˈt͡ʃtvr̩dlɛciː">čtvrtletí</phoneme>'),
             (r'\be-mailem\b', r'<phoneme alphabet="ipa" ph="ˈiːmejlem">e-mailem</phoneme>'),
             (r'\bHR\b', r'<phoneme alphabet="ipa" ph="ˈɛjt͡ʃ aːr">HR</phoneme>'),
-            (r'\AnyDesk\b', r'<phoneme alphabet="ipa" ph="ˈɛni dɛsk">AnyDesk</phoneme>'),
+            (r'\bAnyDesk\b', r'<phoneme alphabet="ipa" ph="ˈɛni dɛsk">AnyDesk</phoneme>'),
         ]
     },
     "2": {
