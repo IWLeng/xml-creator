@@ -48,8 +48,7 @@ rule_sets = {
         "name": "ja-JP",
         "rules": [
             (r'\bAvis\b', r'<phoneme alphabet="sapi" ph="エイビス">Avis</phoneme>'),
-            (r'\bハイ\b', r'<phoneme alphabet="ipa" ph="ha.i">ハイ</phoneme>'),
-            (r'\bアット\b', r'<phoneme alphabet="ipa" ph="ˈa t͡to">アット</phoneme>'),
+            (r'\bハイアット\b', r'<phoneme alphabet="ipa" ph="ha.i">ハイ</phoneme><phoneme alphabet="ipa" ph="ˈa t͡to">アット</phoneme>'),
         ]
     },
     "4": {
