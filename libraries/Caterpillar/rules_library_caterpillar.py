@@ -104,4 +104,11 @@ rule_sets = {
             (r'\bCat Certified Maintained\b', r'<lang xml:lang="en-US">Cat Certified Maintained</lang>'),
         ]
     },
+    "15": {
+        "name": "fr-CA",
+        "rules": [
+            (r'\bCVA\b', r'<say-as interpret-as="characters">CVA</say-as>'),
+            (r'\bparts\b', r'<phoneme alphabet="ipa" ph="pɑɹts">parts</phoneme>'),
+        ]
+    },    
 }
