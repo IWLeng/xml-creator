@@ -430,6 +430,7 @@ rule_sets = {
             (r'\be-mailt\b', r'<phoneme alphabet="ipa" ph="ˈiː.meɪlt">e-mailt</phoneme>'),
             (r'\btekintse\b', r'<phoneme alphabet="ipa" ph=" tɛkinʧːɛ">tekintse</phoneme>'),
             (r'\bészre a szokatlan\b', r'<phoneme alphabet="ipa" ph="eːsɾɛ‿ɒ‿sokɒtlɒn">észre a szokatlan</phoneme>'),
+			(r'\bAI\b', r'<phoneme alphabet="ipa" ph="eːjaːj">AI</phoneme>'),
         ]
     },
 }
