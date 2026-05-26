@@ -58,6 +58,7 @@ rule_sets = {
           (r'\bestas\b', r'<phoneme alphabet="ipa" ph="ˈes.tas">estas</phoneme>'),
           (r'\bshell\b', r'<lang xml:lang="en-US">Shell</lang>'),
           (r'\bPVC\b', r'<phoneme alphabet="ipa" ph="piː viː siː">P V C</phoneme>'),
+          (r'\bBáton Rouge\b', r'<phoneme alphabet="ipa" ph="ˌbæ.tən ˈruːʒ">Báton Rouge</phoneme>'), 
             
         ]
     }
