@@ -113,7 +113,7 @@ rule_sets = {
             (r'\bAnyDesk\b', r'<lang xml:lang="en-US">AnyDesk</lang>'),
             (r'\barruíne\b', r'<phoneme alphabet="ipa" ph="aruˈine">arruíne</phoneme>'),
             (r'\bconfiámos\b', r'<phoneme alphabet="ipa" ph="konfjˈamˌos">confiámos</phoneme>'),
-			(r'\bestas\b', r'<phoneme alphabet="ipa" ph="ˈes.ta">estas</phoneme>'),
+			(r'\bestas\b', r'<phoneme alphabet="ipa" ph="ˈes.tas">estas</phoneme>'),
         ]
     },
     "6": {
