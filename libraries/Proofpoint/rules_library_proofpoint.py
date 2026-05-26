@@ -137,6 +137,7 @@ rule_sets = {
             (r'\bGmail\b', r'<lang xml:lang="en-US">Gmail</lang>'),
             (r'\bID\b', r'<say-as interpret-as="characters">ID</say-as>'),
             (r'\bTI\b', r'<say-as interpret-as="characters">TI</say-as>'),
+			(r'\bPhishing\b', r'<phoneme alphabet="ipa" ph="ˈfɪʃɪŋ">Phishing</phoneme>'),
         ]
     },
     "7": {
