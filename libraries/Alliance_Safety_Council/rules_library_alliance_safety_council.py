@@ -55,8 +55,7 @@ rule_sets = {
           (r'\bSmith Energy Complex\b', r'<lang xml:lang="en-US">Smith Energy Complex</lang>'),
           (r'\bStokes\b', r'<lang xml:lang="en-US">Stokes</lang>'),
           (r'\bWalkertown\b', r'<lang xml:lang="en-US">Walkertown</lang>'),
-          (r'\bestas\b', r'<phoneme alphabet="ipa" ph="ˈes.tas">estas</phoneme>'),
-          (r'\bEstas\b', r'<phoneme alphabet="ipa" ph="ˈes.tas">Estas</phoneme>'),  
+          (r'\bestas\b', r'<phoneme alphabet="ipa" ph="ˈes.tas">estas</phoneme>'), 
         ]
     }
 }
