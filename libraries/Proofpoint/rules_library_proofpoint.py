@@ -343,7 +343,7 @@ rule_sets = {
             (r'\bcloudové\b', r'<phoneme alphabet="ipa" ph="ˈklau̯dɔʋe">cloudové</phoneme>'),
             (r'\bcloudových\b', r'<phoneme alphabet="ipa" ph="ˈklau̯dɔʋiːx">cloudových</phoneme>'),
             (r'\bmenej\b', r'<phoneme alphabet="ipa" ph="ˈmeɲej">menej</phoneme>'),
-            (r'\bprostredníctvom\b', r'<phoneme alphabet="ipa" ph="ˈprɔstrɛdɲiːctʋɔm">prostredníctvom</phoneme>'),
+            (r'\bprostredníctvom\b', r'<phoneme alphabet="ipa" ph="ˈprostreˈdɲiːt͡stvom">prostredníctvom</phoneme>'),
             (r'\bsietnica\b', r'<phoneme alphabet="ipa" ph="ˈsɪetɲitsa">sietnica</phoneme>'),
             (r'\bspoofingu\b', r'<phoneme alphabet="ipa" ph="ˈspuːfingu">spoofingu</phoneme>'),
             (r'\bzariadenia\b', r'<phoneme alphabet="ipa" ph="ˈzarɪɐɟeɲɪɐ">zariadenia</phoneme>'),
@@ -366,6 +366,8 @@ rule_sets = {
 			(r'\bzahanbenia\b', r'<phoneme alphabet="ipa" ph="ˈzaˌɦanbeˈɲi͡a">zahanbenia</phoneme>'),
 			(r'\bsextortion\b', r'<phoneme alphabet="ipa" ph="ˈsekstoːr̩ʃn">sextortion</phoneme>'),
 			(r'\bbitcoinoch\b', r'<phoneme alphabet="ipa" ph="ˈbitkojnox">bitcoinoch</phoneme>'),
+			(r'\bagentic browsing\b', r'<phoneme alphabet="ipa" ph="ˈejd͡ʒentik ˈbrausink">agentic browsing</phoneme>'),
+			(r'\bAI\b', r'<phoneme alphabet="ipa" ph="ˈej ˈaːj">AI</phoneme>'),
         ]
     },
     "17": {
