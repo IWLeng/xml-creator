@@ -57,7 +57,7 @@ rule_sets = {
           (r'\bWalkertown\b', r'<lang xml:lang="en-US">Walkertown</lang>'),
           (r'\bestas\b', r'<phoneme alphabet="ipa" ph="ˈes.tas">estas</phoneme>'),
           (r'\bshell\b', r'<lang xml:lang="en-US">Shell</lang>'),
-          (r'\bPVC\b', r'<phoneme alphabet="ipa" ph="piː viː siː">P V C</phoneme>'),
+          (r'\bPVC\b', r'<lang xml:lang="es-US">PE-VE-SE</lang>'),
           (r'\bBáton Rouge\b', r'<phoneme alphabet="ipa" ph="ˌbæ.tən ˈruːʒ">Báton Rouge</phoneme>'), 
             
         ]
