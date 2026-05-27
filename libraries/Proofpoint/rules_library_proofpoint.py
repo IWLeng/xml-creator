@@ -335,7 +335,7 @@ rule_sets = {
             (r'\bphishing\b', r'<phoneme alphabet="ipa" ph="ˈfiʂing">phishing</phoneme>'),
             (r'\bphishingovými\b', r'<phoneme alphabet="ipa" ph="ˈfiʂingɔʋiːmi">phishingovými</phoneme>'),
             (r'\bphishingu\b', r'<phoneme alphabet="ipa" ph="ˈfiʃiŋɡu">phishingu</phoneme>'),
-            (r'\be-mailov\b', r'<phoneme alphabet="ipa" ph="ˈiːmɛjlɔʋ">e-mailov</phoneme>'),
+            (r'\be-mailov\b', r'<phoneme alphabet="ipa" ph="ˈiˌmejlov">e-mailov</phoneme>'),
             (r'\be-mailové\b', r'<phoneme alphabet="ipa" ph="ˈiːmejlɔʋeː">e-mailové</phoneme>'),
             (r'\be-maile\b', r'<phoneme alphabet="ipa" ph="ˈiːmejle">e-maile</phoneme>'),
             (r'\be-maily\b', r'<phoneme alphabet="ipa" ph="ˈiːmɛjli">e-maily</phoneme>'),
