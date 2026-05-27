@@ -200,6 +200,7 @@ rule_sets = {
             (r'\bMMS-y\b', r'<phoneme alphabet="ipa" ph="ɛmɛmˈɛsɨ">MMS-y</phoneme>'),
             (r'\bpodziękowanie\b', r'<phoneme alphabet="ipa" ph="ˌpɔd͡ʑɛ̃ŋkɔˈvaɲɛ">podziękowanie</phoneme>'),
             (r'\bzweryfikować\b', r'<phoneme alphabet="ipa" ph="zvɛrʲiˈfʲikɔvat͡ɕ">zweryfikować</phoneme>'),
+			(r'\be-mailu\b', r'<phoneme alphabet="ipa" ph="ɛ mɛjlu">e-mailu</phoneme>'),
         ]
     },
     "11": {
