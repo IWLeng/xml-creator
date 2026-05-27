@@ -361,6 +361,11 @@ rule_sets = {
             (r'\bphishingových\b', r'<phoneme alphabet="ipa" ph="ˈfiʃiŋɔʋiːx">phishingových</phoneme>'),
             (r'\bphishingovým\b', r'<phoneme alphabet="ipa" ph="ˈfiʃiŋɔʋiːm">phishingovým</phoneme>'),
             (r'\bpoďakovanie\b', r'<phoneme alphabet="ipa" ph="ˈpɔɟakɔʋaɲɛ">poďakovanie</phoneme>'),
+			(r'\bhackerskej\b', r'<phoneme alphabet="ipa" ph="ˈɦeˌkerˈskej">hackerskej</phoneme>'),
+			(r'\bhackeri\b', r'<phoneme alphabet="ipa" ph="ˈɦeˌkeri">hackeri</phoneme>'),
+			(r'\bzahanbenia\b', r'<phoneme alphabet="ipa" ph="ˈzaˌɦanbeˈɲi͡a">zahanbenia</phoneme>'),
+			(r'\bsextortion\b', r'<phoneme alphabet="ipa" ph="ˈsekstoːr̩ʃn">sextortion</phoneme>'),
+			(r'\bbitcoinoch\b', r'<phoneme alphabet="ipa" ph="ˈbitkojnox">bitcoinoch</phoneme>'),
         ]
     },
     "17": {
