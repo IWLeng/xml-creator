@@ -375,6 +375,7 @@ rule_sets = {
 			(r'\bzahanbenia\b', r'<phoneme alphabet="ipa" ph="ˈzaˌɦanbeˈɲi͡a">zahanbenia</phoneme>'),
 			(r'\bsextortion\b', r'<phoneme alphabet="ipa" ph="ˈsekstoːr̩ʃn">sextortion</phoneme>'),
 			(r'\bbitcoinoch\b', r'<phoneme alphabet="ipa" ph="ˈbitkojnox">bitcoinoch</phoneme>'),
+			(r'\bprostredníctvom\b', r'<phoneme alphabet="ipa" ph="ˈprostreˈdɲiːt͡stvom">prostredníctvom</phoneme>'),
 			
         ]
     },
