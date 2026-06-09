@@ -411,7 +411,7 @@ rule_sets = {
             (r'\bid\b', r'<say-as interpret-as="characters">id</say-as>'),
             (r'\bpolitikker\b', r'<phoneme alphabet="ipa" ph="politiger">politikker</phoneme>'),
             (r'\bpålideligt\b', r'<phoneme alphabet="ipa" ph="pˌɒ.lidelˈigt">pålideligt</phoneme>'),
-			(r'\bAI\b', r'<phoneme alphabet="ipa" ph="ˈæː ʔi">AI</phoneme>'),
+			(r'\bAI-\b', r'<phoneme alphabet="ipa" ph="ˈæˀˈiˀ">AI-</phoneme>'),
         ]
     },
     "19": {
