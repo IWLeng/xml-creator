@@ -368,6 +368,14 @@ rule_sets = {
 			(r'\bbitcoinoch\b', r'<phoneme alphabet="ipa" ph="ˈbitkojnox">bitcoinoch</phoneme>'),
 			(r'\bagentic browsing\b', r'<phoneme alphabet="ipa" ph="ˈejd͡ʒentik ˈbrausink">agentic browsing</phoneme>'),
 			(r'\bAI\b', r'<phoneme alphabet="ipa" ph="ˈej ˈaːj">AI</phoneme>'),
+			(r'\be-mailový\b', r'<phoneme alphabet="ipa" ph="ˈiˌmejˈloviː">e-mailový</phoneme>'),
+			(r'\be-mailov\b', r'<phoneme alphabet="ipa" ph="ˈiˌmejlov">e-mailov</phoneme>'),
+			(r'\bhackerskej\b', r'<phoneme alphabet="ipa" ph="ˈɦeˌkerˈskej">hackerskej</phoneme>'),
+			(r'\bhackeri\b', r'<phoneme alphabet="ipa" ph="ˈɦeˌkeri">hackeri</phoneme>'),
+			(r'\bzahanbenia\b', r'<phoneme alphabet="ipa" ph="ˈzaˌɦanbeˈɲi͡a">zahanbenia</phoneme>'),
+			(r'\bsextortion\b', r'<phoneme alphabet="ipa" ph="ˈsekstoːr̩ʃn">sextortion</phoneme>'),
+			(r'\bbitcoinoch\b', r'<phoneme alphabet="ipa" ph="ˈbitkojnox">bitcoinoch</phoneme>'),
+			
         ]
     },
     "17": {
