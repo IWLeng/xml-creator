@@ -449,6 +449,7 @@ rule_sets = {
             (r'\bészre a szokatlan\b', r'<phoneme alphabet="ipa" ph="eːsɾɛ‿ɒ‿sokɒtlɒn">észre a szokatlan</phoneme>'),
 			(r'\bAI\b', r'<phoneme alphabet="ipa" ph="eːjaːj">AI</phoneme>'),
 			(r'\be-mailekhez\b', r'<phoneme alphabet="ipa" ph="iːmeːlɛkhɛz">e-mailekhez</phoneme>'),
+			(r'\be-mailekkel\b', r'<phoneme alphabet="ipa" ph="iːmeːlɛkːɛl">e-mailekkel,</phoneme>'),
         ]
     },
 }
