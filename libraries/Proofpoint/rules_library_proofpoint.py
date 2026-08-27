@@ -244,7 +244,7 @@ rule_sets = {
             (r'\binfetar\b', r'<phoneme alphabet="ipa" ph="ĩfɛtˈar">infetar</phoneme>'),
             (r'\bmultifator\b', r'<phoneme alphabet="ipa" ph="muɫtifatˈor">multifator</phoneme>'),
             (r'\bpush\b', r'<phoneme alphabet="ipa" ph="pʊʃ">push</phoneme>'),
-            (r'\bransomware\b', r'<phoneme alphabet="ipa" ph="ˈɾænsəmwɛɹ">ransomware</phoneme>'),
+            (r'\bransomware\b', r'<phoneme alphabet="ipa" ph="ˈʁɐ̃.sɐ̃m.wɛɾ">Ransomware</phoneme>'),
             (r'\bestratagemas\b', r'<phoneme alphabet="ipa" ph="ʃtrɐtɐʒˈemɐʃ">estratagemas</phoneme>'),
             (r'\balojá-las\b', r'<phoneme alphabet="ipa" ph="ɐluʒˈalɐʃ">alojá-las</phoneme>'),
             (r'\binstalá-las\b', r'<phoneme alphabet="ipa" ph="ĩʃtɐlˈalɐʃ">instalá-las</phoneme>'),
