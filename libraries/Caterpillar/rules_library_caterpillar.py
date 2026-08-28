@@ -18,6 +18,7 @@ rule_sets = {
         "rules": [
             (r'\bCone\b', r'<phoneme alphabet="ipa" ph="ˈkoʊn">Cone</phoneme>'),
             (r'\bCAT Certified Maintained\b', r'<phoneme alphabet="ipa" ph="kˈat‿ˈsɝ.tɪ.faɪd‿meɪnˈteɪnd">CAT Certified Maintained</phoneme>'),
+            (r'\bCaterpillar\b', r'Cater-pi-larrr'),
             (r'\bCVA\b', r'C-V-A'),
         ]
     },
