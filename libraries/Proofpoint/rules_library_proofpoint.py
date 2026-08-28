@@ -424,6 +424,7 @@ rule_sets = {
             (r'\b確かに\b', r'<phoneme alphabet="sapi" ph="タシカニ">確かに</phoneme>'),
             (r'\b福利厚生\b', r'<phoneme alphabet="sapi" ph="フクリ+コウセイ">福利厚生</phoneme>'),
             (r'\b送信者名\b', r'<phoneme alphabet="sapi" ph="ソウシンシャメイ">送信者名</phoneme>'),
+			(r'\b例えば\b', r'<phoneme alphabet="sapi" ph="タトエバ">例えば</phoneme>'),
         ]
     },
     "20": {
