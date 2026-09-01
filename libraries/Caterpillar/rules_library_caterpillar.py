@@ -103,6 +103,15 @@ rule_sets = {
         "rules": [
             (r'\bCVA\b', r'<say-as interpret-as="characters">CVA</say-as>'),
             (r'\bCat Certified Maintained\b', r'<lang xml:lang="en-US">Cat Certified Maintained</lang>'),
+            (r'\bCat Converge\b', r'<lang xml:lang="en-US">Cat Converge</lang>'),
+            (r'\bCustomer Insights\b', r'<lang xml:lang="en-US">Customer Insights</lang>'),
+            (r'\bSales and Marketing\b', r'<lang xml:lang="en-US">Sales and Marketing</lang>'),
+            (r'\bElizabeth\b', r'<lang xml:lang="en-US">Elizabeth</lang>'),
+            (r'\bElle\b', r'<lang xml:lang="en-US">Elle</lang>'),
+            (r'\band Marketing\b', r'<lang xml:lang="en-US">and Marketing</lang>'),
+            (r'\bCopilot\b', r'<lang xml:lang="en-US">Co-pilot</lang>'),
+            (r'\bcatdealer\b', r'<lang xml:lang="en-US">cat-dealer</lang>'),
+            (r'\bcatconvergesuite\b', r'<lang xml:lang="en-US">cat-converge-suite</lang>'),
         ]
     },
     "15": {
