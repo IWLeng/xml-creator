@@ -128,7 +128,7 @@ rule_sets = {
         "rules": [
             (r'\bCVA\b', r'<say-as interpret-as="characters">CVA</say-as>'),
             (r'\bparts\b', r'<phoneme alphabet="ipa" ph="pɑɹts">parts</phoneme>'),
-            (r'\bCat Converge Suite\b', r'<lang xml:lang="en-US">Cat Converge</lang>'),
+            (r'\bCat Converge Suite\b', r'<lang xml:lang="en-US">Cat Converge Suite</lang>'),
             (r'\bCustomer Insights\b', r'<lang xml:lang="en-US">Customer Insights</lang>'),
             (r'\bSales and Marketing\b', r'<lang xml:lang="en-US">Sales and Marketing</lang>'),
             (r'\bElizabeth\b', r'<lang xml:lang="en-US">Elizabeth</lang>'),
