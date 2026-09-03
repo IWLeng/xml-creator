@@ -132,12 +132,12 @@ rule_sets = {
             (r'\bCat Converge Suite\b', r'<lang xml:lang="en-US">Cat Converge Suite</lang>'),
             (r'\bCustomer Insights\b', r'<lang xml:lang="en-US">Customer Insights</lang>'),
             (r'\bSales and Marketing\b', r'<lang xml:lang="en-US">Sales and Marketing</lang>'),
-            (r'\bElizabeth\b', r'<lang xml:lang="en-US">Elizabeth</lang>'),
-            (r'\bElle\b', r'<lang xml:lang="en-US">Elle</lang>'),
+            (r'\bElizabeth\b', r'<phoneme alphabet="ipa" ph="elizəbəθ">Elizabeth</phoneme>'),
             (r'\bCopilot\b', r'<phoneme alphabet="ipa" ph="kɔpaɪlɔt">Copilot</phoneme>'),
             (r'\bcatdealer\b', r'<lang xml:lang="en-US">cat-dealer</lang>'),
             (r'\bcatconvergesuite\b', r'<lang xml:lang="en-US">cat-converge-suite</lang>'),
             (r'\bMicrosoft Dynamics 365\b', r'<lang xml:lang="en-US">Microsoft Dynamics 365</lang>'),
+            (r'\b/\b', r'<phoneme alphabet="ipa" ph="slaʃ">slash</phoneme>'),
         ]
     },    
 }
