@@ -11,6 +11,7 @@ rule_sets = {
         "rules": [
             (r'\bDuo-Cone\b', r'<lang xml:lang="en-US">Duo-Cone</lang>'),
             (r'\bSingle Life Cutting Edges\b', r'<lang xml:lang="en-US">Single Life Cutting Edges</lang>'),
+            (r'\bIT\b', r'</phoneme> Ay <phoneme alphabet="ipa" ph="ˈtiː">T</phoneme>'),
         ]
     },
     "3": {
@@ -116,10 +117,10 @@ rule_sets = {
             (r'\bCat Converge\b', r'<lang xml:lang="en-US">Cat Converge</lang>'),
             (r'\bCustomer Insights\b', r'<lang xml:lang="en-US">Customer Insights</lang>'),
             (r'\bSales and Marketing\b', r'<lang xml:lang="en-US">Sales and Marketing</lang>'),
-            (r'\bElizabeth\b', r'<lang xml:lang="en-US">Elizabeth</lang>'),
+            (r'\bElizabeth\b', r'<phoneme alphabet="ipa" ph="əlizabɛt">Elizabeth</phoneme>'),
             (r'\bElle\b', r'<lang xml:lang="en-US">Elle</lang>'),
             (r'\band Marketing\b', r'<lang xml:lang="en-US">and Marketing</lang>'),
-            (r'\bCopilot\b', r'<lang xml:lang="en-US">Co-pilot</lang>'),
+            (r'\bCopilot\b', r'<phoneme alphabet="ipa" ph="kɔpilɔt">Copilot</phoneme>'),
             (r'\bcatdealer\b', r'<lang xml:lang="en-US">cat-dealer</lang>'),
             (r'\bcatconvergesuite\b', r'<lang xml:lang="en-US">cat-converge-suite</lang>'),
         ]
