@@ -100,11 +100,11 @@ rule_sets = {
             (r'\bCustomer Insights\b', r'<lang xml:lang="en-US">Customer Insights</lang>'),
             (r'\bSales and Marketing\b', r'<lang xml:lang="en-US">Sales and Marketing</lang>'),
             (r'\bElizabeth\b', r'<lang xml:lang="en-US">Elizabeth</lang>'),
-            (r'\bElle\b', r'<lang xml:lang="en-US">Elle</lang>'),
             (r'\band Marketing\b', r'<lang xml:lang="en-US">and Marketing</lang>'),
-            (r'\bCopilot\b', r'<lang xml:lang="en-US">Co-pilot</lang>'),
+            (r'\bCopilot\b', r'<phoneme alphabet="ipa" ph="ˈkoʊˌpaɪlət">Copilot</phoneme>'),
             (r'\bcatdealer\b', r'<lang xml:lang="en-US">cat-dealer</lang>'),
             (r'\bcatconvergesuite\b', r'<lang xml:lang="en-US">cat-converge-suite</lang>'),
+            (r'\b365\b', r'<phoneme alphabet="ipa" ph="tɾesˈsjen.tos seˈsen.ta i ˈsiŋ.ko">365</phoneme>'),
         ]
     },
     "14": {
