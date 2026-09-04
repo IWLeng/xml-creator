@@ -107,6 +107,7 @@ rule_sets = {
             (r'\bcatdealer\b', r'<lang xml:lang="en-US">cat-dealer</lang>'),
             (r'\bcatconvergesuite\b', r'<lang xml:lang="en-US">cat-converge-suite</lang>'),
             (r'\b365\b', r'<phoneme alphabet="ipa" ph="tɾesˈsjen.tos seˈsen.ta i ˈsiŋ.ko">365</phoneme>'),
+            (r'\bCaterpillar\b', r'Caterpí-larr'),
         ]
     },
     "14": {
