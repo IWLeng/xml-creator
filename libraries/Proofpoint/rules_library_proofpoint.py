@@ -77,6 +77,7 @@ rule_sets = {
             (r'\bhosten\b', r'<phoneme alphabet="ipa" ph="hˈɔstn">hosten</phoneme>'),
             (r'\bJunk\b', r'<lang xml:lang="en-US"><phoneme alphabet="ipa" ph=" d͡ʒˈʌŋk">Junk</phoneme></lang>'),
             (r'\bBoxing Day\b', r'<lang xml:lang="en-US"><phoneme alphabet="ipa" ph="ˈbɒksɪŋ">Boxing</phoneme> Day</lang>'),
+			(r'\bshadow IT\b', r'<lang xml:lang="en-US">Shadow</lang> <phoneme alphabet="ipa" ph="aɪ">I</phoneme><phoneme alphabet="ipa" ph="tiː">T</phoneme>'),
         ]
     },
     "3": {
