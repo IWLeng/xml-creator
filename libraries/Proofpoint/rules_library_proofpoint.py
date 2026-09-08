@@ -232,6 +232,9 @@ rule_sets = {
             (r'\bOracle\b', r'<phoneme alphabet="ipa" ph="ˈɔːrəkəl">Oracle</phoneme>'),
             (r'\bTI\b', r'<say-as interpret-as="characters">TI</say-as>'),
             (r'\be-mail\b', r'<phoneme alphabet="ipa" ph="imˈejl">e-mail</phoneme>'),
+			(r'\binformações\b', r'informações-'),
+			(r'\bApós\b', r'Após-'),
+			(r'\bkeylogging\b', r'<lang xml:lang="en-US">key-logging</lang>'),
         ]
     },
     "12": {
