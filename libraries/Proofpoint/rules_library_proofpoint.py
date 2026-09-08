@@ -115,7 +115,7 @@ rule_sets = {
             (r'\barruíne\b', r'<phoneme alphabet="ipa" ph="aruˈine">arruíne</phoneme>'),
             (r'\bconfiámos\b', r'<phoneme alphabet="ipa" ph="konfjˈamˌos">confiámos</phoneme>'),
 			(r'\bestas\b', r'<phoneme alphabet="ipa" ph="ˈes.tas">estas</phoneme>'),
-			(r'\bshadow\b', r'<lang xml:lang="en-US">Shadow</lang>'),
+			(r'\bshadow\b', r'<phoneme alphabet="ipa" ph="ˈʃæ doʊ">Shadow</phoneme>'),
 			(r'\bIT\b', r'<phoneme alphabet="ipa" ph="aɪ tiː">IT</phoneme>'),
         ]
     },
