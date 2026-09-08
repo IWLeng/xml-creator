@@ -96,6 +96,7 @@ rule_sets = {
         "rules": [
             (r'\bdeep-fake\b', r'<phoneme alphabet="ipa" ph="diːp.feɪk">deep-fake</phoneme>'),
             (r'\bdeep-fakes\b', r'<phoneme alphabet="ipa" ph="diːp.feɪks">deep-fakes</phoneme>'),
+			(r'\bDeepfakes\b', r'<phoneme alphabet="ipa" ph="diːp.feɪks">deep-fakes</phoneme>'),
             (r'\bMalware\b', r'<phoneme alphabet="ipa" ph="ˈmæl.weɹ">Malware</phoneme>'),
             (r'\bmalvertising\b', r'<phoneme alphabet="ipa" ph="mal.ver.taɪzɪŋ">malvertising</phoneme>'),
             (r'\bSpambots\b', r'<phoneme alphabet="ipa" ph="spˈambots">Spambots</phoneme>'),
@@ -107,7 +108,7 @@ rule_sets = {
             (r'\bransomware\b', r'<lang xml:lang="en-US">ransomware</lang>'),
             (r'\bBlack Friday\b', r'<lang xml:lang="en-US">Black Friday</lang>'),
             (r'\bCyber Monday\b', r'<lang xml:lang="en-US">Cyber Monday</lang>'),
-            (r'\bPhishing\b', r'<lang xml:lang="en-US">Phishing</lang>'), 
+            (r'\bPhishing\b', r'<lang xml:lang="en-US">Fi-shhing</lang>'), 
             (r'\barruine\b', r'<phoneme alphabet="ipa" ph="aruˈine">arruíne</phoneme>'),
             (r'\bsmishing\b', r'<lang xml:lang="en-US">smishing</lang>'),
             (r'\bAnyDesk\b', r'<lang xml:lang="en-US">AnyDesk</lang>'),
