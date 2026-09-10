@@ -381,6 +381,7 @@ rule_sets = {
 			(r'\bzahanbenia\b', r'<phoneme alphabet="ipa" ph="ˈzaˌɦanbeˈɲi͡a">zahanbenia</phoneme>'),
 			(r'\bsextortion\b', r'<phoneme alphabet="ipa" ph="ˈsekstoːr̩ʃn">sextortion</phoneme>'),
 			(r'\bbitcoinoch\b', r'<phoneme alphabet="ipa" ph="ˈbitkojnox">bitcoinoch</phoneme>'),
+			(r'\b123456\b', r'<say-as interpret-as="number_digit">123456</say-as>'),
 						
         ]
     },
