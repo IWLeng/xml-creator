@@ -297,7 +297,6 @@ rule_sets = {
             (r'\be-postasından\b', r'<phoneme alphabet="ipa" ph="eːpostasɯndan">e-postasından</phoneme>'),
             (r'\beşleşmeyen\b', r'<phoneme alphabet="ipa" ph="eʃleʃmejen">eşleşmeyen</phoneme>'),
             (r'\bhalen\b', r'<phoneme alphabet="ipa" ph="haːlen">halen</phoneme>'),
-            (r'\byalnızca\b', r'<phoneme alphabet="ipa" ph="jal.nɯz̥d͡ʒa">yalnızca</phoneme>'),
             (r'\bkısaltmalar\b', r'<phoneme alphabet="ipa" ph="kɯsaltmalaɾ">kısaltmalar</phoneme>'),
             (r'\bolarak\b', r'<phoneme alphabet="ipa" ph="olaɾak">olarak</phoneme>'),
             (r'\bTabi\b', r'<phoneme alphabet="ipa" ph="ta.biː">Tabi</phoneme>'),
