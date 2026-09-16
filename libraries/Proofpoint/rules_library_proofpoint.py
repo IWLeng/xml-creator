@@ -39,6 +39,7 @@ rule_sets = {
             (r'\bConvention\b', r'<phoneme alphabet="ipa" ph="kənˈvɛnʃən">Convention</phoneme>'),
             (r'\bcloudových\b', r'<phoneme alphabet="ipa" ph="ˈklaudoviːx">cloudových</phoneme>'),
             (r'\bransomware\b', r'<phoneme alphabet="ipa" ph="ˈransomvɛːr">ransomware</phoneme>'),
+			(r'\bransomvér\b', r'<phoneme alphabet="ipa" ph="ˈransomvɛːr">ransomware</phoneme>'),
             (r'\bStealers\b', r'<phoneme alphabet="ipa" ph="ˈstiːlərz">Stealers</phoneme>'),
             (r'\bThomasi\b', r'<phoneme alphabet="ipa" ph="ˈtɔmasi">Thomasi</phoneme>'),
             (r'\bTeda\b', r'<phoneme alphabet="ipa" ph="ˈtɛda">Teda</phoneme>'),
