@@ -77,7 +77,7 @@ rule_sets = {
             (r'\bhosten\b', r'<phoneme alphabet="ipa" ph="hˈɔstn">hosten</phoneme>'),
             (r'\bJunk\b', r'<lang xml:lang="en-US"><phoneme alphabet="ipa" ph=" d͡ʒˈʌŋk">Junk</phoneme></lang>'),
             (r'\bBoxing Day\b', r'<lang xml:lang="en-US"><phoneme alphabet="ipa" ph="ˈbɒksɪŋ">Boxing</phoneme> Day</lang>'),
-			(r'\b123456\b', r'<phoneme alphabet="ipa" ph="ˈa͡ɪns, t͡svˈa͡ɪ, dɾˈa͡ɪ, fˈiːɾ fˈynf">123456</phoneme>'),
+			(r'\b123456\b', r'<phoneme alphabet="ipa" ph="ˈaɪns t͡svaɪ dʁaɪ fiːɐ̯ fʏnf">123456</phoneme>'),
 			(r'\blegitime\b', r'<phoneme alphabet="ipa" ph="lˈeːɡiːtˌiːmə">legitime</phoneme>'),
 			(r'\bDeepfake\b', r'<phoneme alphabet="ipa" ph="dˈiːpfe͡ɪk">Deepfake</phoneme>'),
 			(r'\bTailgating\b', r'<phoneme alphabet="ipa" ph="tˈe͡ɪlɡe͡ɪtɪŋ">Tailgating</phoneme>'),
