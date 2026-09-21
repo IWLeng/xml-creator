@@ -48,7 +48,12 @@ rule_sets = {
             (r'\be-mailem\b', r'<phoneme alphabet="ipa" ph="ˈiːmejlem">e-mailem</phoneme>'),
             (r'\bHR\b', r'<phoneme alphabet="ipa" ph="ˈɛjt͡ʃ aːr">HR</phoneme>'),
             (r'(?i)anydesk', r'<phoneme alphabet="ipa" ph="ˈɛni dɛsk">AnyDesk</phoneme>'),
-			(r'\Aby zpráva\b', r'<phoneme alphabet="ipa" ph="ˈabɪ ˈzpraːva">Aby zpráva</phoneme>'),
+			(r'\bAby zpráva\b', r'<phoneme alphabet="ipa" ph="ˈabɪ ˈzpraːva">Aby zpráva</phoneme>'),
+			(r'\bPCI\b', r'<phoneme alphabet="ipa" ph="ˈpɛː ˈt͡sɛː ˈʔiː">PCI</phoneme'),
+			(r'\bPII\b', r'<phoneme alphabet="ipa" ph="pɛː iː iː">PII</phoneme>'),
+			(r'\b„O“\b', r'„<phoneme alphabet="ipa" ph="oː">O</phoneme>“'),
+			(r'\bpředstavují\b', r'<phoneme alphabet="ipa" ph="ˈpr̝ɛdstavujiː">představují</phoneme>'),
+			(r'\bOdhalit\b', r'<phoneme alphabet="ipa" ph="ˈɔdɦalɪt">Odhalit</phoneme>'),
         ]
     },
     "2": {
