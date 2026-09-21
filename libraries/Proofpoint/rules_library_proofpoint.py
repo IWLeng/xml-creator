@@ -122,6 +122,7 @@ rule_sets = {
 			(r'\bestas\b', r'<phoneme alphabet="ipa" ph="ˈes.tas">estas</phoneme>'),
 			(r'\bshadow\b', r'<phoneme alphabet="ipa" ph="ˈʃæ doʊ">Shadow</phoneme>'),
 			(r'\bIT\b', r'<phoneme alphabet="ipa" ph="aɪ tiː">IT</phoneme>'),
+			(r'\bGlobal Modern Slavery Directory\b', r'<phoneme alphabet="ipa" ph="ˈɡloʊbəl ˈmɒdəɾn ˈsleɪvəri daɪˈrɛktəri">Global Modern Slavery Directory</phoneme>'),
         ]
     },
     "6": {
