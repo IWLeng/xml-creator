@@ -241,7 +241,7 @@ rule_sets = {
 			(r'\binformações\b', r'informações-'),
 			(r'\bApós\b', r'Após-'),
 			(r'\bkeylogging\b', r'<lang xml:lang="en-US">key-logging</lang>'),
-			(r'\bFOI\b', r'<phoneme alphabet="ipa" ph="ˈɛfi ˈɔ ˈi">FOI</phoneme>'),
+			(r'\bFOI\b', r'<say-as interpret-as="characters">F O I</say-as>'),
 			(r'\bisenções\b', r'<phoneme alphabet="ipa" ph="i.zenˈsoj̃s">isenções</phoneme>'),
         ]
     },
