@@ -181,6 +181,7 @@ rule_sets = {
             (r'\bleggere\b', r'<phoneme alphabet="ipa" ph="ˈledˈdʒɛre">leggere</phoneme>'),
             (r'\bcomplete\b', r'<phoneme alphabet="ipa" ph="ˈkomˈplɛte">complete</phoneme>'),
             (r'\bfile\b', r'<phoneme alphabet="ipa" ph="fajl">file</phoneme>'),
+			(r'\bcollegati\b', r'<phoneme alphabet="ipa" ph="kɔl le ˈgati">collegati</phoneme>'),
         ]
     },
     "10": {
