@@ -50,7 +50,7 @@ rule_sets = {
             (r'(?i)anydesk', r'<phoneme alphabet="ipa" ph="ˈɛni dɛsk">AnyDesk</phoneme>'),
 			(r'\bAby zpráva\b', r'<phoneme alphabet="ipa" ph="ˈabɪ ˈzpraːva">Aby zpráva</phoneme>'),
 			(r'\bPCI\b', r'<phoneme alphabet="ipa" ph="ˈpɛː ˈt͡sɛː ˈʔiː">PCI</phoneme'),
-			(r'\bPII\b', r'<phoneme alphabet="ipa" ph="pɛː iː iː">PII</phoneme>'),
+			(r'\bPII\b', r'<phoneme alphabet="ipa" ph="ˈpɛː">P</phoneme> <phoneme alphabet="ipa" ph="ˈiː">I</phoneme><break time="20ms"/><phoneme alphabet="ipa" ph="ˈiː">I</phoneme>'),
 			(r'\b„O“\b', r'„<phoneme alphabet="ipa" ph="oː">O</phoneme>“'),
 			(r'\bpředstavují\b', r'<phoneme alphabet="ipa" ph="ˈpr̝ɛdstavujiː">představují</phoneme>'),
 			(r'\bOdhalit\b', r'<phoneme alphabet="ipa" ph="ˈɔdɦalɪt">Odhalit</phoneme>'),
