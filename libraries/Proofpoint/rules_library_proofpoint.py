@@ -87,6 +87,7 @@ rule_sets = {
 			(r'\bDeepfake\b', r'<lang xml:lang="en-US">Deep-fake</lang>'),
 			(r'\bTailgating\b', r'<phoneme alphabet="ipa" ph="tˈa͡ɪlɡatˌɪŋ">Tailgating</phoneme>'),
 			(r'\bCredential-Stuffing\b', r'<phoneme alphabet="ipa" ph="kɹɪdˈɛnʃə͡l stˈʌfɪŋ">Credential-Stuffing</phoneme>'),
+			(r'\bPop-ups\b', r'<lang xml:lang="en-US">Pop-ups</lang>'),
         ]
     },
     "3": {
