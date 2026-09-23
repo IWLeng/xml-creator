@@ -280,6 +280,8 @@ rule_sets = {
             (r'\bGmail\b', r'<phoneme alphabet="ipa" ph="d͡ʒi.mˈɐjl">Gmail</phoneme>'),
             (r'\bTI\b', r'<say-as interpret-as="characters">TI</say-as>'),
             (r'\brideshare\b', r'<phoneme alphabet="ipa" ph="ɹajdɘʃˈɛɾɘ">rideshare</phoneme>'),
+			(r'\bquishing\b', r'<phoneme alphabet="ipa" ph="kuj.ˈʃĩg">quishing</phoneme>'),
+			(r'\bManter-se\b', r'<phoneme alphabet="ipa" ph="mɐ̃.ˈteɾ.sɨ">Manter-se</phoneme>>'),
         ]
     },
     "13": {
