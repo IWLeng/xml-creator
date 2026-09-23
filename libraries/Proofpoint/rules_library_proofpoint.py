@@ -88,6 +88,10 @@ rule_sets = {
 			(r'\bTailgating\b', r'<phoneme alphabet="ipa" ph="tˈa͡ɪlɡatˌɪŋ">Tailgating</phoneme>'),
 			(r'\bCredential-Stuffing\b', r'<phoneme alphabet="ipa" ph="kɹɪdˈɛnʃə͡l stˈʌfɪŋ">Credential-Stuffing</phoneme>'),
 			(r'\bPop-ups\b', r'<lang xml:lang="en-US">Pop-ups</lang>'),
+			(r'\bmobile\b', r'<phoneme alphabet="ipa" ph="moːbˈiːlə">mobile</phoneme>'),
+			(r'\bFintech\b', r'<lang xml:lang="en-US">Fin-tech</lang>'),
+			(r'\bFirewalls\b', r'<lang xml:lang="en-US">Fire-walls</lang>'),
+			(r'\bunethische\b', r'<phoneme alphabet="ipa" ph="ˈʊnˌeːtɪʃə">unethische</phoneme>'),
         ]
     },
     "3": {
