@@ -509,7 +509,8 @@ rule_sets = {
 			(r'\bSmishing\b', r'<phoneme alphabet="ipa" ph="ˈsmɪʃɪŋ">Smishing</phoneme>'),
 			(r'\bQuishing\b', r'<phoneme alphabet="ipa" ph="ˈkwɪʃɪŋ">kwishing</phoneme>'),
 			(r'\bClickbait\b', r'<phoneme alphabet="ipa" ph="ˈklɪk beɪt">Click-bait</phoneme>'),
-			(r'\bmegismer\b', r'<phoneme alphabet="ipa" ph="mɛgiʃmɛɾ">megismer</phoneme>'),			
+			(r'\bmegismer\b', r'<phoneme alphabet="ipa" ph="mɛgiʃmɛɾ">megismer</phoneme>'),	
+			(r'\bcredential stuffing\b', r'<phoneme alphabet="ipa" ph="kɹɪˈdɛn.ʃəl ˈstʌf.ɪŋ">credential stuffing</phoneme>'),	
         ]
     },
 }
