@@ -258,7 +258,7 @@ rule_sets = {
             (r'\bTI\b', r'<say-as interpret-as="characters">TI</say-as>'),
             (r'\be-mail\b', r'<phoneme alphabet="ipa" ph="imˈejl">e-mail</phoneme>'),
 			(r'\binformações\b', r'informações-'),
-			(r'\bApós este\b', r'<phoneme alphabet="ipa" ph="aˈpɔs ˈes.tʃi">Após este</phoneme>'),
+			(r'\bApós este\b', r'<phoneme alphabet="ipa" ph="a">a</phoneme><prosody pitch="+8%" volume="+10%"><phoneme alphabet="ipa" ph="pɔs">pós</phoneme></prosody> este'),
 			(r'\bkeylogging\b', r'<lang xml:lang="en-US">key-logging</lang>'),
 			(r'\bFOI\b', r'<say-as interpret-as="characters">F O I</say-as>'),
 			(r'\bisenções\b', r'<phoneme alphabet="ipa" ph="i.zenˈsoj̃s">isenções</phoneme>'),
