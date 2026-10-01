@@ -64,9 +64,11 @@ rule_sets = {
     "2": {
         "name": "fr-CA",
         "rules": [
-            (r'\bOsha\b', r'<phoneme alphabet="ipa" ph="ˈoʊʃə">Osha</phoneme>'),
+            (r'\bOsha/Ansi\b', r'<phoneme alphabet="ipa" ph="ˈoʊʃə">o-cha</phoneme>, <phoneme alphabet="ipa" ph="ˈænsi">an-si</phoneme>,'),
             (r'\bIntegrityLine\b', r'<phoneme alphabet="ipa" ph="ɪnˈtɛɡrəti laɪn">Integrity Line</phoneme>'),
             (r'\bIntegrityOnline\b', r'<phoneme alphabet="ipa" ph="ɪnˈtɛɡrəti ɑnˈlaɪn">Integrity Online</phoneme>'),
+            (r'\bA3\b', r'<phoneme alphabet="ipa" ph="a tʁwa">A3</phoneme>'),
+            
             
         ]
     },
