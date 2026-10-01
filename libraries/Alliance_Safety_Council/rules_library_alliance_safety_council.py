@@ -58,8 +58,16 @@ rule_sets = {
           (r'\bestas\b', r'<phoneme alphabet="ipa" ph="ˈes.tas">estas</phoneme>'),
           (r'\bshell\b', r'<lang xml:lang="en-US">Shell</lang>'),
           (r'\bPVC\b', r'<lang xml:lang="es-US">PE-VE-SE</lang>'),
-          (r'\bBáton Rouge\b', r'<phoneme alphabet="ipa" ph="ˌbæ.tən ˈruːʒ">Báton Rouge</phoneme>'), 
+          (r'\bBáton Rouge\b', r'<phoneme alphabet="ipa" ph="ˌbæ.tən ˈruːʒ">Báton Rouge</phoneme>'),
+        ]
+    },
+    "2": {
+        "name": "fr-CA",
+        "rules": [
+            (r'\bOsha\b', r'<phoneme alphabet="ipa" ph="ˈoʊʃə">Osha</phoneme>'),
+            (r'\bIntegrityLine\b', r'<phoneme alphabet="ipa" ph="ɪnˈtɛɡrəti laɪn">Integrity Line</phoneme>'),
+            (r'\bIntegrityOnline\b', r'<phoneme alphabet="ipa" ph="ɪnˈtɛɡrəti ɑnˈlaɪn">Integrity Online</phoneme>'),
             
         ]
-    }
+    },
 }
