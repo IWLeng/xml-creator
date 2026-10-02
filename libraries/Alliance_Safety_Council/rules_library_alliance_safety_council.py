@@ -59,6 +59,10 @@ rule_sets = {
           (r'\bshell\b', r'<lang xml:lang="en-US">Shell</lang>'),
           (r'\bPVC\b', r'<lang xml:lang="es-US">PE-VE-SE</lang>'),
           (r'\bBáton Rouge\b', r'<phoneme alphabet="ipa" ph="ˌbæ.tən ˈruːʒ">Báton Rouge</phoneme>'),
+          (r'\bsea\b', r'<lang xml:lang="es-US">sea</lang>'),
+          (r'\bIntegrityLine\b', r'<lang xml:lang="en-US">Integrity Line</lang>'),
+          (r'\bIntegrityOnline\b', r'<lang xml:lang="en-US">Integrity Online</lang>'),
+          (r'\bEPP\b', r'equipo de protección personal'),
         ]
     },
     "2": {
