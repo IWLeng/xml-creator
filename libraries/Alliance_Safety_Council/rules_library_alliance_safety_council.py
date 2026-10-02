@@ -14,11 +14,10 @@ rule_sets = {
           (r'\bEngineered\b', r'<phoneme alphabet="ipa" ph="ˌendʒiˈnieɾd">Engineered</phoneme>'),
           (r'\bEscanee\b', r'escané-e'),
           (r'\bFive-S\b', r'Five-eS'),
-          (r'Baton', r'Báton'),
+          (r'\bBaton\b', r'Báton'),
           (r'\bAir Liquide\b', r'Air <phoneme alphabet="ipa" ph="likwˈid">Liquide</phoneme>'),
           (r'\bEHS\b', r'<say-as interpret-as="characters">EHS</say-as>'),
           (r'\bEPA\b', r'<say-as interpret-as="characters">EPA</say-as>'),
-          (r'\bEPP\b', r'<say-as interpret-as="characters">EPP</say-as>'),
           (r'\bSDS\b', r'<say-as interpret-as="characters">SDS</say-as>'),
           (r'\bexceder\b', r'<phoneme alphabet="ipa" ph="ek.seðˈeɾ">exceder</phoneme>'),
           (r'\binspecciónela\b', r'<phoneme alphabet="ipa" ph="ins.peksjˈo.ne.ˌla">inspecciónela</phoneme>'),
@@ -63,6 +62,8 @@ rule_sets = {
           (r'\bIntegrityLine\b', r'<lang xml:lang="en-US">Integrity Line</lang>'),
           (r'\bIntegrityOnline\b', r'<lang xml:lang="en-US">Integrity Online</lang>'),
           (r'\bEPP\b', r'equipo de protección personal'),
+          (r'\bTyvek\b', r'<lang xml:lang="en-US">Tie-vek</lang>'),
+          (r'\bHEPA\b', r'<lang xml:lang="en-US">Tie-vek</lang>'),
         ]
     },
     "2": {
