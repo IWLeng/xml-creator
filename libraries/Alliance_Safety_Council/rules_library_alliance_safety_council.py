@@ -59,11 +59,12 @@ rule_sets = {
           (r'\bPVC\b', r'<lang xml:lang="es-US">PE-VE-SE</lang>'),
           (r'\bBáton Rouge\b', r'<phoneme alphabet="ipa" ph="ˌbæ.tən ˈruːʒ">Báton Rouge</phoneme>'),
           (r'\bsea\b', r'<lang xml:lang="es-US">sea</lang>'),
-          (r'\bIntegrityLine\b', r'<phoneme alphabet="ipa" ph="ɪnˈtɛɡrəti laɪn">Integrity Line</phoneme>'),
-          (r'\bIntegrityOnline\b', r'<phoneme alphabet="ipa" ph="ɪnˈtɛɡrəti ɑnˈlaɪn">Integrity Online</phoneme>'),
+          (r'\bIntegrityLine\b', r'<lang xml:lang="en-US">Integrity Line</lang>'),
+          (r'\bIntegrityOnline\b', r'<lang xml:lang="en-US">Integrity Online</lang>'),
           (r'\bEPP\b', r'equipo de protección personal'),
           (r'\bTyvek\b', r'<lang xml:lang="en-US">Tie-vek</lang>'),
           (r'\bHEPA\b', r'<lang xml:lang="en-US">Tie-vek</lang>'),
+          (r'\bgatillo\b', r'<prosody rate="-15%"><phoneme alphabet="ipa" ph="ɡa">ga</phoneme><phoneme alphabet="ipa" ph="ˈti.ʝo.">TI-llo</phoneme></prosody>'),
         ]
     },
     "2": {
