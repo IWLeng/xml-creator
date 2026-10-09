@@ -161,7 +161,7 @@ rule_sets = {
 			(r'\b123456\b', r'<say-as interpret-as="characters">123456</say-as>'),
 			(r'\bEste\b', r'<phoneme alphabet="ipa" ph="ˈes.te">Este</phoneme> '),
 			(r'\bPCI DSS\b', r'<lang xml:lang="en-US">PCI DSS</lang>'),
-			(r'\bEstas \b', r'<phoneme alphabet="ipa" ph="ˈes.tes">Estas</phoneme> '),
+			(r'\bEstas \b', r'<sub alias="ehstahs">estas</sub> '),
 			(r'\bPII\b', r'Información de Identificación Personal'),
 			(r'\btailgating\b', r'<lang xml:lang="en-US">Tail-gateing</lang>'),
 			(r'\bQuishing\b', r'<lang xml:lang="en-US">Kwishing</lang>'),
