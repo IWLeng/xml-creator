@@ -524,5 +524,5 @@ rule_sets = {
 			(r'\bdeepfake-video's\b', r'<phoneme alphabet="ipa" ph="ˈdiːpfeɪk ˈvɪdɪoʊz">deepfake-video's</phoneme>'),
 			(r'\bvan uw account\b', r'<phoneme alphabet="ipa" ph="vɑn yʋ əˈkaʊnt">van uw account</phoneme>'),
         ]
-    },
+    },    
 }
