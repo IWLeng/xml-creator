@@ -517,4 +517,12 @@ rule_sets = {
 			(r'\bcredential stuffing\b', r'<phoneme alphabet="ipa" ph="kɹɪˈdɛn.ʃəl ˈstʌf.ɪŋ">credential stuffing</phoneme>'),	
         ]
     },
+    "19": {
+        "name": "nl-nl",
+        "rules": [
+            (r'\bclickbait\b', r'<phoneme alphabet="ipa" ph="ˈklɪkbeɪt">clickbait</phoneme>'),
+			(r'\bdeepfake-video's\b', r'<phoneme alphabet="ipa" ph="ˈdiːpfeɪk ˈvɪdɪoʊz">deepfake-video's</phoneme>'),
+			(r'\bvan uw account\b', r'<phoneme alphabet="ipa" ph="vɑn yʋ əˈkaʊnt">van uw account</phoneme>'),
+        ]
+    },
 }
