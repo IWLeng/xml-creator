@@ -3,7 +3,7 @@ rule_sets = {
         "name": "en-US",
         "rules": [
             (r'\b5Rs\b', "5 R's"),
-            (r'\b“R”\b', "<phoneme alphabet="ipa" ph="ɑːɹ">"R"</phoneme>"),
+            (r'\b"R"\b', "<phoneme alphabet="ipa" ph="ɑːɹ">"R"</phoneme>"),
         ]
     },
 }
