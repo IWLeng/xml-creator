@@ -521,7 +521,7 @@ rule_sets = {
         "name": "nl-nl",
         "rules": [
             (r'\bclickbait\b', r'<phoneme alphabet="ipa" ph="ˈklɪkbeɪt">clickbait</phoneme>'),
-			(r'\bdeepfake-video's\b', r'<phoneme alphabet="ipa" ph="ˈdiːpfeɪk ˈvɪdɪoʊz">deepfake-video's</phoneme>'),
+			(r"\bdeepfake-video's\b", r'''<phoneme alphabet="ipa" ph="ˈdiːpfeɪk ˈvɪdɪoʊz">deepfake-video's</phoneme>'''),
 			(r'\bvan uw account\b', r'<phoneme alphabet="ipa" ph="vɑn yʋ əˈkaʊnt">van uw account</phoneme>'),
         ]
     },    
