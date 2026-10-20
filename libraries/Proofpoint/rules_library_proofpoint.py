@@ -410,6 +410,11 @@ rule_sets = {
 			(r'\bsextortion\b', r'<phoneme alphabet="ipa" ph="ˈsekstoːr̩ʃn">sextortion</phoneme>'),
 			(r'\bbitcoinoch\b', r'<phoneme alphabet="ipa" ph="ˈbitkojnox">bitcoinoch</phoneme>'),
 			(r'\b123456\b', r'<say-as interpret-as="number_digit">123456</say-as>'),
+			(r'\bprávne\b', r'<phoneme alphabet="ipa" ph="ˈpraːvnɛ">právne</phoneme>'),
+			(r'\bdisciplinárne\b', r'<phoneme alphabet="ipa" ph="ˈdɪscɪplinaːrnɛ">disciplinárne</phoneme>'),
+			(r'\bdigitálne\b', r'<phoneme alphabet="ipa" ph="ˈdɪɡɪtaːlnɛ">digitálne</phoneme>'),
+			(r'\bprávneho\b', r'<phoneme alphabet="ipa" ph="ˈpraːvnɛɦɔ">právneho</phoneme>'),
+			(r'\bNervózne\b', r'<phoneme alphabet="ipa" ph="ˈnɛrvɔːznɛ">Nervózne</phoneme>'),
 						
         ]
     },
