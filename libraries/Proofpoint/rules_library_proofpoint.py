@@ -104,6 +104,7 @@ rule_sets = {
         "name": "en-gb",
         "rules": [
             (r'\bAiTM\b', r'<say-as interpret-as="characters">AiTM</say-as>'),
+			(r"\bIT's\b", r'''I-Tees'''),
         ]
     },
     "5": {
