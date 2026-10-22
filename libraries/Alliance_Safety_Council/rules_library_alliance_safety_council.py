@@ -1,6 +1,6 @@
 rule_sets = {
     "1": {
-        "name": "Spanish",
+        "name": "es-US",
         "rules": [
           (r'\(?(1)?\)?([-. ]?\d{3}[-. ]\d{3}[-. ]\d{4})', r'<say-as interpret-as="telephone">\1\2</say-as>'),
           (r'\bWaskey\b', r'Wáskey'),
