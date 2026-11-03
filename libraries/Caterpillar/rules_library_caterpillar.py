@@ -11,7 +11,7 @@ rule_sets = {
         "rules": [
             (r'\bDuo-Cone\b', r'<lang xml:lang="en-US">Duo-Cone</lang>'),
             (r'\bSingle Life Cutting Edges\b', r'<lang xml:lang="en-US">Single Life Cutting Edges</lang>'),
-            (r'\bIT\b', r'</phoneme> Ay <phoneme alphabet="ipa" ph="ˈtiː">T</phoneme>'),
+            (r'(?-i:\bIT\b)', r'Ay <phoneme alphabet="ipa" ph="ˈtiː">T</phoneme>'),  # (?-i:...) = case-sensitive
         ]
     },
     "3": {
@@ -45,7 +45,7 @@ rule_sets = {
     "7": {
         "name": "ru-RU",
         "rules": [
-            (r'\bCat\b', r'<lang xml:lang="en-US">Cat</lang>'),
+            (r'\bCat\b(?! Duo Cone\b)', r'<lang xml:lang="en-US">Cat</lang>'),
             (r'\bCat Duo Cone\b', r'<lang xml:lang="en-US">Cat Duo Cone</lang>'),
         ]
     },
@@ -59,24 +59,24 @@ rule_sets = {
     "9": {
         "name": "ja-JP",
         "rules": [
-            (r'\bCaterpillar\b', r'<phoneme alphabet="sapi" ph="キャタピラー">Caterpillar</phoneme>'),
+            (r'(?<![A-Za-z0-9_])Caterpillar(?![A-Za-z0-9_])', r'<phoneme alphabet="sapi" ph="キャタピラー">Caterpillar</phoneme>'),  # not \b: kana/kanji count as word characters
         ]
     },
     "10": {
         "name": "zh-CN",
         "rules": [
-            (r'\bCVA\b', r'<say-as interpret-as="characters">CVA</say-as>'),
-            (r'\b均包含\b', r'<phoneme alphabet="sapi" ph="jun 1 - bao 1 - han 2">均包含</phoneme>'),
-            (r'\b维修两日毕\b', r'<phoneme alphabet="sapi" ph="wei 2 - xiu 1 - liang 3 - ri 4 - bi 4">维修两日毕</phoneme>'),
-            (r'\b设备拥有\b', r'<phoneme alphabet="sapi" ph="she 4 - bei 4 - yong 3 - you 3">设备拥有</phoneme>'),
+            (r'(?<![A-Za-z0-9_])CVA(?![A-Za-z0-9_])', r'<say-as interpret-as="characters">CVA</say-as>'),  # not \b: hanzi count as word characters
+            (r'均包含', r'<phoneme alphabet="sapi" ph="jun 1 - bao 1 - han 2">均包含</phoneme>'),
+            (r'维修两日毕', r'<phoneme alphabet="sapi" ph="wei 2 - xiu 1 - liang 3 - ri 4 - bi 4">维修两日毕</phoneme>'),
+            (r'设备拥有', r'<phoneme alphabet="sapi" ph="she 4 - bei 4 - yong 3 - you 3">设备拥有</phoneme>'),
         ]
     },
     "11": {
         "name": "zh-TW",
         "rules": [
-            (r'\b鏟斗\b', r'<phoneme alphabet="sapi" ph="ㄔㄢˇ ㄉㄡˇ ">鏟斗</phoneme>'),
-            (r'\bCVA\b', r'<say-as interpret-as="characters">CVA</say-as>'),
-            (r'\b為\b', r'<phoneme alphabet="sapi" ph="ㄨㄟˊ ">為</phoneme>'),
+            (r'\b為\b', r'<phoneme alphabet="sapi" ph="ㄨㄟˊ ">為</phoneme>'),  # kept first: the tags added below would otherwise make \b match next to 為
+            (r'鏟斗', r'<phoneme alphabet="sapi" ph="ㄔㄢˇ ㄉㄡˇ ">鏟斗</phoneme>'),
+            (r'(?<![A-Za-z0-9_])CVA(?![A-Za-z0-9_])', r'<say-as interpret-as="characters">CVA</say-as>'),  # not \b: hanzi count as word characters
         ]
     },
     "12": {
@@ -100,13 +100,13 @@ rule_sets = {
             (r'\bCat Converge\b', r'<lang xml:lang="en-US">Cat Converge</lang>'),
             (r'\bSuite\b', r'<lang xml:lang="en-US">Suite</lang>'),
             (r'\bCustomer Insights\b', r'<lang xml:lang="en-US">Customer Insights</lang>'),
-            (r'\bSales\b', r'<lang xml:lang="en-US">Sales</lang>'),
+            (r'(?-i:\bSales\b)', r'<lang xml:lang="en-US">Sales</lang>'),  # (?-i:...) = case-sensitive
             (r'\bElizabeth\b', r'<lang xml:lang="en-US">Elizabeth</lang>'),
             (r'\band Marketing\b', r'<lang xml:lang="en-US">and Marketing</lang>'),
             (r'\bCopilot\b', r'<phoneme alphabet="ipa" ph="ˈkoʊˌpaɪlət">Copilot</phoneme>'),
             (r'\bcatdealer\b', r'<lang xml:lang="en-US">cat-dealer</lang>'),
             (r'\bcatconvergesuite\b', r'<lang xml:lang="en-US">cat-converge-suite</lang>'),
-            (r'\b365\b', r'<phoneme alphabet="ipa" ph="tɾesˈsjen.tos seˈsen.ta i ˈsiŋ.ko">365</phoneme>'),
+            (r'(?<![.,])\b365\b(?![.,]\d)', r'<phoneme alphabet="ipa" ph="tɾesˈsjen.tos seˈsen.ta i ˈsiŋ.ko">365</phoneme>'),  # skips 365,000 and 1,365
             (r'\bCaterpillar\b', r'Caterpí-larr'),
         ]
     },
@@ -119,8 +119,7 @@ rule_sets = {
             (r'\bCustomer Insights\b', r'<lang xml:lang="en-US">Customer Insights</lang>'),
             (r'\bSales and Marketing\b', r'<lang xml:lang="en-US">Sales and Marketing</lang>'),
             (r'\bElizabeth\b', r'<phoneme alphabet="ipa" ph="əlizabɛt">Elizabeth</phoneme>'),
-            (r'\bElle\b', r'<lang xml:lang="en-US">Elle</lang>'),
-            (r'\band Marketing\b', r'<lang xml:lang="en-US">and Marketing</lang>'),
+            (r'\band Marketing\b(?!</lang>)', r'<lang xml:lang="en-US">and Marketing</lang>'),  # not inside 'Sales and Marketing' (wrapped above)
             (r'\bCopilot\b', r'<phoneme alphabet="ipa" ph="kɔpilɔt">Copilot</phoneme>'),
             (r'\bcatdealer\b', r'<lang xml:lang="en-US">cat-dealer</lang>'),
             (r'\bcatconvergesuite\b', r'<lang xml:lang="en-US">cat-converge-suite</lang>'),
@@ -130,7 +129,7 @@ rule_sets = {
         "name": "fr-CA",
         "rules": [
             (r'\bCVA\b', r'<say-as interpret-as="characters">CVA</say-as>'),
-            (r'\bparts\b', r'<phoneme alphabet="ipa" ph="pɑɹts">parts</phoneme>'),
+            (r'\bparts(?=\.cat\.com\b)', r'<phoneme alphabet="ipa" ph="pɑɹts">parts</phoneme>'),
             (r'\bCat Converge Suite\b', r'<lang xml:lang="en-US">Cat Converge Suite</lang>'),
             (r'\bCustomer Insights\b', r'<lang xml:lang="en-US">Customer Insights</lang>'),
             (r'\bSales and Marketing\b', r'<lang xml:lang="en-US">Sales and Marketing</lang>'),
@@ -139,7 +138,7 @@ rule_sets = {
             (r'\bcatdealer\b', r'<lang xml:lang="en-US">cat-dealer</lang>'),
             (r'\bcatconvergesuite\b', r'<lang xml:lang="en-US">cat-converge-suite</lang>'),
             (r'\bMicrosoft Dynamics 365\b', r'<lang xml:lang="en-US">Microsoft Dynamics 365</lang>'),
-            (r'\b/\b', r'<phoneme alphabet="ipa" ph="slaʃ">slash</phoneme>'),
+            (r'(?<=\.com)/(?=[\w<])', r'<phoneme alphabet="ipa" ph="slaʃ">slash</phoneme>'),  # only the slash in a .com/ URL
         ]
     },    
 }
