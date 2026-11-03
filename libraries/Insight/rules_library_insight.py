@@ -12,7 +12,7 @@ rule_sets = {
             (r'\boídos\b', r'<phoneme alphabet="ipa" ph="oˈi.dos">oídos</phoneme>'),
             (r'\blisteria\b', r'listéria'),
             (r'\bStandardize\b', r'Stándardais'),
-            (r'\bE. coli\b', r'e-coli'),
+            (r'\bE\.\s*coli\b', r'e-coli'),  # \s* = space, no-break space or none
         ]
     },
     "3": {
@@ -20,7 +20,7 @@ rule_sets = {
       "rules": [
             (r'\bControle\b', r'<phoneme alphabet="ipa" ph="kon.ˈtɾo.li">Controle</phoneme>'),
             (r'\bWhisper\b', r'<lang xml:lang="en-US">Whisper</lang>'),
-            (r'\bHershey\b', r'<lang xml:lang="en-US"><phoneme alphabet="ipa" ph="ˈhɛrʃi">Hershey</phoneme></lang>'),
+            (r'\bHershey\b(?! (?:Company|Super Six)\b)', r'<lang xml:lang="en-US"><phoneme alphabet="ipa" ph="ˈhɛrʃi">Hershey</phoneme></lang>'),
             (r'\bmop\b', r'<phoneme alphabet="ipa" ph="mɔ.pi">mop</phoneme>'),
             (r'\bThe Hershey Company\b', r'<lang xml:lang="en-US">The <phoneme alphabet="ipa" ph="ˈhɛrʃi">Hershey</phoneme> Company</lang>'),
             (r'\bHershey Company\b', r'<lang xml:lang="en-US"><phoneme alphabet="ipa" ph="ˈhɛrʃi">Hershey</phoneme> Company</lang>'),
