@@ -15,7 +15,7 @@ rule_sets = {
             (r'\bAlipay\b', r'<lang xml:lang="en-US">Alipay</lang>'),
             (r'\bApple Pay\b', r'<lang xml:lang="en-US">Apple Pay</lang>'),
             (r'\bWeChat Pay\b', r'<lang xml:lang="en-US">WeChat Pay</lang>'),
-            (r'\bHyatt\b', r'<lang xml:lang="en-US"><phoneme alphabet="ipa" ph="ˈhaɪət">Hyatt</phoneme></lang>'),
+            (r'(?<!World of )\bHyatt\b(?! Inclusive Collection\b)', r'<lang xml:lang="en-US"><phoneme alphabet="ipa" ph="ˈhaɪət">Hyatt</phoneme></lang>'),  # leaves World of Hyatt / Hyatt Inclusive Collection to their own rules
             (r'\bMilestone\b', r'<lang xml:lang="en-US"><phoneme alphabet="ipa" ph="majlstɔn">Milestone</phoneme></lang>'),
             (r'\bMiraval\b', r'<lang xml:lang="en-US"><phoneme alphabet="ipa" ph="miʁaval">Miraval</phoneme></lang>'),
         ]
@@ -29,11 +29,11 @@ rule_sets = {
                 (r'Discoverist', r'<lang xml:lang="en-US"><phoneme alphabet="ipa" ph="diskɔvøʁist">Discoverist</phoneme></lang>'),
                 (r'Explorist', r'<lang xml:lang="en-US"><phoneme alphabet="ipa" ph="ɛksplɔʁist">Explorist</phoneme></lang>'),
                 (r'\bMember\b', r'<lang xml:lang="en-US">Member</lang>'),
-                (r'\bHyatt Inclusive Collection\b', r'<lang xml:lang="en-US">Hyatt Inclusive Collection</lang>'),
-                (r'Hyatt', r'<lang xml:lang="en-US"><phoneme alphabet="ipa" ph="ˈhaɪət">Hyatt</phoneme></lang>'),
+                (r'(?<!World of )Hyatt(?! Inclusive Collection)', r'<lang xml:lang="en-US"><phoneme alphabet="ipa" ph="ˈhaɪət">Hyatt</phoneme></lang>'),  # leaves World of Hyatt / Hyatt Inclusive Collection to their own rules
                 (r'\bVacation Club\b', r'<lang xml:lang="en-US">Vacation Club</lang>'),
                 (r'Milestone', r'<lang xml:lang="en-US"><phoneme alphabet="ipa" ph="majlstɔn">Milestone</phoneme></lang>'),
                 (r'Miraval', r'<lang xml:lang="en-US"><phoneme alphabet="ipa" ph="miʁaval">Miraval</phoneme></lang>'),
+                (r'\bHyatt Inclusive Collection\b', r'<lang xml:lang="en-US">Hyatt Inclusive Collection</lang>'),
                 (r'\bAlipay\b', r'<lang xml:lang="en-US">Alipay</lang>'),
                 (r'\bApple Pay\b', r'<lang xml:lang="en-US">Apple Pay</lang>'),
                 (r'\bWeChat Pay\b', r'<lang xml:lang="en-US">WeChat Pay</lang>'),
