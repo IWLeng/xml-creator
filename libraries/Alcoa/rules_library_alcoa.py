@@ -10,7 +10,7 @@ rule_sets = {
         "name": "fr-ca",
         "rules": [
                 (r'\bd’Alcoa\b', r'<phoneme alphabet="ipa" ph="dalkˈoɑ">d’Alcoa</phoneme>'),
-                (r'\bAlcoa\b', r'<phoneme alphabet="ipa" ph="alkˈoɑ">Alcoa</phoneme>'),
+                (r'(?<!d’)\bAlcoa\b', r'<phoneme alphabet="ipa" ph="alkˈoɑ">Alcoa</phoneme>'),  # d’Alcoa is done by the rule above
         ]
     },
     "3": {
@@ -49,16 +49,16 @@ rule_sets = {
     "5": {
         "name": "zh-cn",
         "rules": [
-            (r'\bMy Alcoa\b', r'<lang xml:lang="en-US">My Alcoa</lang> '),
-            (r'\bAlcoa\b', r'<lang xml:lang="en-US">Alcoa</lang>'),
-            (r'\bGen-AI\b', r'<lang xml:lang="en-US">Gen-AI</lang>'),
-            (r'\bMicrosoft Copilot\b', r'<lang xml:lang="en-US">Microsoft Copilot</lang>'),
-            (r'\bChatGPT\b', r'<lang xml:lang="en-US">ChatGPT</lang>'),
-            (r'\bDeepSeek\b', r'<lang xml:lang="en-US">DeepSeek</lang>'),
-            (r'\bPrivacy by Design\b', r'<lang xml:lang="en-US">Privacy by Design</lang>'),
-            (r'\bPbD\b', r'<lang xml:lang="en-US">PbD</lang>'),
-            (r'\bBYOD\b', r'<lang xml:lang="en-US"><say-as interpret-as="characters">BYOD</say-as></lang>'),
-            (r'\bAndrew\b', r'<lang xml:lang="en-US">Andrew</lang>'),
+            (r'(?<![A-Za-z0-9])My Alcoa(?![A-Za-z0-9])', r'<lang xml:lang="en-US">My Alcoa</lang> '),  # \b fails next to Chinese characters
+            (r'(?<![A-Za-z0-9])Alcoa(?![A-Za-z0-9])', r'<lang xml:lang="en-US">Alcoa</lang>'),
+            (r'(?<![A-Za-z0-9])Gen-AI(?![A-Za-z0-9])', r'<lang xml:lang="en-US">Gen-AI</lang>'),
+            (r'(?<![A-Za-z0-9])Microsoft Copilot(?![A-Za-z0-9])', r'<lang xml:lang="en-US">Microsoft Copilot</lang>'),
+            (r'(?<![A-Za-z0-9])ChatGPT(?![A-Za-z0-9])', r'<lang xml:lang="en-US">ChatGPT</lang>'),
+            (r'(?<![A-Za-z0-9])DeepSeek(?![A-Za-z0-9])', r'<lang xml:lang="en-US">DeepSeek</lang>'),
+            (r'(?<![A-Za-z0-9])Privacy by Design(?![A-Za-z0-9])', r'<lang xml:lang="en-US">Privacy by Design</lang>'),
+            (r'(?<![A-Za-z0-9])PbD(?![A-Za-z0-9])', r'<lang xml:lang="en-US">PbD</lang>'),
+            (r'(?<![A-Za-z0-9])BYOD(?![A-Za-z0-9])', r'<lang xml:lang="en-US"><say-as interpret-as="characters">BYOD</say-as></lang>'),
+            (r'(?<![A-Za-z0-9])Andrew(?![A-Za-z0-9])', r'<lang xml:lang="en-US">Andrew</lang>'),
         ]
     },
 }
