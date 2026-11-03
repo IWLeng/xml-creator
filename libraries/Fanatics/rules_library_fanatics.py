@@ -19,8 +19,8 @@ rule_sets = {
             (r'\bAll Access\b', r'<lang xml:lang="en-US">All Access</lang>'),
 
             # Terms that need negative lookahead to prevent partial matches
-            (r'\bCorporate\b(?!\s+and\s+Platform\s+Services)', r'<lang xml:lang="en-US">Corporate</lang>'),
-            (r'\bCollectibles\b(?!\s*</)', r'<lang xml:lang="en-US">Collectibles</lang>'),
+            (r'\bCorporate\b(?!\s+and\s+Platform\s+Services|\s*</lang>)', r'<lang xml:lang="en-US">Corporate</lang>'),
+            (r'\bCollectibles\b(?!\s*</lang>)', r'<lang xml:lang="en-US">Collectibles</lang>'),
             (r'\bMLB\b(?!\s+Debut)', r'<lang xml:lang="en-US">MLB</lang>'),
 
             # Remaining single-word terms
