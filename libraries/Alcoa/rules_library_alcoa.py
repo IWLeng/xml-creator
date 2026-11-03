@@ -50,7 +50,7 @@ rule_sets = {
         "name": "zh-cn",
         "rules": [
             (r'(?<![A-Za-z0-9])My Alcoa(?![A-Za-z0-9])', r'<lang xml:lang="en-US">My Alcoa</lang> '),  # \b fails next to Chinese characters
-            (r'(?<![A-Za-z0-9])Alcoa(?![A-Za-z0-9])', r'<lang xml:lang="en-US">Alcoa</lang>'),
+            (r'(?<![A-Za-z0-9])(?<!My )Alcoa(?![A-Za-z0-9])', r'<lang xml:lang="en-US">Alcoa</lang>'),  # not the Alcoa inside My Alcoa (wrapped above)
             (r'(?<![A-Za-z0-9])Gen-AI(?![A-Za-z0-9])', r'<lang xml:lang="en-US">Gen-AI</lang>'),
             (r'(?<![A-Za-z0-9])Microsoft Copilot(?![A-Za-z0-9])', r'<lang xml:lang="en-US">Microsoft Copilot</lang>'),
             (r'(?<![A-Za-z0-9])ChatGPT(?![A-Za-z0-9])', r'<lang xml:lang="en-US">ChatGPT</lang>'),
