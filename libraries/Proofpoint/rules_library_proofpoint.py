@@ -49,9 +49,9 @@ rule_sets = {
             (r'\bHR\b', r'<phoneme alphabet="ipa" ph="ˈɛjt͡ʃ aːr">HR</phoneme>'),
             (r'(?i)anydesk', r'<phoneme alphabet="ipa" ph="ˈɛni dɛsk">AnyDesk</phoneme>'),
 			(r'\bAby zpráva\b', r'<phoneme alphabet="ipa" ph="ˈabɪ ˈzpraːva">Aby zpráva</phoneme>'),
-			(r'\bPCI\b', r'<phoneme alphabet="ipa" ph="ˈpɛː ˈt͡sɛː ˈʔiː">PCI</phoneme'),
+			(r'\bPCI\b', r'<phoneme alphabet="ipa" ph="ˈpɛː ˈt͡sɛː ˈʔiː">PCI</phoneme>'),
 			(r'\bPII\b', r'<phoneme alphabet="ipa" ph="ˈpɛː">P</phoneme> <phoneme alphabet="ipa" ph="ˈiː">I</phoneme><break time="20ms"/><phoneme alphabet="ipa" ph="ˈiː">I</phoneme>'),
-			(r'\b„O“\b', r'„<phoneme alphabet="ipa" ph="ˈoː">O</phoneme>“'),
+			(r'„O“', r'„<phoneme alphabet="ipa" ph="ˈoː">O</phoneme>“'),
 			(r'\bpředstavují\b', r'<phoneme alphabet="ipa" ph="ˈpr̝ɛdstavujiː">představují</phoneme>'),
 			(r'\bOdhalit\b', r'<phoneme alphabet="ipa" ph="ˈɔdɦalɪt">Odhalit</phoneme>'),
         ]
@@ -59,7 +59,7 @@ rule_sets = {
     "2": {
         "name": "de-de",
         "rules": [
-            (r'\bbot\b', r'<phoneme alphabet="ipa" ph="bɔt">bot</phoneme>'),
+            (r'(?-i:\bBot\b)', r'<phoneme alphabet="ipa" ph="bɔt">bot</phoneme>'),  # case-sensitive: the noun Bot, not the verb bot (bieten)
             (r'\bbotnet\b', r'<phoneme alphabet="ipa" ph="bˈɔtnət">botnet</phoneme>'),
             (r'\bEngineering\b', r'<phoneme alphabet="ipa" ph="ˈɛndʒəˈnɪɹɪŋ">Engineering</phoneme>'),
             (r'\bPhishing\b', r'<phoneme alphabet="ipa" ph="ˈfɪʃɪŋ">Phishing</phoneme>'),
@@ -76,13 +76,13 @@ rule_sets = {
             (r'\bVirtuosin\b', r'<phoneme alphabet="ipa" ph="vˌɪɾtuːoːzˈiːn">Virtuosin</phoneme>'),
             (r'\büblen\b', r'<phoneme alphabet="ipa" ph="ˈyblən">üblen</phoneme>'),
             (r'\bRansomware\b', r'<phoneme alphabet="ipa" ph="ɹˈansəmwˌe͡ə">Ransomware</phoneme>'),
-            (r'\Black Friday\b', r'<lang xml:lang="en-US">Black <phoneme alphabet="ipa" ph="ˈfɹaɪˌdeɪ">Friday</phoneme></lang>'),
+            (r'\bBlack Friday\b', r'<lang xml:lang="en-US">Black <phoneme alphabet="ipa" ph="ˈfɹaɪˌdeɪ">Friday</phoneme></lang>'),
             (r'\bCyber Monday\b', r'<lang xml:lang="en-US">Cyber Monday</lang>'),
             (r'\bE-Commerce-Websites\b', r'<lang xml:lang="en-US">E-Commerce-Websites</lang>'),
             (r'\bhosten\b', r'<phoneme alphabet="ipa" ph="hˈɔstn">hosten</phoneme>'),
             (r'\bJunk\b', r'<lang xml:lang="en-US"><phoneme alphabet="ipa" ph=" d͡ʒˈʌŋk">Junk</phoneme></lang>'),
             (r'\bBoxing Day\b', r'<lang xml:lang="en-US"><phoneme alphabet="ipa" ph="ˈbɒksɪŋ">Boxing</phoneme> Day</lang>'),
-			(r'\b123456\b', r'<phoneme alphabet="ipa" ph="ˈaɪns t͡svaɪ dʁaɪ fiːɐ̯ fʏnf">123456</phoneme>'),
+			(r'\b123456\b', r'<phoneme alphabet="ipa" ph="ˈaɪns t͡svaɪ dʁaɪ fiːɐ̯ fʏnf zɛks">123456</phoneme>'),
 			(r'\blegitime\b', r'<phoneme alphabet="ipa" ph="lˈeːɡiːtˌiːmə">legitime</phoneme>'),
 			(r'\bDeepfake\b', r'<lang xml:lang="en-US">Deep-fake</lang>'),
 			(r'\bTailgating\b', r'<phoneme alphabet="ipa" ph="tˈa͡ɪlɡatˌɪŋ">Tailgating</phoneme>'),
@@ -104,7 +104,7 @@ rule_sets = {
         "name": "en-gb",
         "rules": [
             (r'\bAiTM\b', r'<say-as interpret-as="characters">AiTM</say-as>'),
-			(r"\bIT['’]s\b", 'I-Tees'),
+			(r"(?-i:\bIT['’]s\b)", 'I-Tees'),  # case-sensitive: IT's only, not it's
         ]
     },
     "5": {
@@ -125,7 +125,7 @@ rule_sets = {
             (r'\bBlack Friday\b', r'<lang xml:lang="en-US">Black Friday</lang>'),
             (r'\bCyber Monday\b', r'<lang xml:lang="en-US">Cyber Monday</lang>'),
             (r'\bPhishing\b', r'<lang xml:lang="en-US">Fi-shhing</lang>'), 
-            (r'\barruine\b', r'<phoneme alphabet="ipa" ph="aruˈine">arruíne</phoneme>'),
+            (r'\barruine\b', r'<phoneme alphabet="ipa" ph="aruˈine">arruine</phoneme>'),
             (r'\bsmishing\b', r'<lang xml:lang="en-US">smishing</lang>'),
             (r'\bAnyDesk\b', r'<lang xml:lang="en-US">AnyDesk</lang>'),
             (r'\barruíne\b', r'<phoneme alphabet="ipa" ph="aruˈine">arruíne</phoneme>'),
@@ -156,7 +156,7 @@ rule_sets = {
             (r'\bCanada Post\b', r'<lang xml:lang="en-US">Canada Post</lang>'),
             (r'\bGmail\b', r'<lang xml:lang="en-US">Gmail</lang>'),
             (r'\bID\b', r'<say-as interpret-as="characters">ID</say-as>'),
-            (r'\bTI\b', r'<say-as interpret-as="characters">TI</say-as>'),
+            (r'(?-i:\bTI\b)', r'<say-as interpret-as="characters">TI</say-as>'),  # case-sensitive: not the pronoun ti
 			(r'\bPhishing\b', r'<phoneme alphabet="ipa" ph="ˈfɪʃɪŋ">Phishing</phoneme>'),
 			(r'\bUsa \b', r'<phoneme alphabet="ipa" ph="ˈu.sa">usa</phoneme> '),
 			(r'\b123456\b', r'<say-as interpret-as="characters">123456</say-as>'),
@@ -180,7 +180,7 @@ rule_sets = {
             (r'\bpuppet\b', r'<phoneme alphabet="ipa" ph="pohpɛt">puppet</phoneme>'),
             (r'\bcinq secondes\b', r'<phoneme alphabet="ipa" ph="sɛ̃k søgɔ̃d">cinq secondes</phoneme>'),
             (r'\bsûr\b', r'<phoneme alphabet="ipa" ph="syʁ">sûr</phoneme>'),
-            (r'\bregardez y\b', r'<phoneme alphabet="ipa" ph="ɾəgaɾdez‿ i">regardez y</phoneme>'),
+            (r'\bregardez[- ]y\b', r'<phoneme alphabet="ipa" ph="ɾəgaɾdez‿ i">regardez y</phoneme>'),
             (r'\bWi-Fi\b', r'<phoneme alphabet="ipa" ph="wifi">Wi-Fi</phoneme>'),
             (r'\bicloud\b', r'<phoneme alphabet="ipa" ph="aɪˌklaʊd">icloud</phoneme>'),
         ]
@@ -192,7 +192,7 @@ rule_sets = {
             (r'\bdeep-fake\b', r'<phoneme alphabet="ipa" ph="diːp.feɪk">deep-fake</phoneme>'),
             (r'\bdeep-fakes\b', r'<phoneme alphabet="ipa" ph="diːp.feɪks">deep-fakes</phoneme>'),
             (r'\bcryptomonnaie\b', r'<phoneme alphabet="ipa" ph="kʁiptɔmɔnɛ">cryptomonnaie</phoneme>'),
-            (r'\bregardez y\b', r'<phoneme alphabet="ipa" ph="ɾəgaɾdez‿ i">regardez y</phoneme>'),
+            (r'\bregardez[- ]y\b', r'<phoneme alphabet="ipa" ph="ɾəgaɾdez‿ i">regardez y</phoneme>'),
         ]
     },
     "9": {
@@ -252,16 +252,16 @@ rule_sets = {
             (r'\bcoloca-se\b', r'<phoneme alphabet="ipa" ph="ko.ˈlɔ.ka.si">coloca-se</phoneme>'),
             (r'\babram\b', r'<phoneme alphabet="ipa" ph="ˈabɾɐ̃w">abram</phoneme>'),
             (r'\bPerceba\b', r'<phoneme alphabet="ipa" ph="peɾˈsebɐ">Perceba</phoneme>'),
+			(r'\bApós este\b', r'<phoneme alphabet="ipa" ph="a">a</phoneme><prosody pitch="+8%" volume="+10%"><phoneme alphabet="ipa" ph="pɔs">pós</phoneme></prosody> este'),
             (r'\bEste\b', r'<phoneme alphabet="ipa" ph="ˈes.tʃi">Este</phoneme>'),
             (r'\bcartões\b', r'<phoneme alphabet="ipa" ph="kaɾtˌoˈjj̃s">cartões</phoneme>'),
             (r'\bVPNs\b', r'<phoneme alphabet="ipa" ph="vepeˈens">VPNs</phoneme>'),
             (r'\bOracle\b', r'<phoneme alphabet="ipa" ph="ˈɔːrəkəl">Oracle</phoneme>'),
-            (r'\bTI\b', r'<say-as interpret-as="characters">TI</say-as>'),
+            (r'(?-i:\bTI\b)', r'<say-as interpret-as="characters">TI</say-as>'),  # case-sensitive: not the pronoun ti
             (r'\be-mail\b', r'<phoneme alphabet="ipa" ph="imˈejl">e-mail</phoneme>'),
 			(r'\binformações\b', r'informações-'),
-			(r'\bApós este\b', r'<phoneme alphabet="ipa" ph="a">a</phoneme><prosody pitch="+8%" volume="+10%"><phoneme alphabet="ipa" ph="pɔs">pós</phoneme></prosody> este'),
 			(r'\bkeylogging\b', r'<lang xml:lang="en-US">key-logging</lang>'),
-			(r'\bFOI\b', r'<say-as interpret-as="characters">F O I</say-as>'),
+			(r'(?-i:\bFOI\b)', r'<say-as interpret-as="characters">F O I</say-as>'),  # case-sensitive: not the verb foi
 			(r'\bisenções\b', r'<phoneme alphabet="ipa" ph="i.zenˈsoj̃s">isenções</phoneme>'),
         ]
     },
@@ -284,10 +284,10 @@ rule_sets = {
             (r'\binstalá-las\b', r'<phoneme alphabet="ipa" ph="ĩʃtɐlˈalɐʃ">instalá-las</phoneme>'),
             (r'\binfetará\b', r'<phoneme alphabet="ipa" ph="ĩfɘtɐɾˈa">infetará</phoneme>'),
             (r'\bGmail\b', r'<phoneme alphabet="ipa" ph="d͡ʒi.mˈɐjl">Gmail</phoneme>'),
-            (r'\bTI\b', r'<say-as interpret-as="characters">TI</say-as>'),
+            (r'(?-i:\bTI\b)', r'<say-as interpret-as="characters">TI</say-as>'),  # case-sensitive: not the pronoun ti
             (r'\brideshare\b', r'<phoneme alphabet="ipa" ph="ɹajdɘʃˈɛɾɘ">rideshare</phoneme>'),
 			(r'\bquishing\b', r'<phoneme alphabet="ipa" ph="kuj.ˈʃĩg">quishing</phoneme>'),
-			(r'\bManter-se\b', r'<phoneme alphabet="ipa" ph="mɐ̃.ˈteɾ.sɨ">Manter-se</phoneme>>'),
+			(r'\bManter-se\b', r'<phoneme alphabet="ipa" ph="mɐ̃.ˈteɾ.sɨ">Manter-se</phoneme>'),
         ]
     },
     "13": {
@@ -296,7 +296,7 @@ rule_sets = {
             (r'\bแอปพลิเคชัน\b', r'<phoneme alphabet="ipa" ph="ˌæplɪˈkeɪʃən">แอปพลิเคชัน</phoneme>'),
             (r'\bDocuSign\b', r'<phoneme alphabet="ipa" ph="ˈdɑkiʊsɑin">DocuSign</phoneme>'),
             (r'\bโคร\b', r'<phoneme alphabet="ipa" ph="kʰrōː">โคร</phoneme>'),
-            (r'\bมาโคร\b', r'<phoneme alphabet="ipa" ph="maːkʰrō">มาโคร</phoneme>'),
+            (r'(?!งมาโคร)', r'<phoneme alphabet="ipa" ph="maːkʰrō">มาโคร</phoneme>'),
             (r'\bรูปแบบอื่น\b', r'<phoneme alphabet="ipa" ph="rú̋̀p.bàb.eun">รูปแบบอื่น</phoneme>'),
             (r'\bTOAD\b', r'<phoneme alphabet="ipa" ph="toad">TOAD</phoneme>'),
             (r'\bอย่าคลิกลิงก์\b', r'<phoneme alphabet="ipa" ph="yaá̋̀.khliḱ.linḡ">อย่าคลิกลิงก์</phoneme>'),
@@ -329,7 +329,7 @@ rule_sets = {
             (r'\bhalen\b', r'<phoneme alphabet="ipa" ph="haːlen">halen</phoneme>'),
             (r'\bkısaltmalar\b', r'<phoneme alphabet="ipa" ph="kɯsaltmalaɾ">kısaltmalar</phoneme>'),
             (r'\bolarak\b', r'<phoneme alphabet="ipa" ph="olaɾak">olarak</phoneme>'),
-            (r'\bTabi\b', r'<phoneme alphabet="ipa" ph="ta.biː">Tabi</phoneme>'),
+            (r'(?-i:\bTabi\b|\btabi(?=\s+ki\b))', r'<phoneme alphabet="ipa" ph="ta.biː">Tabi</phoneme>'),  # case-sensitive: Tabi or tabi ki, not tabi (subject to)
             (r'\bçözmelerine\b', r'<phoneme alphabet="ipa" ph="t͡ʃœzmeleɾine">çözmelerine</phoneme>'),
             (r'\be-postalardaki\b', r'<phoneme alphabet="ipa" ph="e.pos.ta.lar.da.kii">e-postalardaki</phoneme>'),
 			(r'\be-postalarıyla\b', r'<phoneme alphabet="ipa" ph="e.pos.ta.la.rɯɯj.la">e-postalarıyla</phoneme>'),
@@ -354,8 +354,8 @@ rule_sets = {
         "name": "ko-kr",
         "rules": [
             (r'\b슬롯에\b', r'<phoneme alphabet="ipa" ph="sʰɯl‿losʰe">슬롯에</phoneme>'),
-            (r'\bAsecna\b', r'<phoneme alphabet="ipa" ph="asekna">Asecna</phoneme>'),
-            (r'\bFAA\b', r'<say-as interpret-as="characters">FAA</say-as>'),
+            (r'\bAsecna(?![A-Za-z0-9])', r'<phoneme alphabet="ipa" ph="asekna">Asecna</phoneme>'),  # not \b at the end: Korean particles attach directly (ASECNA의)
+            (r'\bFAA(?![A-Za-z0-9])', r'<say-as interpret-as="characters">FAA</say-as>'),  # not \b at the end: Korean particles attach directly (FAA는)
         ]
     },
     "16": {
@@ -404,15 +404,9 @@ rule_sets = {
 			(r'\bagentic browsing\b', r'<phoneme alphabet="ipa" ph="ˈejd͡ʒentik ˈbrausink">agentic browsing</phoneme>'),
 			(r'\bAI\b', r'<phoneme alphabet="ipa" ph="ˈej ˈaːj">AI</phoneme>'),
 			(r'\be-mailový\b', r'<phoneme alphabet="ipa" ph="ˈiˌmejˈloviː">e-mailový</phoneme>'),
-			(r'\be-mailov\b', r'<phoneme alphabet="ipa" ph="ˈiˌmejlov">e-mailov</phoneme>'),
-			(r'\bhackerskej\b', r'<phoneme alphabet="ipa" ph="ˈɦeˌkerˈskej">hackerskej</phoneme>'),
-			(r'\bhackeri\b', r'<phoneme alphabet="ipa" ph="ˈɦeˌkeri">hackeri</phoneme>'),
-			(r'\bzahanbenia\b', r'<phoneme alphabet="ipa" ph="ˈzaˌɦanbeˈɲi͡a">zahanbenia</phoneme>'),
-			(r'\bsextortion\b', r'<phoneme alphabet="ipa" ph="ˈsekstoːr̩ʃn">sextortion</phoneme>'),
-			(r'\bbitcoinoch\b', r'<phoneme alphabet="ipa" ph="ˈbitkojnox">bitcoinoch</phoneme>'),
 			(r'\b123456\b', r'<say-as interpret-as="number_digit">123456</say-as>'),
 			(r'\bprávne\b', r'<phoneme alphabet="ipa" ph="ˈpraːvnɛ">právne</phoneme>'),
-			(r'\bdisciplinárne\b', r'<phoneme alphabet="ipa" ph="ˈdɪscɪplinaːrnɛ">disciplinárne</phoneme>'),
+			(r'\bdisciplinárne\b', r'<phoneme alphabet="ipa" ph="ˈdɪst͡sɪplinaːrnɛ">disciplinárne</phoneme>'),
 			(r'\bdigitálne\b', r'<phoneme alphabet="ipa" ph="ˈdɪɡɪtaːlnɛ">digitálne</phoneme>'),
 			(r'\bprávneho\b', r'<phoneme alphabet="ipa" ph="ˈpraːvnɛɦɔ">právneho</phoneme>'),
 			(r'\bNervózne\b', r'<phoneme alphabet="ipa" ph="ˈnɛrvɔːznɛ">Nervózne</phoneme>'),
@@ -458,14 +452,14 @@ rule_sets = {
     "19": {
         "name": "ja-jp",
         "rules": [
-            (r'\bフィッシング\b', r'<phoneme alphabet="sapi" ph="フィッシング">フィッシング</phoneme>'),
-            (r'\b使うよう\b', r'<phoneme alphabet="sapi" ph="ツカウ\'ヨー">使うよう</phoneme>'),
-            (r'\b個別連絡\b', r'<phoneme alphabet="sapi" ph="コベツ+レンラク">個別連絡</phoneme>'),
-            (r'\b受取ったときに、\b', r'<phoneme alphabet="sapi" ph="ウケトッタトキニ">受取ったときに、</phoneme>'),
-            (r'\b確かに\b', r'<phoneme alphabet="sapi" ph="タシカニ">確かに</phoneme>'),
-            (r'\b福利厚生\b', r'<phoneme alphabet="sapi" ph="フクリ+コウセイ">福利厚生</phoneme>'),
-            (r'\b送信者名\b', r'<phoneme alphabet="sapi" ph="ソウシンシャメイ">送信者名</phoneme>'),
-			(r'\b例えば\b', r'<phoneme alphabet="sapi" ph="タトエバ">例えば</phoneme>'),
+            (r'フィッシング', r'<phoneme alphabet="sapi" ph="フィッシング">フィッシング</phoneme>'),
+            (r'使うよう', r'''<phoneme alphabet="sapi" ph="ツカウ'ヨー">使うよう</phoneme>'''),
+            (r'個別連絡', r'<phoneme alphabet="sapi" ph="コベツ+レンラク">個別連絡</phoneme>'),
+            (r'受取ったときに、', r'<phoneme alphabet="sapi" ph="ウケトッタトキニ">受取ったときに、</phoneme>'),
+            (r'(?<![正的明])確かに', r'<phoneme alphabet="sapi" ph="タシカニ">確かに</phoneme>'),  # not inside 正確か/的確か/明確か + に
+            (r'福利厚生', r'<phoneme alphabet="sapi" ph="フクリ+コウセイ">福利厚生</phoneme>'),
+            (r'送信者名', r'<phoneme alphabet="sapi" ph="ソウシンシャメイ">送信者名</phoneme>'),
+			(r'例えば', r'<phoneme alphabet="sapi" ph="タトエバ">例えば</phoneme>'),
         ]
     },
     "20": {
@@ -496,12 +490,11 @@ rule_sets = {
 			(r'\bAI\b', r'<phoneme alphabet="ipa" ph="eːjaːj">AI</phoneme>'),
 			(r'\be-mailekhez\b', r'<phoneme alphabet="ipa" ph="iːmeːlɛkhɛz">e-mailekhez</phoneme>'),
 			(r'\be-mailekkel\b', r'<phoneme alphabet="ipa" ph="iːmeːlɛkːɛl">e-mailekkel,</phoneme>'),
-			(r'\bGratulálunk!\b', r'<prosody contour="(25%,+50%) (50%,-25%)" >Gratulálunk!</prosody>'),
+			(r'\bGratulálunk!', r'<prosody contour="(25%,+50%) (50%,-25%)" >Gratulálunk!</prosody>'),
 			(r'\bféligazságok\b', r'<phoneme alphabet="ipa" ph="feːligɒz ʃaːgok">féligazságok</phoneme>'),
 			(r'\bkisebbekre\b', r'<phoneme alphabet="ipa" ph="kiʃːɛbːɛkɾɛ">kisebbekre</phoneme>'),
 			(r'\bluxusautók\b', r'<phoneme alphabet="ipa" ph="luksuʃ ɒutoːk">luxusautók</phoneme>'),
 			(r'\bmegismer\b', r'<phoneme alphabet="ipa" ph="mɛgiʃmɛɾ">megismer</phoneme>'),
-			(r'\badathalász\b', r'<phoneme alphabet="ipa" ph="ɒdɒthɒlaːs">adathalász</phoneme>'),
 			(r'\bIT\b', r'<phoneme alphabet="ipa" ph="aːjti">IT</phoneme>'),
 			(r'\bGDPR\b', r'<phoneme alphabet="ipa" ph="ʤidipiaːɾ">GDPR</phoneme>'),
 			(r'\bkeylogging\b', r'<lang xml:lang="en-US">key-log-ing</lang>'),
@@ -519,7 +512,6 @@ rule_sets = {
 			(r'\bSmishing\b', r'<phoneme alphabet="ipa" ph="ˈsmɪʃɪŋ">Smishing</phoneme>'),
 			(r'\bQuishing\b', r'<phoneme alphabet="ipa" ph="ˈkwɪʃɪŋ">kwishing</phoneme>'),
 			(r'\bClickbait\b', r'<phoneme alphabet="ipa" ph="ˈklɪk beɪt">Click-bait</phoneme>'),
-			(r'\bmegismer\b', r'<phoneme alphabet="ipa" ph="mɛgiʃmɛɾ">megismer</phoneme>'),	
 			(r'\bcredential stuffing\b', r'<phoneme alphabet="ipa" ph="kɹɪˈdɛn.ʃəl ˈstʌf.ɪŋ">credential stuffing</phoneme>'),	
         ]
     },
@@ -527,7 +519,7 @@ rule_sets = {
         "name": "nl-nl",
         "rules": [
             (r'\bclickbait\b', r'<phoneme alphabet="ipa" ph="ˈklɪkbeɪt">clickbait</phoneme>'),
-			(r"\bdeepfake-video's\b", r'''<phoneme alphabet="ipa" ph="ˈdiːpfeɪk ˈvɪdɪoʊz">deepfake-video's</phoneme>'''),
+			(r"\bdeepfake-video['’]s\b", r'''<phoneme alphabet="ipa" ph="ˈdiːpfeɪk ˈvɪdɪoʊz">deepfake-video's</phoneme>'''),
 			(r'\bvan uw account\b', r'<phoneme alphabet="ipa" ph="vɑn yʋ əˈkaʊnt">van uw account</phoneme>'),
         ]
     },    
