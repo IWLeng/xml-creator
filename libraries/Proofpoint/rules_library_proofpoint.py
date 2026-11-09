@@ -180,7 +180,7 @@ rule_sets = {
             (r'\bpuppet\b', r'<phoneme alphabet="ipa" ph="pohpɛt">puppet</phoneme>'),
             (r'\bcinq secondes\b', r'<phoneme alphabet="ipa" ph="sɛ̃k søgɔ̃d">cinq secondes</phoneme>'),
             (r'\bsûr\b', r'<phoneme alphabet="ipa" ph="syʁ">sûr</phoneme>'),
-            (r'\bregardez y\b', r'<phoneme alphabet="ipa" ph="ɾəgaɾdez‿ i">regardez y</phoneme>'),
+            (r'\bregardez[- ]y\b', r'<phoneme alphabet="ipa" ph="ɾəgaɾdez‿ i">regardez y</phoneme>'),
             (r'\bWi-Fi\b', r'<phoneme alphabet="ipa" ph="wifi">Wi-Fi</phoneme>'),
             (r'\bicloud\b', r'<phoneme alphabet="ipa" ph="aɪˌklaʊd">icloud</phoneme>'),
         ]
@@ -192,7 +192,7 @@ rule_sets = {
             (r'\bdeep-fake\b', r'<phoneme alphabet="ipa" ph="diːp.feɪk">deep-fake</phoneme>'),
             (r'\bdeep-fakes\b', r'<phoneme alphabet="ipa" ph="diːp.feɪks">deep-fakes</phoneme>'),
             (r'\bcryptomonnaie\b', r'<phoneme alphabet="ipa" ph="kʁiptɔmɔnɛ">cryptomonnaie</phoneme>'),
-            (r'\bregardez y\b', r'<phoneme alphabet="ipa" ph="ɾəgaɾdez‿ i">regardez y</phoneme>'),
+            (r'\bregardez[- ]y\b', r'<phoneme alphabet="ipa" ph="ɾəgaɾdez‿ i">regardez y</phoneme>'),
         ]
     },
     "9": {
@@ -296,7 +296,7 @@ rule_sets = {
             (r'\bแอปพลิเคชัน\b', r'<phoneme alphabet="ipa" ph="ˌæplɪˈkeɪʃən">แอปพลิเคชัน</phoneme>'),
             (r'\bDocuSign\b', r'<phoneme alphabet="ipa" ph="ˈdɑkiʊsɑin">DocuSign</phoneme>'),
             (r'\bโคร\b', r'<phoneme alphabet="ipa" ph="kʰrōː">โคร</phoneme>'),
-            (r'\bมาโคร\b', r'<phoneme alphabet="ipa" ph="maːkʰrō">มาโคร</phoneme>'),
+            (r'(?!งมาโคร)', r'<phoneme alphabet="ipa" ph="maːkʰrō">มาโคร</phoneme>'),
             (r'\bรูปแบบอื่น\b', r'<phoneme alphabet="ipa" ph="rú̋̀p.bàb.eun">รูปแบบอื่น</phoneme>'),
             (r'\bTOAD\b', r'<phoneme alphabet="ipa" ph="toad">TOAD</phoneme>'),
             (r'\bอย่าคลิกลิงก์\b', r'<phoneme alphabet="ipa" ph="yaá̋̀.khliḱ.linḡ">อย่าคลิกลิงก์</phoneme>'),
@@ -406,7 +406,7 @@ rule_sets = {
 			(r'\be-mailový\b', r'<phoneme alphabet="ipa" ph="ˈiˌmejˈloviː">e-mailový</phoneme>'),
 			(r'\b123456\b', r'<say-as interpret-as="number_digit">123456</say-as>'),
 			(r'\bprávne\b', r'<phoneme alphabet="ipa" ph="ˈpraːvnɛ">právne</phoneme>'),
-			(r'\bdisciplinárne\b', r'<phoneme alphabet="ipa" ph="ˈdɪscɪplinaːrnɛ">disciplinárne</phoneme>'),
+			(r'\bdisciplinárne\b', r'<phoneme alphabet="ipa" ph="ˈdɪst͡sɪplinaːrnɛ">disciplinárne</phoneme>'),
 			(r'\bdigitálne\b', r'<phoneme alphabet="ipa" ph="ˈdɪɡɪtaːlnɛ">digitálne</phoneme>'),
 			(r'\bprávneho\b', r'<phoneme alphabet="ipa" ph="ˈpraːvnɛɦɔ">právneho</phoneme>'),
 			(r'\bNervózne\b', r'<phoneme alphabet="ipa" ph="ˈnɛrvɔːznɛ">Nervózne</phoneme>'),
@@ -519,7 +519,7 @@ rule_sets = {
         "name": "nl-nl",
         "rules": [
             (r'\bclickbait\b', r'<phoneme alphabet="ipa" ph="ˈklɪkbeɪt">clickbait</phoneme>'),
-			(r"\bdeepfake-video's\b", r'''<phoneme alphabet="ipa" ph="ˈdiːpfeɪk ˈvɪdɪoʊz">deepfake-video's</phoneme>'''),
+			(r"\bdeepfake-video['’]s\b", r'''<phoneme alphabet="ipa" ph="ˈdiːpfeɪk ˈvɪdɪoʊz">deepfake-video's</phoneme>'''),
 			(r'\bvan uw account\b', r'<phoneme alphabet="ipa" ph="vɑn yʋ əˈkaʊnt">van uw account</phoneme>'),
         ]
     },    
