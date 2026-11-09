@@ -2,8 +2,8 @@ rule_sets = {
     "1": {
         "name": "English",
         "rules": [
-            (r'TTY(?:[: ]?\s*711)?', lambda m: f'<say-as interpret-as="characters">TTY</say-as>' + (': <say-as interpret-as="characters">711</say-as>' if '711' in m.group() else '')),
-            (r'\bLead\b(?!\s+(?:to|by|into|on|from))', r'<phoneme alphabet="ipa" ph="lɛd">Lead</phoneme>'),
+            (r'(?<![A-Za-z])TTY(?![A-Za-z])(?:[: ]?\s*711(?!\d))?', lambda m: f'<say-as interpret-as="characters">TTY</say-as>' + (': <say-as interpret-as="characters">711</say-as>' if '711' in m.group() else '')),
+            (r'\bLead\b(?!\s+(?:to|toward|towards|by|on|a|an|the|you|your|our|their|healthier|healthy|longer|better)\b)', r'<phoneme alphabet="ipa" ph="lɛd">Lead</phoneme>'),
             (r'\bAmeriHealth\b', r'<phoneme alphabet="ipa" ph="ʌmɛɹʌ">Ameri</phoneme>Health'),
             (r'\bCaritas\b', r'<phoneme alphabet="ipa" ph="kæɹ.ətɔs">Caritas</phoneme>'),
             (r'\bColon\b', r'<phoneme alphabet="ipa" ph="ˈkoʊ.lən">Colon</phoneme>'),
@@ -25,15 +25,14 @@ rule_sets = {
             (r'avmed', r'AvMed'),
             (r'av med', r'AvMed'),
             (r'well point', r'WellPoint'),
-            (r'\(?(1)?\)?([-. ]?\d{3}[-. ]\d{3}[-. ]\d{4})', r'<say-as interpret-as="telephone">\1\2</say-as>'),
-            (r'\bLead\b(?!\s+(?:to|by|into|on|from))', r'<phoneme alphabet="ipa" ph="lɛd">Lead</phoneme>'),
+            (r'(?<!\d)(1[-. ]?)?((?:\(\d{3}\)\s?|\d{3}[-. ])\d{3}[-. ]\d{4})(?!\d)', r'<say-as interpret-as="telephone">\1\2</say-as>'),
             (r'My Benefits dot Nations Benefits dot com', r'My Benefits dot Nations Benefits, dot com')
         ]
     },
     "2": {
         "name": "Spanish",
         "rules": [
-            (r'TTY(?:[: ]?\s*711)?', lambda m: f'<say-as interpret-as="characters">TTY</say-as>' + (', <say-as interpret-as="characters">711</say-as>' if '711' in m.group() else '')),
+            (r'(?<![A-Za-z])TTY(?![A-Za-z])(?:[: ]?\s*711(?!\d))?', lambda m: f'<say-as interpret-as="characters">TTY</say-as>' + (', <say-as interpret-as="characters">711</say-as>' if '711' in m.group() else '')),
             (r'To continue this call in English, press one', r'To <phoneme alphabet="ipa" ph="kənˈtɪnjuː">continue</phoneme> this call in English, press one'),
             (r'To continue this call in English, press 1', r'To <phoneme alphabet="ipa" ph="kənˈtɪnjuː">continue</phoneme> this call in English, press one.'),
             (r'AvMed', r'Av-Med'),
@@ -63,11 +62,11 @@ rule_sets = {
             (r'\bTanir\b', r'Taníier'),
             (r'\bMy Family Doctor\b', r'My Family <phoneme alphabet="ipa" ph="ˈdɔktɚ">Doctor</phoneme>'),
             (r'Capital Blue', r'Cápital Blue'),
-            (r'\bHumana\b', r'<phoneme alphabet="ipa" ph="hjuˈmɛna">Humana</phoneme>'),
+            (r'(?-i:\bHumana\b)', r'<phoneme alphabet="ipa" ph="hjuˈmɛna">Humana</phoneme>'),  # (?-i:...) = case-sensitive, so the Spanish adjective humana is left alone
             (r'\bMedica\b', r'Médica'),
             (r'\bla 1\b', r'la una'),
             (r'\bAdvantage MD\b', r'Advantage <phoneme alphabet="ipa" ph="ɛm">M</phoneme><phoneme alphabet="ipa" ph="diː">D</phoneme>'),
-            (r'\(?(1)?\)?([-. ]?\d{3}[-. ]\d{3}[-. ]\d{4})', r'<say-as interpret-as="telephone">\1\2</say-as>'),
+            (r'(?<!\d)(1[-. ]?)?((?:\(\d{3}\)\s?|\d{3}[-. ])\d{3}[-. ]\d{4})(?!\d)', r'<say-as interpret-as="telephone">\1\2</say-as>'),
             (r'\bCentene\b', r'Centín'),
             (r'a través', r'através'),
             (r'Flexible Benefit', r'<phoneme alphabet="ipa" ph="ˈflɛk.sɪ.bəl">Flexible</phoneme> Benefit'),
@@ -83,49 +82,47 @@ rule_sets = {
     "3": {
         "name": "Korean",
         "rules": [
-            (r'\bCentene\b', r'<lang xml:lang="en-US">Centene</lang>'),
-            (r'([0-9])번', r'<say-as interpret-as="number_digit">\1</say-as>번'),
+            (r'(?<![A-Za-z])Centene(?![A-Za-z])', r'<lang xml:lang="en-US">Centene</lang>'),  # not \b: a Korean particle can follow directly (Centene의)
+            (r'(?<![\d에-])(?<![에일주월년연달] )(?<!하루 |마다 )([0-9])번(?!\s*(?:째|씩|이상|이하|정도|더|만))', r'<say-as interpret-as="number_digit">\1</say-as>번'),  # skips counts (하루에 2번, 매일 2번, 2번째, 3번씩) and the last digit of a longer number (711번)
             (r'10자리', r'<phoneme alphabet="ipa" ph="jʌl">10</phoneme>자리'),
-            (r'회의', r'<phoneme alphabet="ipa" ph="ˈhø̞ːi">회의</phoneme>'),
-            (r'24시간', r'<say-as interpret-as="character">24</say-as>시간'),
-            (r'\bWellcare By Allwell\b', r'<lang xml:lang="en-US">Wellcare By Allwell</lang>'),
-            (r'\(?(\d)?\)?[-. ]?(\d{3})[-. ]?(\d{3})[-. ]?(\d{4})', lambda m: f'<say-as interpret-as="characters">{m.group(1)}</say-as>-<say-as interpret-as="characters">{m.group(2)}</say-as>-<say-as interpret-as="characters">{m.group(3)}</say-as>-<say-as interpret-as="characters">{m.group(4)}</say-as>' if m.group(1) else f'<say-as interpret-as="characters">{m.group(2)}</say-as>-<say-as interpret-as="characters">{m.group(3)}</say-as>-<say-as interpret-as="characters">{m.group(4)}</say-as>'),
-            (r'\b(Wellcare(?: By (?:Delaware First Health|Superior HealthPlan|Allwell|Fidelis Care))?)\b', r'<lang xml:lang="en-US">\1</lang>'),
+            (r'(?<![가-힣])회의', r'<phoneme alphabet="ipa" ph="ˈhø̞ːi">회의</phoneme>'),
+            (r'24시간', r'<say-as interpret-as="cardinal">24</say-as>시간'),
+            (r'(?<!\d)(?:(\d)[-. ]?)?\(?(\d{3})\)?[-. ]?(\d{3})[-. ]?(\d{4})(?!\d)', lambda m: f'<say-as interpret-as="characters">{m.group(1)}</say-as>-<say-as interpret-as="characters">{m.group(2)}</say-as>-<say-as interpret-as="characters">{m.group(3)}</say-as>-<say-as interpret-as="characters">{m.group(4)}</say-as>' if m.group(1) else f'<say-as interpret-as="characters">{m.group(2)}</say-as>-<say-as interpret-as="characters">{m.group(3)}</say-as>-<say-as interpret-as="characters">{m.group(4)}</say-as>'),
+            (r'(?<![A-Za-z])(Wellcare(?: By (?:Delaware First Health|Superior HealthPlan|Allwell|Fidelis Care))?)(?![A-Za-z])', r'<lang xml:lang="en-US">\1</lang>'),  # not \b: a Korean particle can follow directly (Wellcare에)
         ]
     },
     "4": {
         "name": "Vietnamese",
         "rules": [
             (r'\bCentene\b', r'<lang xml:lang="en-US">Centene</lang>'),
-            (r'TTY(?:[: ]?\s*711)?', lambda m: f'TTY' + (': <say-as interpret-as="characters">711</say-as>' if '711' in m.group() else '')),
-            (r'\(?(1)?\)?[-. ]?(\d{3})[-. ](\d{3})[-. ](\d{4})',  lambda m: (f'<say-as interpret-as="characters">{m.group(1)}</say-as>-' if m.group(1) else '') +            f'<say-as interpret-as="characters">{m.group(2)}</say-as>-<say-as interpret-as="characters">{m.group(3)}</say-as>-<say-as interpret-as="characters">{m.group(4)}</say-as>'),
+            (r'(?<![A-Za-z])TTY(?![A-Za-z])(?:[: ]?\s*711(?!\d))?', lambda m: f'TTY' + (': <say-as interpret-as="characters">711</say-as>' if '711' in m.group() else '')),
+            (r'(?<!\d)(?:(1)[-. ]?)?\(?(\d{3})\)?[-. ]?(\d{3})[-. ](\d{4})(?!\d)',  lambda m: (f'<say-as interpret-as="characters">{m.group(1)}</say-as>-' if m.group(1) else '') +            f'<say-as interpret-as="characters">{m.group(2)}</say-as>-<say-as interpret-as="characters">{m.group(3)}</say-as>-<say-as interpret-as="characters">{m.group(4)}</say-as>'),
             (r'\b(Wellcare(?: By (?:Delaware First Health|Superior HealthPlan|Allwell|Fidelis Care))?)\b', r'<lang xml:lang="en-US">\1</lang>'),
         ]
     },
     "5": {
         "name": "Chinese (Simplified)",
         "rules": [
-            (r'TTY(?:[: ]?\s*711)?', lambda m: f'<say-as interpret-as="characters">TTY</say-as>' + (': <say-as interpret-as="characters">711</say-as>' if '711' in m.group() else '')),
-            (r'\b(Wellcare(?: By (?:Delaware First Health|Superior HealthPlan|Allwell|Fidelis Care))?)\b', r'<lang xml:lang="en-US">\1</lang>'),
+            (r'(?<![A-Za-z])TTY(?![A-Za-z])(?:[:： ]?\s*711(?!\d))?', lambda m: f'<say-as interpret-as="characters">TTY</say-as>' + (': <say-as interpret-as="characters">711</say-as>' if '711' in m.group() else '')),
+            (r'(?<![A-Za-z])(Wellcare(?: By (?:Delaware First Health|Superior HealthPlan|Allwell|Fidelis Care))?)(?![A-Za-z])', r'<lang xml:lang="en-US">\1</lang>'),  # not \b: Chinese puts no space around it (致电Wellcare。)
         ]
     },
     "6": {
         "name": "Armenian",
         "rules": [
             (r'\bKaiser Permanente\b', r'<lang xml:lang="en-US">Kaiser Permanente</lang>'),
-            (r'\bTTY\b', r'<lang xml:lang="en-US">TTY</lang>'),
             (r'\bID\b', r'<lang xml:lang="en-US">ID</lang>'),
-            (r'\borg\b', r'<lang xml:lang="en-US">org</lang>'),
+            (r'(?<!w3\.)\borg\b', r'<lang xml:lang="en-US">org</lang>'),  # (?<!w3\.) keeps it off the www.w3.org URLs in the <speak> header
             (r'\b(Wellcare(?: By (?:Delaware First Health|Superior HealthPlan|Allwell|Fidelis Care))?)\b', r'<lang xml:lang="en-US">\1</lang>'),
-            (r'TTY(?:[: ]?\s*711)?', lambda m: f'<say-as interpret-as="characters">TTY</say-as>' + (': <say-as interpret-as="characters">711</say-as>' if '711' in m.group() else '')),
+            (r'(?<![A-Za-z])TTY(?![A-Za-z])(?:[: ]?\s*711(?!\d))?', lambda m: f'<lang xml:lang="en-US"><say-as interpret-as="characters">TTY</say-as></lang>' + (': <say-as interpret-as="characters">711</say-as>' if '711' in m.group() else '')),
         ]
     },
-    "6": {
+    "7": {
         "name": "Russian",
         "rules": [
             (r'\b(Wellcare(?: By (?:Delaware First Health|Superior HealthPlan|Allwell|Fidelis Care))?)\b', r'<lang xml:lang="en-US">\1</lang>'),
-            (r'TTY(?:[: ]?\s*711)?', lambda m: f'<say-as interpret-as="characters">TTY</say-as>' + (': <say-as interpret-as="characters">711</say-as>' if '711' in m.group() else '')),
-            (r'\(?(1)?\)?([-. ]?\d{3}[-. ]\d{3}[-. ]\d{4})', r'<say-as interpret-as="telephone">\1\2</say-as>'),
+            (r'(?<![A-Za-z])TTY(?![A-Za-z])(?:[: ]?\s*711(?!\d))?', lambda m: f'<say-as interpret-as="characters">TTY</say-as>' + (': <say-as interpret-as="characters">711</say-as>' if '711' in m.group() else '')),
+            (r'(?<!\d)(1[-. ]?)?((?:\(\d{3}\)\s?|\d{3}[-. ])\d{3}[-. ]\d{4})(?!\d)', r'<say-as interpret-as="telephone">\1\2</say-as>'),
         ]
     }
     
