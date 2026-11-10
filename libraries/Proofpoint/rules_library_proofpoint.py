@@ -296,7 +296,7 @@ rule_sets = {
             (r'\bแอปพลิเคชัน\b', r'<phoneme alphabet="ipa" ph="ˌæplɪˈkeɪʃən">แอปพลิเคชัน</phoneme>'),
             (r'\bDocuSign\b', r'<phoneme alphabet="ipa" ph="ˈdɑkiʊsɑin">DocuSign</phoneme>'),
             (r'\bโคร\b', r'<phoneme alphabet="ipa" ph="kʰrōː">โคร</phoneme>'),
-            (r'(?!งมาโคร)', r'<phoneme alphabet="ipa" ph="maːkʰrō">มาโคร</phoneme>'),
+            (r'มาโคร(?!ง)', r'<phoneme alphabet="ipa" ph="maːkʰrō">มาโคร</phoneme>'),  # not the มา + โคร of มาโครงการ
             (r'\bรูปแบบอื่น\b', r'<phoneme alphabet="ipa" ph="rú̋̀p.bàb.eun">รูปแบบอื่น</phoneme>'),
             (r'\bTOAD\b', r'<phoneme alphabet="ipa" ph="toad">TOAD</phoneme>'),
             (r'\bอย่าคลิกลิงก์\b', r'<phoneme alphabet="ipa" ph="yaá̋̀.khliḱ.linḡ">อย่าคลิกลิงก์</phoneme>'),
