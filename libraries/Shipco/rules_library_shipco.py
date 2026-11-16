@@ -8,7 +8,7 @@ rule_sets = {
             (r'\bhackear\b', r'<phoneme alphabet="ipa" ph="xakear">hackear</phoneme>'),
             (r'\bdeepfakes\b', r'<lang xml:lang="en-US">deepfakes</lang>'),
             (r'\bphishing\b', r'<lang xml:lang="en-US">phishing</lang>'),
-            (r'\bTI\b', r'<say-as interpret-as="characters">TI</say-as>'),
+            (r'(?-i:\bTI\b)', r'<say-as interpret-as="characters">TI</say-as>'),  # (?-i:...) = case-sensitive, so the pronoun "ti" is left alone
         ]
     },
 }
