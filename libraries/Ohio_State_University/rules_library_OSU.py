@@ -2,11 +2,11 @@ rule_sets = {
     "1": {
         "name": "Italian",
         "rules": [
-            (r'\b(AC[!.,?-]?)\b', r'<say-as interpret-as="characters">AC</say-as>'),
-            (r'\b(CV[!.,?-]?)\b', r'<say-as interpret-as="characters">CV</say-as>'),
-            (r'\b(ID[!.,?-]?)\b', r'<say-as interpret-as="characters">ID</say-as>'),
-            (r'\b(V[!.,?-]?)\b', r'<say-as interpret-as="characters">V</say-as>'),
-            (r'\b(X[!.,?-]?)\b', r'<say-as interpret-as="characters">X</say-as>'),
+            (r'\bAC\b', r'<say-as interpret-as="characters">AC</say-as>'),
+            (r'\bCV\b', r'<say-as interpret-as="characters">CV</say-as>'),
+            (r'\bID\b', r'<say-as interpret-as="characters">ID</say-as>'),
+            (r'\bV\b', r'<say-as interpret-as="characters">V</say-as>'),
+            (r'\bX\b', r'<say-as interpret-as="characters">X</say-as>'),
             (r'\bAir-Gap\b', r'<phoneme alphabet="ipa" ph="ɛɚ">Air</phoneme>-<phoneme alphabet="ipa" ph="gap">Gap</phoneme>'),
             (r'\bampere\b', r'ampére'),
             (r'\banodi\b', r'<phoneme alphabet="ipa" ph="ˈanodi">anodi</phoneme>'),
@@ -20,7 +20,7 @@ rule_sets = {
             (r'\bcells\b', r'<phoneme alphabet="ipa" ph="ˈsɛlz">cells</phoneme>'),
             (r'\bcentrifughi\b', r'centrífughi'),
             (r'\bCH4\b', r'<say-as interpret-as="characters">CH4</say-as>'),
-            (r'\bCO\b', r'<say-as interpret-as="characters">CO</say-as>'),
+            (r'(?-i:\bCO\b)', r'<say-as interpret-as="characters">CO</say-as>'),  # case-sensitive: skips the prefix "co-" (co-simulazione)
             (r'\bCO2\b', r'<say-as interpret-as="characters">CO2</say-as>'),
             (r'\bCoenergia\b', r'<phoneme alphabet="ipa" ph="ko.e.ner.ʤˈia">Coenergia</phoneme>'),
             (r'\bCogging\b', r'<phoneme alphabet="ipa" ph="ˈko.gːing">Cogging</phoneme>'),
@@ -44,7 +44,7 @@ rule_sets = {
             (r'\bjoule\b', r'<phoneme alphabet="ipa" ph="ˈd͡ʒawl">joule</phoneme>'),
             (r'\bkilohertz\b', r'<phoneme alphabet="ipa" ph="ˈkilo.ertz">kilohertz</phoneme>'),
             (r'\bkilowatt\b', r'<phoneme alphabet="ipa" ph="ˈkilo.vatː">kilowatt</phoneme>'),
-            (r'\bKirchoff\b', r'<phoneme alphabet="ipa" ph="ˈkir.kofː">Kirchoff</phoneme>'),
+            (r'\bKirch?hoff\b', r'<phoneme alphabet="ipa" ph="ˈkir.kofː">Kirchhoff</phoneme>'),
             (r'\blasciatemelo\b', r'<phoneme alphabet="ipa" ph="la.ʃʃˈa.te.melˌo">lasciatemelo</phoneme>'),
             (r'\bmatematici\b', r'<phoneme alphabet="ipa" ph="ma.te.ˈma.ti.ˌtʃːi">matematici</phoneme>'),
             (r'\bmodellino\b', r'modéllino'),
@@ -58,7 +58,7 @@ rule_sets = {
             (r'\bPSIM\b', r'<say-as interpret-as="characters">P</say-as>SIM'),
             (r'\bsincrone\b', r'síncrone'),
             (r'\bslave\b', r'<phoneme alphabet="ipa" ph="s.leiv">slave</phoneme>'),
-            (r'\bstate\b', r'<phoneme alphabet="ipa" ph="state">state</phoneme>'),
+            (r'(?<!\bOhio )\bstate\b(?! of\b)', r'<phoneme alphabet="ipa" ph="state">state</phoneme>'),  # not "Ohio State", "State of Charge"
             (r'\bstop and go\b', r'stop and <phoneme alphabet="ipa" ph="ˈgːoʊ">go</phoneme>'),
             (r'\btenetelo\b', r'<phoneme alphabet="ipa" ph="te.nɛ.telo">tenetelo</phoneme>'),
             (r'cost-to-go', r'cost-to-<phoneme alphabet="ipa" ph="ɡoʊ">go</phoneme>'),
